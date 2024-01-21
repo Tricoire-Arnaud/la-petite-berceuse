@@ -577,10 +577,12 @@ section {
 }
 
 #about .about-container .background {
-  width: 50%;
+  width: calc(50% - 12px); /* Utilisation de calc() pour ajuster la largeur */
   height: 100%;
   object-fit: cover;
+  padding-left: 0; /* Ajout de cette règle pour écraser le padding indésirable */
 }
+
 
 #about .about-container .content {
   width: 45%;
@@ -611,6 +613,7 @@ section {
 
   #about .about-container .background {
     height: auto;
+    width: 100%; /* Réduction supplémentaire de la largeur sur les écrans de petite taille */
   }
 }
 
