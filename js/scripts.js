@@ -8,6 +8,7 @@
 // 
 
 window.addEventListener('DOMContentLoaded', event => {
+    
 
     // Navbar shrink function
     var navbarShrink = function () {
@@ -51,4 +52,16 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+});
+window.addEventListener('DOMContentLoaded', event => {
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('#mainNav');
+        if (window.scrollY > 0) {
+            navbar.classList.add('hide-on-scroll');
+        } else {
+            navbar.classList.remove('hide-on-scroll');
+        }
+    });
+
+    // Rest of your code...
 });
