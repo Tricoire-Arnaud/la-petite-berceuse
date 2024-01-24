@@ -5358,7 +5358,9 @@ textarea.form-control-lg {
   margin-bottom: 0;
   line-height: var(--bs-modal-title-line-height);
 }
-
+.modal-body p {
+  text-align: justify;
+}
 .modal-body {
   position: relative;
   flex: 1 1 auto;
