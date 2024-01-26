@@ -2957,7 +2957,7 @@ textarea.form-control-lg {
 }
 
 .btn-dark {
-  --bs-btn-color: #c5dfc1 ;
+  --bs-btn-color: #545454 ;
   --bs-btn-bg: #ffd9d9;
   --bs-btn-border-color: #212529;
   --bs-btn-hover-color: #fff;
@@ -10956,7 +10956,7 @@ header.masthead .masthead-subheading {
   font-style: italic;
   line-height: 1.5rem;
   margin-bottom: 25px;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "lugrasimo", cursive;  
 }
 header.masthead .masthead-heading {
   font-size: 3.25rem;
@@ -11121,7 +11121,7 @@ header.masthead .masthead-heading {
   height: 80px;
   margin-left: 0;
   text-align: center;
-  color: white;
+  color: gray;
   border: 7px solid #e9ecef;
   border-radius: 100%;
   background-color: #ffd9d9;
