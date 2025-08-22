@@ -1,59 +1,105 @@
+// Script moderne pour La Petite Berceuse avec Tailwind CSS
+document.addEventListener("DOMContentLoaded", function () {
+  // Gestion du menu mobile
+  const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
 
-window.addEventListener('DOMContentLoaded', event => {
-    
-
-    // Fonction pour réduire la barre de navigation
-    var navbarShrink = function () {
-        const navbarCollapsible = document.body.querySelector('#mainNav');
-        if (!navbarCollapsible) {
-            return;
-        }
-        if (window.scrollY === 0) {
-            navbarCollapsible.classList.remove('navbar-shrink')
-        } else {
-            navbarCollapsible.classList.add('navbar-shrink')
-        }
-
-    };
-
-    // Réduire la barre de navigation 
-    navbarShrink();
-
-    // Réduire la barre de navigation lorsque la page est défilée
-    document.addEventListener('scroll', navbarShrink);
-
-    // Activer le scrollspy Bootstrap sur l'élément de navigation principale
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            rootMargin: '0px 0px -40%',
-        });
-    };
-
-    // Réduire la barre de navigation responsive lorsque le bouton de bascule est visible
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
-            }
-        });
+  if (mobileMenuToggle && mobileMenu) {
+    mobileMenuToggle.addEventListener("click", function () {
+      mobileMenu.classList.toggle("hidden");
     });
 
-});
-window.addEventListener('DOMContentLoaded', event => {
-    window.addEventListener('scroll', function() {
-        const navbar = document.querySelector('#mainNav');
-        if (window.scrollY > 0) {
-            navbar.classList.add('hide-on-scroll');
-        } else {
-            navbar.classList.remove('hide-on-scroll');
-        }
+    // Fermer le menu mobile quand on clique sur un lien
+    const mobileLinks = mobileMenu.querySelectorAll("a");
+    mobileLinks.forEach((link) => {
+      link.addEventListener("click", function () {
+        mobileMenu.classList.add("hidden");
+      });
     });
+  }
 
-    // Reste de votre code...
+  // Effet de navigation au scroll
+  const navbar = document.getElementById("mainNav");
+  let lastScrollY = window.scrollY;
+
+  function updateNavbar() {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > 50) {
+      navbar.classList.add("bg-white/98", "shadow-lg");
+      navbar.classList.remove("bg-white/95");
+    } else {
+      navbar.classList.add("bg-white/95");
+      navbar.classList.remove("bg-white/98", "shadow-lg");
+    }
+
+    // Masquer/Afficher la navbar au scroll
+    if (currentScrollY > lastScrollY && currentScrollY > 100) {
+      navbar.style.transform = "translateY(-100%)";
+    } else {
+      navbar.style.transform = "translateY(0)";
+    }
+
+    lastScrollY = currentScrollY;
+  }
+
+  // Throttle pour optimiser les performances
+  let ticking = false;
+  function requestTick() {
+    if (!ticking) {
+      requestAnimationFrame(updateNavbar);
+      ticking = true;
+      setTimeout(() => (ticking = false), 16);
+    }
+  }
+
+  window.addEventListener("scroll", requestTick);
+
+  // Smooth scroll pour les liens d'ancrage
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      const target = document.querySelector(this.getAttribute("href"));
+      if (target) {
+        e.preventDefault();
+        const offsetTop = target.offsetTop - 80; // Compensation pour la navbar fixe
+        window.scrollTo({
+          top: offsetTop,
+          behavior: "smooth",
+        });
+      }
+    });
+  });
+
+  // Animation des éléments au scroll (Intersection Observer)
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px",
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate-fade-in-up");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Observer les sections pour les animations
+  document.querySelectorAll("section").forEach((section) => {
+    observer.observe(section);
+  });
+
+  // Effet parallax léger pour le header
+  const header = document.querySelector("header");
+  if (header) {
+    window.addEventListener("scroll", () => {
+      const scrolled = window.pageYOffset;
+      if (scrolled < window.innerHeight) {
+        header.style.transform = `translateY(${scrolled * 0.5}px)`;
+      }
+    });
+  }
+
+  console.log("🌸 La Petite Berceuse - Site chargé avec succès!");
 });
