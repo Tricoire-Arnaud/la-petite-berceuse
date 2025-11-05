@@ -405,58 +405,228 @@
     <section id="a-propos" class="py-20 bg-white" data-animate>
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-6xl mx-auto">
-          <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="grid lg:grid-cols-2 gap-12 items-start">
             <div>
               <h2
-                class="font-display text-4xl md:text-5xl font-bold text-secondary-700 mb-6"
+                class="font-display text-4xl md:text-5xl font-bold text-[#FF9CA0] mb-6"
               >
                 À propos de moi
               </h2>
 
-              <div class="space-y-4 mb-8">
-                <div class="flex items-center space-x-3">
-                  <i class="fas fa-stethoscope text-secondary-500"></i>
-                  <span class="font-semibold text-accent-700"
-                    >Infirmière de formation</span
-                  >
-                </div>
-                <div class="flex items-center space-x-3">
-                  <i class="fas fa-award text-secondary-500"></i>
-                  <span class="font-semibold text-accent-700"
-                    >Ambassadrice de l'école du bien-naître</span
-                  >
-                </div>
-                <div class="flex items-center space-x-3">
-                  <i class="fas fa-calendar text-secondary-500"></i>
-                  <span class="font-semibold text-accent-700"
-                    >+8 ans d'expérience en tant qu'infirmière</span
-                  >
-                </div>
-                <div class="flex items-center space-x-3">
-                  <i class="fas fa-graduation-cap text-secondary-500"></i>
-                  <span class="font-semibold text-accent-700"
-                    >+14 formations en périnatalité</span
-                  >
-                </div>
+              <div
+                class="mt-12 space-y-8 text-base sm:text-lg text-accent-600 leading-relaxed"
+              >
+                <!-- Racines & vocation -->
+                <article
+                  class="group rounded-3xl border border-secondary-100 bg-white/95 p-6 sm:p-8 shadow-sm ring-1 ring-black/5 transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+                >
+                  <div class="flex items-center gap-3">
+                    <span
+                      class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-secondary-100 text-secondary-600 shadow-sm"
+                    >
+                      <i class="fas fa-seedling text-lg"></i>
+                    </span>
+                    <div>
+                      <span
+                        class="inline-flex items-center gap-2 rounded-full bg-secondary-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-secondary-600"
+                      >
+                        Racines & vocation
+                      </span>
+                    </div>
+                  </div>
+                  <div class="mt-6 space-y-4">
+                    <p>
+                      <span class="font-semibold text-secondary-700"
+                        >D'aussi loin que je me souvienne</span
+                      >, j'ai toujours été passionnée par la maternité. Très
+                      jeune, j'ai compris que je voulais prendre soin des
+                      autres, en particulier des femmes, des mères et des
+                      nouveau-nés qui nous rejoignent dans ce monde.
+                    </p>
+                    <p>
+                      Pour moi, la maternité est un passage puissant. Elle nous
+                      relie à quelque chose de plus grand, de plus vaste que
+                      nous. Je me suis souvent sentie toute petite face à
+                      l'immensité de la vie.
+                    </p>
+                  </div>
+                </article>
+
+                <!-- Parole marquante -->
+                <article
+                  class="group overflow-hidden rounded-3xl border border-primary-100 bg-gradient-to-r from-primary-50 via-white to-secondary-50/80 p-6 sm:p-8 shadow-sm ring-1 ring-black/5 transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+                >
+                  <div class="flex items-start gap-4">
+                    <span
+                      class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-100 text-primary-600 shadow-sm"
+                    >
+                      <i class="fas fa-quote-left text-lg"></i>
+                    </span>
+                    <div>
+                      <p
+                        class="text-xl font-semibold italic text-secondary-700"
+                      >
+                        « Tu es venue sur Terre pour soigner la vie et donner la
+                        vie. »
+                      </p>
+                      <p class="mt-3 text-sm text-accent-500">
+                        Depuis, ces mots résonnent comme une mission de vie.
+                      </p>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Parcours infirmier -->
+                <article
+                  class="group rounded-3xl border border-primary-100 bg-white/95 p-6 sm:p-8 shadow-sm ring-1 ring-black/5 transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+                >
+                  <div class="flex items-center gap-3">
+                    <span
+                      class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-100 text-primary-600 shadow-sm"
+                    >
+                      <i class="fas fa-stethoscope text-lg"></i>
+                    </span>
+                    <div>
+                      <span
+                        class="inline-flex items-center gap-2 rounded-full bg-primary-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary-600"
+                      >
+                        Parcours d'infirmière
+                      </span>
+                    </div>
+                  </div>
+                  <div class="mt-6 space-y-4">
+                    <p>
+                      <span class="font-semibold text-primary-700"
+                        >Infirmière depuis 2017</span
+                      >, j'ai travaillé au sein de différents hôpitaux et
+                      cliniques, auprès des enfants, des adultes, des personnes
+                      âgées ou en situation de handicap. J'ai connu les
+                      urgences, la précarité, l'épuisement, la surcharge et le
+                      stress.
+                    </p>
+                    <p>
+                      Après deux vagues Covid en région parisienne, j'ai
+                      ressenti le besoin de revenir à l'essentiel. De redéfinir
+                      ma façon de prendre soin, dans un système où l'humain
+                      n'est plus la priorité.
+                    </p>
+                  </div>
+                </article>
+
+                <!-- Voyages & engagement -->
+                <article
+                  class="group rounded-3xl border border-secondary-100 bg-white/95 p-6 sm:p-8 shadow-sm ring-1 ring-black/5 transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+                >
+                  <div class="flex items-center gap-3">
+                    <span
+                      class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-secondary-100 text-secondary-600 shadow-sm"
+                    >
+                      <i class="fas fa-globe-africa text-lg"></i>
+                    </span>
+                    <div>
+                      <span
+                        class="inline-flex items-center gap-2 rounded-full bg-secondary-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-secondary-600"
+                      >
+                        Voyages & engagement
+                      </span>
+                    </div>
+                  </div>
+                  <div class="mt-6 space-y-4">
+                    <p>
+                      <span class="font-semibold text-secondary-700"
+                        >Je suis partie en mission de volontariat au Togo</span
+                      >, un voyage qui a bouleversé mon regard. Là-bas, la
+                      maternité est instinctive, honorée et entourée. J'y ai vu
+                      des femmes belles tant je les ai trouvées fortes.
+                    </p>
+                    <p>
+                      À mon retour, j'ai souhaité accompagner la maternité avec
+                      une approche psycho-émotionnelle. Je me suis formée en
+                      périnatalité, j'ai étudié, beaucoup lu, et intégré à plein
+                      temps un service de néonatalogie.
+                    </p>
+                    <p>
+                      <span class="font-semibold text-secondary-700"
+                        >En 2024, j'ai créé La Petite Berceuse</span
+                      >
+                      pour accompagner les familles à domicile, là où tout se
+                      vit sans filtre.
+                    </p>
+                  </div>
+                </article>
+
+                <!-- Devenir mère -->
+                <article
+                  class="group rounded-3xl border border-primary-100 bg-white/95 p-6 sm:p-8 shadow-sm ring-1 ring-black/5 transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+                >
+                  <div class="flex items-center gap-3">
+                    <span
+                      class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-100 text-primary-600 shadow-sm"
+                    >
+                      <i class="fas fa-heart text-lg"></i>
+                    </span>
+                    <div>
+                      <span
+                        class="inline-flex items-center gap-2 rounded-full bg-primary-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary-600"
+                      >
+                        Devenir mère
+                      </span>
+                    </div>
+                  </div>
+                  <div class="mt-6 space-y-4">
+                    <p>
+                      <span class="font-semibold text-primary-700"
+                        >En 2025, je suis devenue mère</span
+                      >
+                      à mon tour. Ce que j'avais observé chez les autres, je
+                      l'ai vécu dans mon corps, dans mes tripes. J'ai connu la
+                      peur, les doutes, les pleurs et surtout l'amour.
+                    </p>
+                    <p>
+                      Alors j'ai imaginé mon cabinet : un espace simple mais
+                      chaleureux, pour vous recevoir telle que vous êtes —
+                      épuisée, heureuse, fatiguée, bouleversée. Un lieu que
+                      j'aurais aimé trouver durant ma propre maternité.
+                    </p>
+                  </div>
+                </article>
               </div>
 
-              <p class="text-lg text-accent-600 leading-relaxed mb-8">
-                D'aussi loin que je me souvienne, j'ai toujours été passionnée
-                par la maternité. Pour moi, la maternité est un passage puissant
-                qui nous relie à quelque chose de plus grand, de plus vaste que
-                nous.
-              </p>
-
-              <a
-                href="#"
-                class="inline-flex items-center text-secondary-600 hover:text-secondary-700 font-semibold"
+              <div
+                class="mt-10 p-8 bg-secondary-50/80 rounded-3xl border border-secondary-100 shadow-sm space-y-4"
               >
-                Découvrir mon parcours
-                <i class="fas fa-arrow-right ml-2"></i>
-              </a>
+                <h3 class="font-display text-2xl font-bold text-secondary-700">
+                  Pourquoi « La petite berceuse » ?
+                </h3>
+                <p>
+                  Le fœtus est en perpétuel bercement dans le ventre de sa mère.
+                  Les nouveau-nés et les adultes demeurent sensibles aux
+                  bercements physiques et psychiques.
+                </p>
+                <p>
+                  C'est pourquoi, j'ai décidé de devenir « La petite berceuse »
+                  : celle qui berce physiquement grâce aux soins proposés, mais
+                  aussi psycho-émotionnellement. Je vous accompagne et vous
+                  épaule avec passion et bienveillance.
+                </p>
+              </div>
+
+              <div class="mt-10 text-center sm:text-left">
+                <a
+                  href="formations.html"
+                  class="inline-flex items-center gap-3 rounded-full bg-secondary-500 px-6 py-3 text-white font-semibold shadow-lg shadow-secondary-500/20 transition hover:-translate-y-0.5 hover:bg-secondary-600 focus:outline-none focus:ring-2 focus:ring-secondary-300 focus:ring-offset-2"
+                >
+                  <i class="fas fa-graduation-cap text-white/90"></i>
+                  <span>Découvrir toutes mes formations</span>
+                </a>
+                <p class="mt-4 text-sm text-accent-500">
+                  Une page dédiée présente l'ensemble de mes diplômes,
+                  spécialités et certifications.
+                </p>
+              </div>
             </div>
 
-            <div>
+            <div class="lg:sticky lg:top-32">
               <img
                 src="assets/img/la petite berceuse/Photo_présentation.jpg"
                 alt="Cassandra, fondatrice de La Petite Berceuse"
