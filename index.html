@@ -57,6 +57,29 @@
               display: ["Georgia", "serif"],
               body: ["Inter", "sans-serif"],
             },
+            keyframes: {
+              fadeUp: {
+                "0%": { opacity: "0", transform: "translateY(24px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+              gradientShift: {
+                "0%": { opacity: "0.3" },
+                "50%": { opacity: "0.45" },
+                "100%": { opacity: "0.35" },
+              },
+              quotePulse: {
+                "0%": { transform: "scale(1)", opacity: "0.25" },
+                "50%": { transform: "scale(1.05)", opacity: "0.45" },
+                "100%": { transform: "scale(1)", opacity: "0.25" },
+              },
+            },
+            animation: {
+              fadeUp: "fadeUp 0.9s ease-out forwards",
+              fadeUpDelay: "fadeUp 0.9s ease-out 0.2s forwards",
+              fadeUpSlow: "fadeUp 0.9s ease-out 0.4s forwards",
+              gradientShift: "gradientShift 12s ease-in-out infinite",
+              quotePulse: "quotePulse 4s ease-in-out infinite",
+            },
           },
         },
       };
@@ -83,47 +106,107 @@
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-20">
           <!-- Logo -->
-          <div class="flex items-center space-x-3">
-            <img
-              src="assets/img/la petite berceuse/logo petite berceuse.png"
-              alt="La Petite Berceuse"
-              class="h-12 w-auto"
-            />
+          <div class="flex items-center space-x-4">
+            <div
+              class="relative flex items-center justify-center w-16 h-16 rounded-2xl bg-white/90 border border-white/80 shadow-lg overflow-hidden"
+            >
+              <img
+                src="assets/img/la petite berceuse/logo petite berceuse.png"
+                alt="La Petite Berceuse"
+                class="h-12 w-auto drop-shadow"
+              />
+            </div>
             <div>
-              <h1 class="font-display text-xl font-bold text-secondary-700">
-                La Petite Berceuse
-              </h1>
-              <p class="text-sm text-accent-500">Accompagnement périnatal</p>
+              <div class="flex items-center gap-2">
+                <h1 class="font-display text-2xl font-bold text-secondary-700">
+                  La Petite Berceuse
+                </h1>
+                <span
+                  class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold text-secondary-600 bg-secondary-100 border border-secondary-200"
+                >
+                  Depuis 2023
+                </span>
+              </div>
+              <p class="text-sm text-accent-500">
+                Accompagnement périnatal — Gard & alentours
+              </p>
             </div>
           </div>
 
           <!-- Navigation Desktop -->
-          <nav class="hidden md:flex space-x-8">
+          <nav
+            class="hidden md:flex items-center space-x-2 bg-white/60 backdrop-blur-lg px-2 py-1 rounded-full border border-white/70 shadow-sm"
+          >
             <a
               href="#accueil"
-              class="text-accent-600 hover:text-secondary-600 transition-colors font-medium"
-              >Accueil</a
+              class="relative inline-flex items-center px-4 py-2 rounded-full text-secondary-700 font-medium transition-all duration-300 group"
             >
+              <span class="relative z-10">Accueil</span>
+              <span
+                class="absolute inset-0 rounded-full bg-secondary-100/80 scale-0 group-hover:scale-100 transition-transform duration-300"
+                aria-hidden="true"
+              ></span>
+              <span
+                class="absolute left-1/2 -bottom-1 w-0 group-hover:w-8 h-[2px] bg-secondary-500 rounded-full transition-all duration-300 -translate-x-1/2"
+                aria-hidden="true"
+              ></span>
+            </a>
             <a
               href="#services"
-              class="text-accent-600 hover:text-secondary-600 transition-colors font-medium"
-              >Soins & Tarifs</a
+              class="relative inline-flex items-center px-4 py-2 rounded-full text-secondary-700 font-medium transition-all duration-300 group"
             >
+              <span class="relative z-10">Soins & Tarifs</span>
+              <span
+                class="absolute inset-0 rounded-full bg-secondary-100/80 scale-0 group-hover:scale-100 transition-transform duration-300"
+                aria-hidden="true"
+              ></span>
+              <span
+                class="absolute left-1/2 -bottom-1 w-0 group-hover:w-8 h-[2px] bg-secondary-500 rounded-full transition-all duration-300 -translate-x-1/2"
+                aria-hidden="true"
+              ></span>
+            </a>
             <a
               href="#a-propos"
-              class="text-accent-600 hover:text-secondary-600 transition-colors font-medium"
-              >À propos</a
+              class="relative inline-flex items-center px-4 py-2 rounded-full text-secondary-700 font-medium transition-all duration-300 group"
             >
+              <span class="relative z-10">À propos</span>
+              <span
+                class="absolute inset-0 rounded-full bg-secondary-100/80 scale-0 group-hover:scale-100 transition-transform duration-300"
+                aria-hidden="true"
+              ></span>
+              <span
+                class="absolute left-1/2 -bottom-1 w-0 group-hover:w-8 h-[2px] bg-secondary-500 rounded-full transition-all duration-300 -translate-x-1/2"
+                aria-hidden="true"
+              ></span>
+            </a>
             <a
               href="#temoignages"
-              class="text-accent-600 hover:text-secondary-600 transition-colors font-medium"
-              >Témoignages</a
+              class="relative inline-flex items-center px-4 py-2 rounded-full text-secondary-700 font-medium transition-all duration-300 group"
             >
+              <span class="relative z-10">Témoignages</span>
+              <span
+                class="absolute inset-0 rounded-full bg-secondary-100/80 scale-0 group-hover:scale-100 transition-transform duration-300"
+                aria-hidden="true"
+              ></span>
+              <span
+                class="absolute left-1/2 -bottom-1 w-0 group-hover:w-8 h-[2px] bg-secondary-500 rounded-full transition-all duration-300 -translate-x-1/2"
+                aria-hidden="true"
+              ></span>
+            </a>
             <a
               href="#contact"
-              class="text-accent-600 hover:text-secondary-600 transition-colors font-medium"
-              >Contact</a
+              class="relative inline-flex items-center px-4 py-2 rounded-full text-secondary-700 font-medium transition-all duration-300 group"
             >
+              <span class="relative z-10">Contact</span>
+              <span
+                class="absolute inset-0 rounded-full bg-secondary-100/80 scale-0 group-hover:scale-100 transition-transform duration-300"
+                aria-hidden="true"
+              ></span>
+              <span
+                class="absolute left-1/2 -bottom-1 w-0 group-hover:w-8 h-[2px] bg-secondary-500 rounded-full transition-all duration-300 -translate-x-1/2"
+                aria-hidden="true"
+              ></span>
+            </a>
           </nav>
 
           <!-- CTA Button -->
@@ -187,36 +270,42 @@
     <!-- Hero Section -->
     <section
       id="accueil"
-      class="relative min-h-screen flex items-center justify-center pt-20"
+      class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden"
     >
       <!-- Background Image -->
       <div class="absolute inset-0">
         <img
-          src="assets/img/la petite berceuse/IMG_1810.jpg"
-          alt="Hero Background"
-          class="w-full h-full object-cover"
+          src="assets/img/la petite berceuse/Hero_section.jpg"
+          alt="Moments de douceur autour de la maternité"
+          data-hero-bg
+          class="w-full h-full object-cover transform-gpu will-change-transform scale-105"
         />
-        <div class="absolute inset-0 bg-black/30"></div>
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-primary-900/45 via-primary-700/35 to-secondary-900/45 mix-blend-multiply animate-gradientShift"
+        ></div>
+        <div class="absolute inset-0 bg-black/20"></div>
       </div>
 
       <!-- Content -->
       <div
-        class="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto"
+        class="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto space-y-10"
       >
         <h1
-          class="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-8 break-words"
+          class="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold break-words opacity-0 animate-fadeUp"
         >
           Bienvenue dans cet espace dédié à la maternité
         </h1>
 
         <blockquote
-          class="text-xl sm:text-2xl md:text-3xl italic mb-12 opacity-90"
+          class="text-xl sm:text-2xl md:text-3xl italic opacity-90 opacity-0 animate-fadeUpDelay"
         >
           « Il n'y a rien de plus fort au monde que la douceur. »
           <footer class="text-lg mt-2 opacity-75">— Han Suyin</footer>
         </blockquote>
 
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <div
+          class="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fadeUpSlow"
+        >
           <a
             href="#services"
             class="bg-primary-500 text-white px-8 py-4 rounded-full hover:bg-primary-600 transition-colors font-semibold text-lg"
@@ -234,15 +323,15 @@
     </section>
 
     <!-- Mon rôle / Comment -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-20 bg-gray-50" data-animate>
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto">
           <!-- Mon rôle -->
           <div class="text-center mb-16">
             <h2
-              class="font-display text-4xl md:text-5xl font-bold text-secondary-700 mb-8"
+              class="font-display text-4xl md:text-5xl font-bold text-[#8BB883] mb-8"
             >
-              Mon <span class="text-primary-500">rôle</span>
+              Mon rôle
             </h2>
             <p
               class="text-xl text-accent-600 leading-relaxed max-w-3xl mx-auto"
@@ -295,7 +384,7 @@
     </section>
 
     <!-- À propos aperçu -->
-    <section id="a-propos" class="py-20 bg-white">
+    <section id="a-propos" class="py-20 bg-white" data-animate>
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-6xl mx-auto">
           <div class="grid lg:grid-cols-2 gap-12 items-center">
@@ -351,8 +440,8 @@
 
             <div>
               <img
-                src="assets/img/la petite berceuse/IMG_1804.jpeg"
-                alt="Cassandra - La Petite Berceuse"
+                src="assets/img/la petite berceuse/Photo_présentation.jpg"
+                alt="Cassandra, fondatrice de La Petite Berceuse"
                 class="w-full rounded-3xl shadow-lg"
               />
             </div>
@@ -362,13 +451,13 @@
     </section>
 
     <!-- Services Aperçu -->
-    <section id="services" class="py-20 bg-white">
+    <section id="services" class="py-20 bg-white" data-animate>
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto text-center mb-16">
           <h2
-            class="font-display text-4xl md:text-5xl font-bold text-secondary-700 mb-6"
+            class="font-display text-4xl md:text-5xl font-bold text-[#FF9CA0] mb-6"
           >
-            Soins et <span class="text-primary-500">tarifs</span>
+            Soins et tarifs
           </h2>
           <p class="text-xl text-accent-600">
             Des accompagnements personnalisés pour chaque étape de votre
@@ -380,13 +469,21 @@
           <!-- Massage femme enceinte -->
           <div class="group cursor-pointer" onclick="openModal('modal1')">
             <div
-              class="relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+              class="relative overflow-hidden rounded-[32px] shadow-xl hover:shadow-2xl transition-all duration-500 transform group-hover:-translate-y-2 group-hover:-rotate-1 ring-1 ring-black/5"
             >
               <img
-                src="assets/img/la petite berceuse/femme enceinte 2.jpeg"
+                src="assets/img/la petite berceuse/massag_femme_enceinte.jpg"
                 alt="Massage femme enceinte"
-                class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                class="w-full h-64 object-cover transition-transform duration-[600ms] group-hover:scale-110"
               />
+              <div
+                class="absolute top-4 left-4 flex items-center gap-2 bg-white/90 text-secondary-700 px-4 py-2 rounded-full shadow-md backdrop-blur-sm border border-white/60"
+              >
+                <i class="fas fa-spa text-secondary-500"></i>
+                <span class="text-xs font-semibold tracking-wide uppercase"
+                  >Massage</span
+                >
+              </div>
               <div
                 class="absolute inset-0 bg-gradient-to-t from-primary-900/70 via-primary-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center"
               >
@@ -411,13 +508,21 @@
           <!-- Thérapeutique Bain Bébé -->
           <div class="group cursor-pointer" onclick="openModal('modal2')">
             <div
-              class="relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+              class="relative overflow-hidden rounded-[32px] shadow-xl hover:shadow-2xl transition-all duration-500 transform group-hover:-translate-y-2 group-hover:-rotate-1 ring-1 ring-black/5"
             >
               <img
-                src="assets/img/la petite berceuse/IMG_1813.jpeg"
+                src="assets/img/la petite berceuse/Bain_therapeuthique.jpg"
                 alt="Thérapeutique Bain Bébé"
-                class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                class="w-full h-64 object-cover transition-transform duration-[600ms] group-hover:scale-110"
               />
+              <div
+                class="absolute top-4 left-4 flex items-center gap-2 bg-white/90 text-accent-700 px-4 py-2 rounded-full shadow-md backdrop-blur-sm border border-white/60"
+              >
+                <i class="fas fa-baby text-accent-600"></i>
+                <span class="text-xs font-semibold tracking-wide uppercase"
+                  >Bain bébé</span
+                >
+              </div>
               <div
                 class="absolute inset-0 bg-gradient-to-t from-accent-900/70 via-accent-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center"
               >
@@ -442,13 +547,21 @@
           <!-- Soin rituel anti-vergetures -->
           <div class="group cursor-pointer" onclick="openModal('modal3')">
             <div
-              class="relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+              class="relative overflow-hidden rounded-[32px] shadow-xl hover:shadow-2xl transition-all duration-500 transform group-hover:-translate-y-2 group-hover:-rotate-1 ring-1 ring-black/5"
             >
               <img
-                src="assets/img/la petite berceuse/femme enceinte1.jpeg"
+                src="assets/img/la petite berceuse/Soin_rituel_anti_vergetures.jpg"
                 alt="Soin rituel anti-vergetures"
-                class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                class="w-full h-64 object-cover transition-transform duration-[600ms] group-hover:scale-110"
               />
+              <div
+                class="absolute top-4 left-4 flex items-center gap-2 bg-white/90 text-secondary-700 px-4 py-2 rounded-full shadow-md backdrop-blur-sm border border-white/60"
+              >
+                <i class="fas fa-feather text-secondary-500"></i>
+                <span class="text-xs font-semibold tracking-wide uppercase"
+                  >Rituel</span
+                >
+              </div>
               <div
                 class="absolute inset-0 bg-gradient-to-t from-secondary-900/70 via-secondary-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center"
               >
@@ -473,13 +586,21 @@
           <!-- Massage post-natal -->
           <div class="group cursor-pointer" onclick="openModal('modal4')">
             <div
-              class="relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+              class="relative overflow-hidden rounded-[32px] shadow-xl hover:shadow-2xl transition-all duration-500 transform group-hover:-translate-y-2 group-hover:-rotate-1 ring-1 ring-black/5"
             >
               <img
-                src="assets/img/la petite berceuse/pexels-joellen-moths-3372787.jpg"
+                src="assets/img/la petite berceuse/Massage_post_natal.jpg"
                 alt="Massage post-natal"
-                class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                class="w-full h-64 object-cover transition-transform duration-[600ms] group-hover:scale-110"
               />
+              <div
+                class="absolute top-4 left-4 flex items-center gap-2 bg-white/90 text-primary-700 px-4 py-2 rounded-full shadow-md backdrop-blur-sm border border-white/60"
+              >
+                <i class="fas fa-hands-holding-heart text-primary-600"></i>
+                <span class="text-xs font-semibold tracking-wide uppercase"
+                  >Post-natal</span
+                >
+              </div>
               <div
                 class="absolute inset-0 bg-gradient-to-t from-primary-900/70 via-primary-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center"
               >
@@ -504,13 +625,21 @@
           <!-- Le serrage de bassin -->
           <div class="group cursor-pointer" onclick="openModal('modal5')">
             <div
-              class="relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+              class="relative overflow-hidden rounded-[32px] shadow-xl hover:shadow-2xl transition-all duration-500 transform group-hover:-translate-y-2 group-hover:-rotate-1 ring-1 ring-black/5"
             >
               <img
-                src="assets/img/la petite berceuse/pexels-polina-tankilevitch-3875103.jpg"
+                src="assets/img/la petite berceuse/Serrage_de_bassin.jpg"
                 alt="Le serrage de bassin"
-                class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                class="w-full h-64 object-cover transition-transform duration-[600ms] group-hover:scale-110"
               />
+              <div
+                class="absolute top-4 left-4 flex items-center gap-2 bg-white/90 text-secondary-700 px-4 py-2 rounded-full shadow-md backdrop-blur-sm border border-white/60"
+              >
+                <i class="fas fa-circle-notch text-secondary-500"></i>
+                <span class="text-xs font-semibold tracking-wide uppercase"
+                  >Rituel</span
+                >
+              </div>
               <div
                 class="absolute inset-0 bg-gradient-to-t from-secondary-900/70 via-secondary-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center"
               >
@@ -536,22 +665,70 @@
     </section>
 
     <!-- Où se rencontrer -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-white" data-animate>
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto">
           <h2
-            class="font-display text-4xl md:text-5xl font-bold text-secondary-700 mb-12 text-center"
+            class="font-display text-4xl md:text-5xl font-bold text-[#8BB883] mb-12 text-center"
           >
-            Où se <span class="text-primary-500">rencontrer</span> ?
+            Où se rencontrer ?
           </h2>
 
-          <div class="grid md:grid-cols-2 gap-12">
+          <div class="max-w-4xl mx-auto mb-12">
+            <div
+              class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-primary-50 via-white to-secondary-50 border border-white/60 shadow-lg p-8 md:p-10"
+            >
+              <div
+                class="absolute -top-16 -right-16 w-40 h-40 bg-secondary-100 rounded-full blur-3xl opacity-40"
+              ></div>
+              <div
+                class="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-8 text-center md:text-left"
+              >
+                <div
+                  class="flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-full bg-white shadow-md text-secondary-600 border border-white/70"
+                >
+                  <i class="fas fa-map-location-dot text-3xl md:text-4xl"></i>
+                </div>
+                <div class="space-y-4 text-accent-600 flex-1">
+                  <p class="text-xl md:text-2xl font-semibold">
+                    Habitant du Gard ? Du Vaucluse ? Des Bouches-du-Rhône ? Le
+                    cabinet est idéalement situé !
+                  </p>
+                  <p>Pour vous situer...</p>
+                </div>
+                <div class="w-full sm:w-auto md:ml-auto">
+                  <div
+                    class="relative mx-auto mt-4 md:mt-0 w-full max-w-xs h-48 sm:h-52 md:h-56 rounded-2xl overflow-hidden shadow-lg border border-white/60"
+                  >
+                    <iframe
+                      src="https://maps.google.com/maps?q=Remoulins%20France&t=&z=12&ie=UTF8&iwloc=&output=embed"
+                      width="100%"
+                      height="100%"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                      title="Carte de Remoulins"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="grid gap-10 md:grid-cols-[1fr_auto_1fr] md:items-start md:gap-12"
+          >
             <!-- Au cabinet -->
             <div
-              class="bg-gradient-to-br from-secondary-50 to-white rounded-3xl p-8 shadow-lg"
+              class="bg-gradient-to-br from-secondary-50 via-white to-white rounded-3xl p-8 shadow-lg h-full flex flex-col gap-6 border border-white/60"
             >
-              <div class="text-center mb-6">
-                <i class="fas fa-home text-secondary-500 text-4xl mb-4"></i>
+              <div class="text-center mb-2">
+                <div
+                  class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white shadow-md border border-white/70 mb-4"
+                >
+                  <i class="fas fa-home text-secondary-500 text-3xl"></i>
+                </div>
                 <h3
                   class="font-display text-2xl font-bold text-secondary-700 mb-2"
                 >
@@ -581,13 +758,18 @@
                   <p class="font-semibold mb-2">
                     Distances depuis le cabinet :
                   </p>
-                  <div class="grid grid-cols-2 gap-1">
-                    <span>• 13min de Marguerittes</span>
-                    <span>• 14min d'Aramon</span>
-                    <span>• 16min d'Uzès</span>
-                    <span>• 16min de Beaucaire</span>
-                    <span>• 24min d'Avignon</span>
-                    <span>• 27min de Nîmes</span>
+                  <div class="grid sm:grid-cols-2 gap-x-6 gap-y-1 text-left">
+                    <span>• 13 min de Marguerittes (30)</span>
+                    <span>• 14 min de Aramon (30)</span>
+                    <span>• 16 min de Uzès (30)</span>
+                    <span>• 16 min de Beaucaire (30)</span>
+                    <span>• 18 min des Angles (30)</span>
+                    <span>• 22 min de Tarascon (13)</span>
+                    <span>• 23 min de Bagnols-sur-Cèze (30)</span>
+                    <span>• 21 min de Orange (84)</span>
+                    <span>• 24 min d'Avignon (84)</span>
+                    <span>• 27 min de Nîmes (30)</span>
+                    <span>• 35 min de Arles (13)</span>
                   </div>
                 </div>
               </div>
@@ -595,10 +777,18 @@
 
             <!-- À domicile -->
             <div
-              class="bg-gradient-to-br from-primary-50 to-white rounded-3xl p-8 shadow-lg"
+              class="hidden md:block w-px bg-gradient-to-b from-primary-200 via-accent-200 to-secondary-300 rounded-full mx-auto"
+            ></div>
+
+            <div
+              class="bg-gradient-to-br from-primary-50 via-white to-white rounded-3xl p-8 shadow-lg h-full flex flex-col gap-6 border border-white/60"
             >
-              <div class="text-center mb-6">
-                <i class="fas fa-car text-primary-500 text-4xl mb-4"></i>
+              <div class="text-center mb-2">
+                <div
+                  class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white shadow-md border border-white/70 mb-4"
+                >
+                  <i class="fas fa-car text-primary-500 text-3xl"></i>
+                </div>
                 <h3
                   class="font-display text-2xl font-bold text-secondary-700 mb-2"
                 >
@@ -606,15 +796,17 @@
                 </h3>
               </div>
 
-              <div class="space-y-4">
-                <p class="text-accent-600">
+              <div class="space-y-4 text-accent-600">
+                <p>
                   Je me déplace également à domicile selon mes disponibilités,
                   moyennement des frais kilométriques (1€/km aller-retour).
                 </p>
 
                 <div class="bg-blue-50 rounded-xl p-4 border border-blue-200">
-                  <p class="text-blue-800">
-                    <i class="fas fa-phone mr-2"></i>
+                  <p
+                    class="text-blue-800 flex items-center justify-center gap-2"
+                  >
+                    <i class="fas fa-phone"></i>
                     N'hésitez pas à me contacter pour en discuter !
                   </p>
                 </div>
@@ -626,13 +818,13 @@
     </section>
 
     <!-- Prendre RDV -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-20 bg-gray-50" data-animate>
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto text-center">
           <h2
-            class="font-display text-4xl md:text-5xl font-bold text-secondary-700 mb-8"
+            class="font-display text-4xl md:text-5xl font-bold text-[#FF9CA0] mb-8"
           >
-            Prendre <span class="text-primary-500">rendez-vous</span>
+            Prendre rendez-vous
           </h2>
           <p class="text-xl text-accent-600 mb-12">
             Les soins se réalisent uniquement sur RDV.
@@ -640,46 +832,86 @@
 
           <div class="grid md:grid-cols-2 gap-8">
             <!-- RDV Cabinet -->
-            <div class="bg-white rounded-3xl p-8 shadow-lg">
-              <i
-                class="fas fa-calendar-check text-secondary-500 text-4xl mb-4"
-              ></i>
-              <h3
-                class="font-display text-xl font-bold text-secondary-700 mb-4"
-              >
-                Soins au cabinet
-              </h3>
-              <p class="text-accent-600 mb-6">
-                Prise de RDV sur Calendly en toute autonomie
+            <div
+              class="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-white/60 flex flex-col gap-6"
+            >
+              <div class="flex items-center gap-4">
+                <span
+                  class="flex items-center justify-center w-14 h-14 rounded-full bg-secondary-100 text-secondary-600 text-2xl"
+                >
+                  <i class="fas fa-calendar-check"></i>
+                </span>
+                <div>
+                  <h3 class="font-display text-xl font-bold text-secondary-700">
+                    Soins au cabinet
+                  </h3>
+                  <p class="text-accent-500 text-sm">
+                    Remoulins — À partir d'octobre 2025
+                  </p>
+                </div>
+              </div>
+
+              <p class="text-accent-600">
+                Réservez votre créneau en ligne et profitez d'un accueil
+                chaleureux dans un espace cocooning.
               </p>
+
+              <div class="flex items-center gap-3">
+                <span
+                  class="inline-flex items-center gap-2 text-sm text-secondary-600"
+                >
+                  <i class="fas fa-clock"></i>
+                  1h à 1h30 selon le soin
+                </span>
+              </div>
+
               <a
                 href="#"
-                class="bg-secondary-500 text-white px-6 py-3 rounded-full hover:bg-secondary-600 transition-colors font-medium"
+                class="self-start bg-secondary-500 text-white px-6 py-3 rounded-full hover:bg-secondary-600 transition-colors font-medium shadow"
               >
                 Réserver en ligne
               </a>
             </div>
 
             <!-- RDV Domicile -->
-            <div class="bg-white rounded-3xl p-8 shadow-lg">
-              <i class="fas fa-phone text-primary-500 text-4xl mb-4"></i>
-              <h3
-                class="font-display text-xl font-bold text-secondary-700 mb-4"
-              >
-                Soins à domicile
-              </h3>
-              <p class="text-accent-600 mb-4">
-                Prise de RDV via téléphone ou email
+            <div
+              class="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-white/60 flex flex-col gap-6"
+            >
+              <div class="flex items-center gap-4">
+                <span
+                  class="flex items-center justify-center w-14 h-14 rounded-full bg-primary-100 text-primary-600 text-2xl"
+                >
+                  <i class="fas fa-house-user"></i>
+                </span>
+                <div>
+                  <h3 class="font-display text-xl font-bold text-secondary-700">
+                    Soins à domicile
+                  </h3>
+                  <p class="text-accent-500 text-sm">
+                    Gard, Vaucluse, Bouches-du-Rhône
+                  </p>
+                </div>
+              </div>
+
+              <p class="text-accent-600">
+                Nous convenons ensemble de la date et du lieu. Je viens avec
+                tout le matériel pour recréer votre bulle de bien-être.
               </p>
-              <div class="space-y-2 mb-6">
-                <p class="font-semibold text-accent-700">06.67.80.98.94</p>
-                <p class="text-sm text-accent-600">
-                  lapetiteberceuse@outlook.fr
+
+              <div class="space-y-1 text-accent-600 text-sm">
+                <p class="font-semibold text-accent-700 text-base">
+                  06.67.80.98.94
+                </p>
+                <p>lapetiteberceuse@outlook.fr</p>
+                <p>
+                  <i class="fas fa-car text-primary-500 mr-2"></i> Frais de
+                  déplacement : 1€/km A/R
                 </p>
               </div>
+
               <a
                 href="tel:0667809894"
-                class="bg-primary-500 text-white px-6 py-3 rounded-full hover:bg-primary-600 transition-colors font-medium"
+                class="self-start bg-primary-500 text-white px-6 py-3 rounded-full hover:bg-primary-600 transition-colors font-medium shadow"
               >
                 Appeler maintenant
               </a>
@@ -690,13 +922,13 @@
     </section>
 
     <!-- Bons cadeaux -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-white" data-animate>
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto">
           <h2
-            class="font-display text-4xl md:text-5xl font-bold text-secondary-700 mb-12 text-center"
+            class="font-display text-4xl md:text-5xl font-bold text-[#8BB883] mb-12 text-center"
           >
-            Bons <span class="text-primary-500">cadeaux</span>
+            Bons cadeaux
           </h2>
 
           <div class="text-center mb-12">
@@ -755,160 +987,398 @@
     </section>
 
     <!-- Témoignages -->
-    <section id="temoignages" class="py-20 bg-gray-50">
+    <section id="temoignages" class="py-20 bg-gray-50" data-animate>
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto text-center mb-16">
           <h2
-            class="font-display text-4xl md:text-5xl font-bold text-secondary-700 mb-6"
+            class="font-display text-4xl md:text-5xl font-bold text-[#FF9CA0] mb-6"
           >
-            Vos retours si <span class="text-primary-500">précieux</span>…
+            Vos retours si précieux…
           </h2>
           <p class="text-xl text-accent-600">
             Quelques témoignages authentiques des familles accompagnées...
           </p>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          <!-- Témoignage Flore -->
-          <div class="bg-white rounded-3xl p-8 shadow-lg">
-            <div class="flex items-center mb-4">
-              <div
-                class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center"
-              >
-                <i class="fas fa-quote-left text-primary-500"></i>
-              </div>
-              <div class="ml-4">
-                <h4 class="font-semibold text-secondary-700">Flore</h4>
-                <div class="flex text-yellow-400">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+        <div class="relative max-w-4xl mx-auto" data-testimonial-slider>
+          <button
+            type="button"
+            class="hidden sm:flex absolute -left-6 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-white shadow-lg border border-white/70 items-center justify-center text-secondary-600 hover:bg-secondary-50 transition"
+            aria-label="Témoignage précédent"
+            data-slider-prev
+          >
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button
+            type="button"
+            class="hidden sm:flex absolute -right-6 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-white shadow-lg border border-white/70 items-center justify-center text-secondary-600 hover:bg-secondary-50 transition"
+            aria-label="Témoignage suivant"
+            data-slider-next
+          >
+            <i class="fas fa-chevron-right"></i>
+          </button>
+
+          <div
+            class="overflow-hidden rounded-[28px] shadow-xl border border-white/70"
+            data-slider
+          >
+            <div
+              class="flex transition-transform duration-[700ms] ease-in-out"
+              data-slider-track
+            >
+              <!-- Témoignage Flore -->
+              <article class="w-full shrink-0 p-4 sm:p-6" data-slide>
+                <div
+                  class="relative bg-white rounded-[28px] p-6 sm:p-8 shadow-lg"
+                >
+                  <span
+                    class="absolute -top-2 right-10 text-6xl text-primary-100 animate-quotePulse select-none"
+                    aria-hidden="true"
+                  >
+                    «
+                  </span>
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="w-14 h-14 rounded-full bg-gradient-to-br from-primary-100 via-white to-primary-200 flex items-center justify-center text-primary-700 text-xl font-semibold"
+                    >
+                      F
+                    </div>
+                    <div>
+                      <h4
+                        class="font-semibold text-secondary-700 text-base sm:text-lg"
+                      >
+                        Flore
+                      </h4>
+                      <div
+                        class="flex text-yellow-400 gap-1 text-xs sm:text-sm"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p
+                    class="text-accent-600 italic leading-relaxed mt-5 whitespace-pre-line text-sm sm:text-base"
+                  >
+                    « J'ai eu la chance d'avoir pour cadeau de naissance un bain
+                    thérapeutique pratiqué par Cassandra pour mon nouveau né. Ce
+                    fut une expérience inoubliable, un souvenir qui restera
+                    gravé. Merci pour votre temps donné, votre douceur et
+                    bienveillance auprès de mon bébé. Je souhaite à toutes les
+                    mamans de recevoir le cadeau de faire venir Cassandra chez
+                    vous pour offrir un moment de détente à votre enfant. J'ai
+                    été émue par ce soin car j'ai ressenti à travers mon bébé
+                    son apaisement et le bien être qu'il ressentait grâce aux
+                    gestes affectueux reçu par Cassandra tout au long de ce
+                    bain. Merci !!! »
+                  </p>
                 </div>
-              </div>
+              </article>
+
+              <!-- Témoignage Mélissa -->
+              <article class="w-full shrink-0 p-4 sm:p-6" data-slide>
+                <div
+                  class="relative bg-white rounded-[28px] p-6 sm:p-8 shadow-lg"
+                >
+                  <span
+                    class="absolute -top-2 right-10 text-6xl text-secondary-100 animate-quotePulse select-none"
+                    aria-hidden="true"
+                  >
+                    «
+                  </span>
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="w-14 h-14 rounded-full bg-gradient-to-br from-secondary-100 via-white to-secondary-200 flex items-center justify-center text-secondary-700 text-xl font-semibold"
+                    >
+                      M
+                    </div>
+                    <div>
+                      <h4
+                        class="font-semibold text-secondary-700 text-base sm:text-lg"
+                      >
+                        Mélissa
+                      </h4>
+                      <div
+                        class="flex text-yellow-400 gap-1 text-xs sm:text-sm"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p
+                    class="text-accent-600 italic leading-relaxed mt-5 whitespace-pre-line text-sm sm:text-base"
+                  >
+                    « En tant que passionnée de l'art du toucher, j'apprécie
+                    particulièrement l'approche de Cassandra qui sais
+                    parfaitement nous accueillir en tant que future maman dans
+                    une bulle de douceur ... j'ai vécu une véritable parenthèse
+                    de repos intégral du corps mais aussi de l'esprit dans cette
+                    période pas toujours evidente à gérer en étant enceinte . Je
+                    vous la recommande sans hésitation!.. »
+                  </p>
+                </div>
+              </article>
+
+              <!-- Témoignage Elodie -->
+              <article class="w-full shrink-0 p-4 sm:p-6" data-slide>
+                <div
+                  class="relative bg-white rounded-[28px] p-6 sm:p-8 shadow-lg"
+                >
+                  <span
+                    class="absolute -top-2 right-10 text-6xl text-accent-100 animate-quotePulse select-none"
+                    aria-hidden="true"
+                  >
+                    «
+                  </span>
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="w-14 h-14 rounded-full bg-gradient-to-br from-accent-100 via-white to-accent-200 flex items-center justify-center text-accent-700 text-xl font-semibold"
+                    >
+                      E
+                    </div>
+                    <div>
+                      <h4
+                        class="font-semibold text-secondary-700 text-base sm:text-lg"
+                      >
+                        Elodie
+                      </h4>
+                      <div
+                        class="flex text-yellow-400 gap-1 text-xs sm:text-sm"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p
+                    class="text-accent-600 italic leading-relaxed mt-5 whitespace-pre-line text-sm sm:text-base"
+                  >
+                    « Bain thérapeutique de ma merveille avec Cassandra : Un
+                    moment extraordinaire ! Véritable bain de bien être,
+                    d'émotions, d'apaisement autant pour bébé que pour maman
+                    d'ailleurs 💝 ! De véritables mains de fée qui accompagnent
+                    bébé offrant tellement de tendresse, de douceur et
+                    d'amour.... 🥰 Le tout enveloppé d'une ambiance tellement
+                    relaxante, chaleureuse et douillette !!!! Milles merci
+                    Cassandra, c'était un moment inoubliable ❤️. »
+                  </p>
+                </div>
+              </article>
+
+              <!-- Témoignage Faustine -->
+              <article class="w-full shrink-0 p-4 sm:p-6" data-slide>
+                <div
+                  class="relative bg-white rounded-[28px] p-6 sm:p-8 shadow-lg"
+                >
+                  <span
+                    class="absolute -top-2 right-10 text-6xl text-secondary-100 animate-quotePulse select-none"
+                    aria-hidden="true"
+                  >
+                    «
+                  </span>
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="w-14 h-14 rounded-full bg-gradient-to-br from-secondary-100 via-white to-secondary-200 flex items-center justify-center text-secondary-700 text-xl font-semibold"
+                    >
+                      F
+                    </div>
+                    <div>
+                      <h4
+                        class="font-semibold text-secondary-700 text-base sm:text-lg"
+                      >
+                        Faustine
+                      </h4>
+                      <div
+                        class="flex text-yellow-400 gap-1 text-xs sm:text-sm"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p
+                    class="text-accent-600 italic leading-relaxed mt-5 whitespace-pre-line text-sm sm:text-base"
+                  >
+                    « Nous avons eu la chance de croiser la route de Cassandra,
+                    sa douceur, ses mains qui balancent dans l'eau au rythme de
+                    bébé. Le bain thérapeutique, un moment suspendu, hors du
+                    temps, qui donne un aperçu de ce que bébé vit dans le
+                    ventre, une véritable parenthèse poétique. Cassandra est une
+                    vraie passionnée. Elle débarque chez vous avec tout son
+                    matériel, s'adapte à n'importe quelle situation, et vous
+                    transmet sa passion. Si vous ne savez pas quoi offrir comme
+                    cadeau de naissance, n'hésitez plus ! »
+                  </p>
+                </div>
+              </article>
+
+              <!-- Témoignage Célia -->
+              <article class="w-full shrink-0 p-4 sm:p-6" data-slide>
+                <div
+                  class="relative bg-white rounded-[28px] p-6 sm:p-8 shadow-lg"
+                >
+                  <span
+                    class="absolute -top-2 right-10 text-6xl text-primary-100 animate-quotePulse select-none"
+                    aria-hidden="true"
+                  >
+                    «
+                  </span>
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="w-14 h-14 rounded-full bg-gradient-to-br from-primary-100 via-white to-primary-200 flex items-center justify-center text-primary-700 text-xl font-semibold"
+                    >
+                      C
+                    </div>
+                    <div>
+                      <h4
+                        class="font-semibold text-secondary-700 text-base sm:text-lg"
+                      >
+                        Célia
+                      </h4>
+                      <div
+                        class="flex text-yellow-400 gap-1 text-xs sm:text-sm"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p
+                    class="text-accent-600 italic leading-relaxed mt-5 whitespace-pre-line text-sm sm:text-base"
+                  >
+                    « Dans le cadre de ma grossesse, il m'a été offert un
+                    massage prénatal par Cassandra. Que dire. Une heure de
+                    bonheur absolu. Le massage a été véritablement étudié pour
+                    soulager les maux de grossesse et se détendre a 100%.
+                    Cassandra est d'une douceur et gentillesse... Très
+                    professionnelle et vraiment douée. Je ne peux que la
+                    recommander. Futures mamans, foncez !!! Pour info, j'ai
+                    effectué ce massage a 32SA et c'était parfait. Encore merci
+                    Cassandra pour vos bons soins! »
+                  </p>
+                </div>
+              </article>
+
+              <!-- Témoignage Émilie -->
+              <article class="w-full shrink-0 p-4 sm:p-6" data-slide>
+                <div
+                  class="relative bg-white rounded-[28px] p-6 sm:p-8 shadow-lg"
+                >
+                  <span
+                    class="absolute -top-2 right-10 text-6xl text-secondary-100 animate-quotePulse select-none"
+                    aria-hidden="true"
+                  >
+                    «
+                  </span>
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="w-14 h-14 rounded-full bg-gradient-to-br from-secondary-100 via-white to-secondary-200 flex items-center justify-center text-secondary-700 text-xl font-semibold"
+                    >
+                      É
+                    </div>
+                    <div>
+                      <h4
+                        class="font-semibold text-secondary-700 text-base sm:text-lg"
+                      >
+                        Émilie
+                      </h4>
+                      <div
+                        class="flex text-yellow-400 gap-1 text-xs sm:text-sm"
+                      >
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p
+                    class="text-accent-600 italic leading-relaxed mt-5 whitespace-pre-line text-sm sm:text-base"
+                  >
+                    « Nous avons réservé avec Cassandra un bain thérapeutique
+                    pour notre petit bébé de 2 semaines. Ma compagne a pu
+                    profiter de massage femme enceinte pendant toute sa
+                    grossesse et c'était une évidence que nous ferions profiter
+                    d'un instant bien être à notre petite puce . Ce fut magique
+                    et émouvant autant pour notre fille que pour nous de vivre
+                    ce moment. Nous sommes ravies d'avoir fait confiance à
+                    Cassandra et nous recommandons fortement son savoir être et
+                    son savoir faire. »
+                  </p>
+                </div>
+              </article>
             </div>
-            <p class="text-accent-600 italic">
-              « J'ai eu la chance d'avoir pour cadeau de naissance un bain
-              thérapeutique pratiqué par Cassandra pour mon nouveau né. Ce fut
-              une expérience inoubliable, un souvenir qui restera gravé. Merci
-              pour votre temps donné, votre douceur et bienveillance auprès de
-              mon bébé. »
-            </p>
           </div>
 
-          <!-- Témoignage Mélissa -->
-          <div class="bg-white rounded-3xl p-8 shadow-lg">
-            <div class="flex items-center mb-4">
-              <div
-                class="w-12 h-12 bg-secondary-100 rounded-full flex items-center justify-center"
-              >
-                <i class="fas fa-quote-left text-secondary-500"></i>
-              </div>
-              <div class="ml-4">
-                <h4 class="font-semibold text-secondary-700">Mélissa</h4>
-                <div class="flex text-yellow-400">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
-            <p class="text-accent-600 italic">
-              « En tant que passionnée de l'art du toucher, j'apprécie
-              particulièrement l'approche de Cassandra qui sait parfaitement
-              nous accueillir en tant que future maman dans une bulle de
-              douceur. J'ai vécu une véritable parenthèse de repos intégral. »
-            </p>
-          </div>
-
-          <!-- Témoignage Elodie -->
-          <div class="bg-white rounded-3xl p-8 shadow-lg">
-            <div class="flex items-center mb-4">
-              <div
-                class="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center"
-              >
-                <i class="fas fa-quote-left text-accent-500"></i>
-              </div>
-              <div class="ml-4">
-                <h4 class="font-semibold text-secondary-700">Elodie</h4>
-                <div class="flex text-yellow-400">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
-            <p class="text-accent-600 italic">
-              « Bain thérapeutique de ma merveille avec Cassandra : Un moment
-              extraordinaire ! De véritables mains de fée qui accompagnent bébé
-              offrant tellement de tendresse, de douceur et d'amour... Le tout
-              enveloppé d'une ambiance tellement relaxante ! »
-            </p>
-          </div>
-
-          <!-- Témoignage Célia -->
-          <div class="bg-white rounded-3xl p-8 shadow-lg">
-            <div class="flex items-center mb-4">
-              <div
-                class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center"
-              >
-                <i class="fas fa-quote-left text-primary-500"></i>
-              </div>
-              <div class="ml-4">
-                <h4 class="font-semibold text-secondary-700">Célia</h4>
-                <div class="flex text-yellow-400">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
-            <p class="text-accent-600 italic">
-              « Dans le cadre de ma grossesse, il m'a été offert un massage
-              prénatal par Cassandra. Une heure de bonheur absolu. Cassandra est
-              d'une douceur et gentillesse... Très professionnelle et vraiment
-              douée. Futures mamans, foncez !!! »
-            </p>
-          </div>
+          <div
+            class="flex items-center justify-center gap-2 mt-8"
+            data-slider-dots
+          ></div>
         </div>
       </div>
     </section>
 
     <!-- FAQ -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-white" data-animate>
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto">
           <h2
-            class="font-display text-4xl md:text-5xl font-bold text-secondary-700 mb-12 text-center"
+            class="font-display text-4xl md:text-5xl font-bold text-[#8BB883] mb-12 text-center"
           >
-            Questions <span class="text-primary-500">fréquentes</span>
+            Questions fréquentes
           </h2>
 
           <div class="space-y-6">
             <!-- FAQ 1 -->
-            <div class="bg-gray-50 rounded-2xl overflow-hidden">
+            <div
+              class="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 shadow-sm transition-all"
+              data-faq-card="1"
+            >
               <button
-                class="w-full text-left p-6 focus:outline-none"
+                type="button"
+                class="w-full px-6 py-5 focus:outline-none group"
                 onclick="toggleFAQ(1)"
               >
-                <div class="flex items-center justify-between">
-                  <h3 class="font-semibold text-lg text-secondary-700">
-                    Quand prendre rdv ?
-                  </h3>
-                  <i
-                    class="fas fa-chevron-down text-accent-500 transform transition-transform duration-200"
-                    id="icon1"
-                  ></i>
+                <div class="flex items-center justify-between gap-4">
+                  <div class="flex items-center gap-4">
+                    <span
+                      id="indicator1"
+                      class="flex items-center justify-center w-12 h-12 rounded-full bg-white border border-secondary-200 text-secondary-500 shadow-sm transition-all duration-300 group-hover:border-secondary-400 group-hover:text-secondary-600"
+                    >
+                      <i class="fas fa-seedling"></i>
+                    </span>
+                    <h3 class="font-semibold text-lg text-secondary-700">
+                      Quand prendre rdv ?
+                    </h3>
+                  </div>
+                  <span
+                    class="flex items-center justify-center w-10 h-10 rounded-full bg-white border border-gray-200 text-secondary-500 transition-all duration-300 group-hover:border-secondary-400"
+                  >
+                    <i
+                      class="fas fa-chevron-down transition-transform duration-300"
+                      id="icon1"
+                    ></i>
+                  </span>
                 </div>
               </button>
-              <div class="px-6 pb-6 hidden" id="answer1">
+              <div class="px-6 pb-6 hidden" id="answer1" data-faq-answer>
                 <div class="space-y-4 text-accent-600">
                   <p>
                     <strong>Pour un TBB :</strong> Le soins se réalise jusqu'au
@@ -931,22 +1401,38 @@
             </div>
 
             <!-- FAQ 2 -->
-            <div class="bg-gray-50 rounded-2xl overflow-hidden">
+            <div
+              class="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 shadow-sm transition-all"
+              data-faq-card="2"
+            >
               <button
-                class="w-full text-left p-6 focus:outline-none"
+                type="button"
+                class="w-full px-6 py-5 focus:outline-none group"
                 onclick="toggleFAQ(2)"
               >
-                <div class="flex items-center justify-between">
-                  <h3 class="font-semibold text-lg text-secondary-700">
-                    Les séances sont-elles remboursées ?
-                  </h3>
-                  <i
-                    class="fas fa-chevron-down text-accent-500 transform transition-transform duration-200"
-                    id="icon2"
-                  ></i>
+                <div class="flex items-center justify-between gap-4">
+                  <div class="flex items-center gap-4">
+                    <span
+                      id="indicator2"
+                      class="flex items-center justify-center w-12 h-12 rounded-full bg-white border border-secondary-200 text-secondary-500 shadow-sm transition-all duration-300 group-hover:border-secondary-400 group-hover:text-secondary-600"
+                    >
+                      <i class="fas fa-receipt"></i>
+                    </span>
+                    <h3 class="font-semibold text-lg text-secondary-700">
+                      Les séances sont-elles remboursées ?
+                    </h3>
+                  </div>
+                  <span
+                    class="flex items-center justify-center w-10 h-10 rounded-full bg-white border border-gray-200 text-secondary-500 transition-all duration-300 group-hover:border-secondary-400"
+                  >
+                    <i
+                      class="fas fa-chevron-down transition-transform duration-300"
+                      id="icon2"
+                    ></i>
+                  </span>
                 </div>
               </button>
-              <div class="px-6 pb-6 hidden" id="answer2">
+              <div class="px-6 pb-6 hidden" id="answer2" data-faq-answer>
                 <p class="text-accent-600">
                   L'accompagnement périnatal n'est malheureusement pas remboursé
                   par la sécurité sociale en France. Par ailleurs, c'est une
@@ -958,53 +1444,162 @@
             </div>
 
             <!-- FAQ 3 -->
-            <div class="bg-gray-50 rounded-2xl overflow-hidden">
+            <div
+              class="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 shadow-sm transition-all"
+              data-faq-card="3"
+            >
               <button
-                class="w-full text-left p-6 focus:outline-none"
+                type="button"
+                class="w-full px-6 py-5 focus:outline-none group"
                 onclick="toggleFAQ(3)"
               >
-                <div class="flex items-center justify-between">
-                  <h3 class="font-semibold text-lg text-secondary-700">
-                    Combien de temps dure une séance ?
-                  </h3>
-                  <i
-                    class="fas fa-chevron-down text-accent-500 transform transition-transform duration-200"
-                    id="icon3"
-                  ></i>
+                <div class="flex items-center justify-between gap-4">
+                  <div class="flex items-center gap-4">
+                    <span
+                      id="indicator3"
+                      class="flex items-center justify-center w-12 h-12 rounded-full bg-white border border-secondary-200 text-secondary-500 shadow-sm transition-all duration-300 group-hover:border-secondary-400 group-hover:text-secondary-600"
+                    >
+                      <i class="fas fa-clock"></i>
+                    </span>
+                    <h3 class="font-semibold text-lg text-secondary-700">
+                      Combien de temps dure une séance ?
+                    </h3>
+                  </div>
+                  <span
+                    class="flex items-center justify-center w-10 h-10 rounded-full bg-white border border-gray-200 text-secondary-500 transition-all duration-300 group-hover:border-secondary-400"
+                  >
+                    <i
+                      class="fas fa-chevron-down transition-transform duration-300"
+                      id="icon3"
+                    ></i>
+                  </span>
                 </div>
               </button>
-              <div class="px-6 pb-6 hidden" id="answer3">
+              <div class="px-6 pb-6 hidden" id="answer3" data-faq-answer>
                 <p class="text-accent-600">
-                  Chaque soin nécessite un moment d'échange avant, mais aussi
-                  après. Pour cette raison, compter environ 30 minutes en plus
-                  de la durée du soin choisi.
+                  Tout dépend de la prestation choisie. Le temps indiqué inclut
+                  le moment d'échange et les conseils personnalisés.
                 </p>
               </div>
             </div>
 
             <!-- FAQ 4 -->
-            <div class="bg-gray-50 rounded-2xl overflow-hidden">
+            <div
+              class="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 shadow-sm transition-all"
+              data-faq-card="4"
+            >
               <button
-                class="w-full text-left p-6 focus:outline-none"
+                type="button"
+                class="w-full px-6 py-5 focus:outline-none group"
                 onclick="toggleFAQ(4)"
               >
-                <div class="flex items-center justify-between">
-                  <h3 class="font-semibold text-lg text-secondary-700">
-                    Quels vêtements choisir si je viens au cabinet pour un soin
-                    ?
-                  </h3>
-                  <i
-                    class="fas fa-chevron-down text-accent-500 transform transition-transform duration-200"
-                    id="icon4"
-                  ></i>
+                <div class="flex items-center justify-between gap-4">
+                  <div class="flex items-center gap-4">
+                    <span
+                      id="indicator4"
+                      class="flex items-center justify-center w-12 h-12 rounded-full bg-white border border-secondary-200 text-secondary-500 shadow-sm transition-all duration-300 group-hover:border-secondary-400 group-hover:text-secondary-600"
+                    >
+                      <i class="fas fa-gift"></i>
+                    </span>
+                    <h3 class="font-semibold text-lg text-secondary-700">
+                      Est-il possible d'offrir un soin ?
+                    </h3>
+                  </div>
+                  <span
+                    class="flex items-center justify-center w-10 h-10 rounded-full bg-white border border-gray-200 text-secondary-500 transition-all duration-300 group-hover:border-secondary-400"
+                  >
+                    <i
+                      class="fas fa-chevron-down transition-transform duration-300"
+                      id="icon4"
+                    ></i>
+                  </span>
                 </div>
               </button>
-              <div class="px-6 pb-6 hidden" id="answer4">
+              <div class="px-6 pb-6 hidden" id="answer4" data-faq-answer>
                 <p class="text-accent-600">
-                  Vous pouvez prévoir des vêtements amples et confortables.
-                  Faciles à mettre et à enlever pour la personne qui reçoit le
-                  soin (que ce soit pour une femme enceinte, une femme en post
-                  partum ou un nouveau-né).
+                  Bien sûr ! Tous les soins sont disponibles en bon cadeau
+                  physique ou numérique, valable 6 mois.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div
+              class="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 shadow-sm transition-all"
+              data-faq-card="5"
+            >
+              <button
+                type="button"
+                class="w-full px-6 py-5 focus:outline-none group"
+                onclick="toggleFAQ(5)"
+              >
+                <div class="flex items-center justify-between gap-4">
+                  <div class="flex items-center gap-4">
+                    <span
+                      id="indicator5"
+                      class="flex items-center justify-center w-12 h-12 rounded-full bg-white border border-secondary-200 text-secondary-500 shadow-sm transition-all duration-300 group-hover:border-secondary-400 group-hover:text-secondary-600"
+                    >
+                      <i class="fas fa-location-dot"></i>
+                    </span>
+                    <h3 class="font-semibold text-lg text-secondary-700">
+                      Où se déroulent les soins ?
+                    </h3>
+                  </div>
+                  <span
+                    class="flex items-center justify-center w-10 h-10 rounded-full bg-white border border-gray-200 text-secondary-500 transition-all duration-300 group-hover:border-secondary-400"
+                  >
+                    <i
+                      class="fas fa-chevron-down transition-transform duration-300"
+                      id="icon5"
+                    ></i>
+                  </span>
+                </div>
+              </button>
+              <div class="px-6 pb-6 hidden" id="answer5" data-faq-answer>
+                <p class="text-accent-600">
+                  Les soins se déroulent à Remoulins, ou à domicile selon vos
+                  préférences et mes disponibilités.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 6 -->
+            <div
+              class="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 shadow-sm transition-all"
+              data-faq-card="6"
+            >
+              <button
+                type="button"
+                class="w-full px-6 py-5 focus:outline-none group"
+                onclick="toggleFAQ(6)"
+              >
+                <div class="flex items-center justify-between gap-4">
+                  <div class="flex items-center gap-4">
+                    <span
+                      id="indicator6"
+                      class="flex items-center justify-center w-12 h-12 rounded-full bg-white border border-secondary-200 text-secondary-500 shadow-sm transition-all duration-300 group-hover:border-secondary-400 group-hover:text-secondary-600"
+                    >
+                      <i class="fas fa-list-check"></i>
+                    </span>
+                    <h3 class="font-semibold text-lg text-secondary-700">
+                      Comment préparer ma venue ?
+                    </h3>
+                  </div>
+                  <span
+                    class="flex items-center justify-center w-10 h-10 rounded-full bg-white border border-gray-200 text-secondary-500 transition-all duration-300 group-hover:border-secondary-400"
+                  >
+                    <i
+                      class="fas fa-chevron-down transition-transform duration-300"
+                      id="icon6"
+                    ></i>
+                  </span>
+                </div>
+              </button>
+              <div class="px-6 pb-6 hidden" id="answer6" data-faq-answer>
+                <p class="text-accent-600">
+                  Lors de votre réservation, vous recevez toutes les
+                  informations nécessaires pour préparer le soin dans les
+                  meilleures conditions.
                 </p>
               </div>
             </div>
@@ -1014,11 +1609,11 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="py-20 bg-gray-50">
+    <section id="contact" class="py-20 bg-gray-50" data-animate>
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto text-center mb-16">
           <h2
-            class="font-display text-4xl md:text-5xl font-bold text-secondary-700 mb-6"
+            class="font-display text-4xl md:text-5xl font-bold text-[#FF9CA0] mb-6"
           >
             Contact
           </h2>
@@ -1098,6 +1693,28 @@
           <p class="text-secondary-300 text-sm">
             © 2025 La Petite Berceuse. Tous droits réservés.
           </p>
+          <div class="mt-6 flex justify-center gap-6 text-sm">
+            <a
+              href="#mentions-legales"
+              class="relative text-secondary-200 hover:text-white transition-colors duration-300"
+            >
+              Mentions légales
+              <span
+                class="absolute left-0 -bottom-1 w-full h-px bg-white/60 scale-x-0 origin-left transition-transform duration-300 hover:scale-x-100"
+                aria-hidden="true"
+              ></span>
+            </a>
+            <a
+              href="#politique-confidentialite"
+              class="relative text-secondary-200 hover:text-white transition-colors duration-300"
+            >
+              Politique de confidentialité
+              <span
+                class="absolute left-0 -bottom-1 w-full h-px bg-white/60 scale-x-0 origin-left transition-transform duration-300 hover:scale-x-100"
+                aria-hidden="true"
+              ></span>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
@@ -1121,7 +1738,7 @@
           <div class="p-8">
             <div class="text-center mb-8">
               <img
-                src="assets/img/la petite berceuse/femme enceinte 2.jpeg"
+                src="assets/img/la petite berceuse/Massage_femme_enceinte2.jpg"
                 alt="Massage femme enceinte"
                 class="w-full max-w-lg mx-auto rounded-2xl shadow-lg mb-6"
               />
@@ -1269,7 +1886,7 @@
           <div class="p-8">
             <div class="text-center mb-8">
               <img
-                src="assets/img/la petite berceuse/IMG_1813.jpeg"
+                src="assets/img/la petite berceuse/Bain_thérapeutique2.jpg"
                 alt="Thérapeutique Bain Bébé"
                 class="w-full max-w-lg mx-auto rounded-2xl shadow-lg mb-6"
               />
@@ -1464,7 +2081,7 @@
           <div class="p-8">
             <div class="text-center mb-8">
               <img
-                src="assets/img/la petite berceuse/femme enceinte1.jpeg"
+                src="assets/img/la petite berceuse/Soin_rituel_anti_vergetures2.jpg"
                 alt="Soin rituel anti-vergetures"
                 class="w-full max-w-lg mx-auto rounded-2xl shadow-lg mb-6"
               />
@@ -1644,7 +2261,7 @@
           <div class="p-8">
             <div class="text-center mb-8">
               <img
-                src="assets/img/la petite berceuse/pexels-joellen-moths-3372787.jpg"
+                src="assets/img/la petite berceuse/Massage_post_natal2.jpg"
                 alt="Massage post-natal"
                 class="w-full max-w-lg mx-auto rounded-2xl shadow-lg mb-6"
               />
@@ -1830,7 +2447,7 @@
           <div class="p-8">
             <div class="text-center mb-8">
               <img
-                src="assets/img/la petite berceuse/pexels-polina-tankilevitch-3875103.jpg"
+                src="assets/img/la petite berceuse/Serrage_de_bassin2.jpg"
                 alt="Le serrage de bassin"
                 class="w-full max-w-lg mx-auto rounded-2xl shadow-lg mb-6"
               />
@@ -2050,9 +2667,72 @@
       function toggleFAQ(id) {
         const answer = document.getElementById("answer" + id);
         const icon = document.getElementById("icon" + id);
+        const indicator = document.getElementById("indicator" + id);
+        const card = document.querySelector(`[data-faq-card="${id}"]`);
 
-        answer.classList.toggle("hidden");
-        icon.classList.toggle("rotate-180");
+        if (!answer || !icon) {
+          return;
+        }
+
+        const isOpening = answer.classList.contains("hidden");
+
+        if (isOpening) {
+          answer.classList.remove("hidden");
+          answer.classList.add("animate-fadeUp");
+          answer.addEventListener(
+            "animationend",
+            () => answer.classList.remove("animate-fadeUp"),
+            { once: true }
+          );
+        } else {
+          answer.classList.add("hidden");
+        }
+
+        icon.classList.toggle("rotate-180", isOpening);
+
+        if (indicator) {
+          if (isOpening) {
+            indicator.classList.remove(
+              "bg-white",
+              "border-secondary-200",
+              "text-secondary-500",
+              "shadow-sm"
+            );
+            indicator.classList.add(
+              "bg-secondary-500",
+              "border-secondary-500",
+              "text-white",
+              "shadow-md"
+            );
+          } else {
+            indicator.classList.add(
+              "bg-white",
+              "border-secondary-200",
+              "text-secondary-500",
+              "shadow-sm"
+            );
+            indicator.classList.remove(
+              "bg-secondary-500",
+              "border-secondary-500",
+              "text-white",
+              "shadow-md"
+            );
+          }
+        }
+
+        if (card) {
+          if (isOpening) {
+            card.classList.remove("bg-gray-50", "border-gray-100", "shadow-sm");
+            card.classList.add("bg-white", "border-secondary-200", "shadow-lg");
+          } else {
+            card.classList.add("bg-gray-50", "border-gray-100", "shadow-sm");
+            card.classList.remove(
+              "bg-white",
+              "border-secondary-200",
+              "shadow-lg"
+            );
+          }
+        }
       }
 
       function openModal(modalId) {
@@ -2064,6 +2744,26 @@
         document.getElementById(modalId).classList.add("hidden");
         document.body.style.overflow = "auto";
       }
+
+      // Ferme les modales lors d'un clic sur la zone d'arrière-plan
+      document.querySelectorAll("[id^='modal']").forEach((modal) => {
+        modal.addEventListener("click", (event) => {
+          if (event.target === modal) {
+            closeModal(modal.id);
+          }
+        });
+      });
+
+      // Ferme les modales avec la touche Échap
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          document.querySelectorAll("[id^='modal']").forEach((modal) => {
+            if (!modal.classList.contains("hidden")) {
+              closeModal(modal.id);
+            }
+          });
+        }
+      });
 
       // Smooth scrolling for navigation links
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -2085,6 +2785,133 @@
           document.getElementById("mobileMenu").classList.add("hidden");
         });
       });
+
+      const heroImage = document.querySelector("[data-hero-bg]");
+      if (heroImage) {
+        const updateParallax = () => {
+          const offset = window.pageYOffset || 0;
+          heroImage.style.transform = `translateY(${
+            offset * 0.15
+          }px) scale(1.08)`;
+        };
+
+        updateParallax();
+
+        window.addEventListener("scroll", () => {
+          window.requestAnimationFrame(updateParallax);
+        });
+      }
+
+      const testimonialSlider = document.querySelector(
+        "[data-testimonial-slider]"
+      );
+
+      if (testimonialSlider) {
+        const track = testimonialSlider.querySelector("[data-slider-track]");
+        const slides = Array.from(track.querySelectorAll("[data-slide]"));
+        const prevButton =
+          testimonialSlider.querySelector("[data-slider-prev]");
+        const nextButton =
+          testimonialSlider.querySelector("[data-slider-next]");
+        const dotsContainer =
+          testimonialSlider.querySelector("[data-slider-dots]");
+        let currentIndex = 0;
+        let autoplayTimer;
+
+        const createDots = () => {
+          slides.forEach((_, index) => {
+            const dot = document.createElement("button");
+            dot.className =
+              "w-2.5 h-2.5 rounded-full bg-accent-200 transition-all duration-300";
+            dot.setAttribute("aria-label", `Aller au témoignage ${index + 1}`);
+            dot.addEventListener("click", () => {
+              goToSlide(index);
+              resetAutoplay();
+            });
+            dotsContainer.appendChild(dot);
+          });
+        };
+
+        const updateDots = () => {
+          const dots = dotsContainer.querySelectorAll("button");
+          dots.forEach((dot, index) => {
+            const isActive = index === currentIndex;
+            dot.classList.toggle("bg-primary-500", isActive);
+            dot.classList.toggle("bg-accent-200", !isActive);
+            dot.classList.toggle("w-6", isActive);
+          });
+        };
+
+        const goToSlide = (index) => {
+          currentIndex = (index + slides.length) % slides.length;
+          track.style.transform = `translateX(-${currentIndex * 100}%)`;
+          updateDots();
+        };
+
+        const goToNext = () => {
+          goToSlide(currentIndex + 1);
+        };
+
+        const goToPrev = () => {
+          goToSlide(currentIndex - 1);
+        };
+
+        const startAutoplay = () => {
+          autoplayTimer = window.setInterval(goToNext, 7000);
+        };
+
+        const stopAutoplay = () => {
+          window.clearInterval(autoplayTimer);
+        };
+
+        const resetAutoplay = () => {
+          stopAutoplay();
+          startAutoplay();
+        };
+
+        if (prevButton) {
+          prevButton.addEventListener("click", () => {
+            goToPrev();
+            resetAutoplay();
+          });
+        }
+
+        if (nextButton) {
+          nextButton.addEventListener("click", () => {
+            goToNext();
+            resetAutoplay();
+          });
+        }
+
+        testimonialSlider.addEventListener("mouseenter", stopAutoplay);
+        testimonialSlider.addEventListener("mouseleave", resetAutoplay);
+
+        createDots();
+        goToSlide(0);
+        startAutoplay();
+      }
+
+      const animatedSections = document.querySelectorAll("[data-animate]");
+      if (animatedSections.length) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("animate-fadeUp");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          {
+            threshold: 0.15,
+          }
+        );
+
+        animatedSections.forEach((section) => {
+          section.classList.add("opacity-0");
+          observer.observe(section);
+        });
+      }
     </script>
   </body>
 </html>
