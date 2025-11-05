@@ -3198,7 +3198,13 @@
 
       const animatedSections = document.querySelectorAll("[data-animate]");
       if (animatedSections.length) {
-        if ("IntersectionObserver" in window) {
+        const isMobile = window.matchMedia("(max-width: 767px)").matches;
+
+        if (isMobile) {
+          animatedSections.forEach((section) => {
+            section.classList.remove("opacity-0", "animate-fadeUp");
+          });
+        } else if ("IntersectionObserver" in window) {
           const observer = new IntersectionObserver(
             (entries) => {
               entries.forEach((entry) => {
@@ -3229,7 +3235,7 @@
           });
         } else {
           animatedSections.forEach((section) => {
-            section.classList.remove("opacity-0");
+            section.classList.remove("opacity-0", "animate-fadeUp");
           });
         }
       }
