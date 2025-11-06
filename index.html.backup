@@ -17,40 +17,40 @@
           extend: {
             colors: {
               primary: {
-                50: "#FFF5F5",
-                100: "#FFE5E5",
-                200: "#FFCCCC",
-                300: "#FFB3B3",
-                400: "#FF9CA0",
-                500: "#FF9CA0",
-                600: "#FF9CA0",
-                700: "#FF9CA0",
-                800: "#CC7D80",
-                900: "#995E60",
+                50: "#fef7f7",
+                100: "#fdeaea",
+                200: "#fbd5d5",
+                300: "#f8b4b4",
+                400: "#f18a8a",
+                500: "#e85d5d",
+                600: "#d73d3d",
+                700: "#b92b2b",
+                800: "#9a2626",
+                900: "#7f2525",
               },
               secondary: {
-                50: "#F2F7F0",
-                100: "#E5EFE1",
-                200: "#CBDFC3",
-                300: "#B1CFA5",
-                400: "#8BB883",
-                500: "#8BB883",
-                600: "#8BB883",
-                700: "#6F9369",
-                800: "#536E4F",
-                900: "#374A35",
+                50: "#f0f9f0",
+                100: "#dcf2dc",
+                200: "#bce5bc",
+                300: "#8dd28d",
+                400: "#56b556",
+                500: "#339933",
+                600: "#267d26",
+                700: "#206320",
+                800: "#1e4f1e",
+                900: "#1a411a",
               },
               accent: {
-                50: "#F9F9F9",
-                100: "#F4F4F4",
-                200: "#EEEEEE",
-                300: "#D9D9D9",
-                400: "#989898",
-                500: "#545454",
+                50: "#f8f8f8",
+                100: "#f0f0f0",
+                200: "#e4e4e4",
+                300: "#d1d1d1",
+                400: "#b4b4b4",
+                500: "#9a9a9a",
                 600: "#545454",
-                700: "#545454",
-                800: "#434343",
-                900: "#323232",
+                700: "#525252",
+                800: "#464646",
+                900: "#3d3d3d",
               },
             },
             fontFamily: {
@@ -415,57 +415,216 @@
                 À propos de moi
               </h2>
 
-              <div class="mt-8 space-y-6">
-                <h3 class="font-display text-2xl font-bold text-accent-600">
-                  Qui suis-je ?
-                </h3>
-
-                <div class="space-y-3 text-accent-600">
-                  <p class="flex items-center gap-2">
-                    <i class="fas fa-check-circle text-primary-500"></i>
-                    Infirmière de formation
-                  </p>
-                  <p class="flex items-center gap-2">
-                    <i class="fas fa-check-circle text-primary-500"></i>
-                    Ambassadrice de l'école du bien-naître
-                  </p>
-                  <p class="flex items-center gap-2">
-                    <i class="fas fa-check-circle text-primary-500"></i>
-                    +8 ans d'expérience en tant qu'infirmière
-                  </p>
-                  <p class="flex items-center gap-2">
-                    <i class="fas fa-check-circle text-primary-500"></i>
-                    +14 formations en périnatalité
-                  </p>
-                </div>
-
-                <div
-                  class="mt-8 text-base sm:text-lg text-accent-600 leading-relaxed space-y-4"
+              <div
+                class="mt-12 space-y-8 text-base sm:text-lg text-accent-600 leading-relaxed"
+              >
+                <!-- Racines & vocation -->
+                <article
+                  class="group rounded-3xl border border-secondary-100 bg-white/95 p-6 sm:p-8 shadow-sm ring-1 ring-black/5 transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
                 >
-                  <p>
-                    D'aussi loin que je me souvienne, j'ai toujours été
-                    passionnée par la maternité. Très jeune, j'ai compris que je
-                    voulais prendre soin des autres, en particulier des femmes,
-                    des mères, et des nouveau-nés qui nous rejoignent dans ce
-                    monde.
-                  </p>
-                  <p>
-                    Pour moi, la maternité est un passage puissant. Elle nous
-                    relie à quelque chose de plus grand, de plus vaste que nous.
-                    Je me suis souvent sentie toute petite face à l'immensité de
-                    la vie...
-                  </p>
-                </div>
+                  <div class="flex items-center gap-3">
+                    <span
+                      class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-secondary-100 text-secondary-600 shadow-sm"
+                    >
+                      <i class="fas fa-seedling text-lg"></i>
+                    </span>
+                    <div>
+                      <span
+                        class="inline-flex items-center gap-2 rounded-full bg-secondary-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-secondary-600"
+                      >
+                        Racines & vocation
+                      </span>
+                    </div>
+                  </div>
+                  <div class="mt-6 space-y-4">
+                    <p>
+                      <span class="font-semibold text-secondary-700"
+                        >D'aussi loin que je me souvienne</span
+                      >, j'ai toujours été passionnée par la maternité. Très
+                      jeune, j'ai compris que je voulais prendre soin des
+                      autres, en particulier des femmes, des mères et des
+                      nouveau-nés qui nous rejoignent dans ce monde.
+                    </p>
+                    <p>
+                      Pour moi, la maternité est un passage puissant. Elle nous
+                      relie à quelque chose de plus grand, de plus vaste que
+                      nous. Je me suis souvent sentie toute petite face à
+                      l'immensité de la vie.
+                    </p>
+                  </div>
+                </article>
 
-                <div class="mt-8">
-                  <a
-                    href="apropos.html"
-                    class="inline-flex items-center gap-3 rounded-full bg-primary-500 px-8 py-4 text-white font-semibold shadow-lg shadow-primary-500/20 transition hover:-translate-y-0.5 hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-300 focus:ring-offset-2"
-                  >
-                    <span>Lire la suite</span>
-                    <i class="fas fa-arrow-right"></i>
-                  </a>
-                </div>
+                <!-- Parole marquante -->
+                <article
+                  class="group overflow-hidden rounded-3xl border border-primary-100 bg-gradient-to-r from-primary-50 via-white to-secondary-50/80 p-6 sm:p-8 shadow-sm ring-1 ring-black/5 transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+                >
+                  <div class="flex items-start gap-4">
+                    <span
+                      class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-100 text-primary-600 shadow-sm"
+                    >
+                      <i class="fas fa-quote-left text-lg"></i>
+                    </span>
+                    <div>
+                      <p
+                        class="text-xl font-semibold italic text-secondary-700"
+                      >
+                        « Tu es venue sur Terre pour soigner la vie et donner la
+                        vie. »
+                      </p>
+                      <p class="mt-3 text-sm text-accent-500">
+                        Depuis, ces mots résonnent comme une mission de vie.
+                      </p>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Parcours infirmier -->
+                <article
+                  class="group rounded-3xl border border-primary-100 bg-white/95 p-6 sm:p-8 shadow-sm ring-1 ring-black/5 transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+                >
+                  <div class="flex items-center gap-3">
+                    <span
+                      class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-100 text-primary-600 shadow-sm"
+                    >
+                      <i class="fas fa-stethoscope text-lg"></i>
+                    </span>
+                    <div>
+                      <span
+                        class="inline-flex items-center gap-2 rounded-full bg-primary-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary-600"
+                      >
+                        Parcours d'infirmière
+                      </span>
+                    </div>
+                  </div>
+                  <div class="mt-6 space-y-4">
+                    <p>
+                      <span class="font-semibold text-primary-700"
+                        >Infirmière depuis 2017</span
+                      >, j'ai travaillé au sein de différents hôpitaux et
+                      cliniques, auprès des enfants, des adultes, des personnes
+                      âgées ou en situation de handicap. J'ai connu les
+                      urgences, la précarité, l'épuisement, la surcharge et le
+                      stress.
+                    </p>
+                    <p>
+                      Après deux vagues Covid en région parisienne, j'ai
+                      ressenti le besoin de revenir à l'essentiel. De redéfinir
+                      ma façon de prendre soin, dans un système où l'humain
+                      n'est plus la priorité.
+                    </p>
+                  </div>
+                </article>
+
+                <!-- Voyages & engagement -->
+                <article
+                  class="group rounded-3xl border border-secondary-100 bg-white/95 p-6 sm:p-8 shadow-sm ring-1 ring-black/5 transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+                >
+                  <div class="flex items-center gap-3">
+                    <span
+                      class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-secondary-100 text-secondary-600 shadow-sm"
+                    >
+                      <i class="fas fa-globe-africa text-lg"></i>
+                    </span>
+                    <div>
+                      <span
+                        class="inline-flex items-center gap-2 rounded-full bg-secondary-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-secondary-600"
+                      >
+                        Voyages & engagement
+                      </span>
+                    </div>
+                  </div>
+                  <div class="mt-6 space-y-4">
+                    <p>
+                      <span class="font-semibold text-secondary-700"
+                        >Je suis partie en mission de volontariat au Togo</span
+                      >, un voyage qui a bouleversé mon regard. Là-bas, la
+                      maternité est instinctive, honorée et entourée. J'y ai vu
+                      des femmes belles tant je les ai trouvées fortes.
+                    </p>
+                    <p>
+                      À mon retour, j'ai souhaité accompagner la maternité avec
+                      une approche psycho-émotionnelle. Je me suis formée en
+                      périnatalité, j'ai étudié, beaucoup lu, et intégré à plein
+                      temps un service de néonatalogie.
+                    </p>
+                    <p>
+                      <span class="font-semibold text-secondary-700"
+                        >En 2024, j'ai créé La Petite Berceuse</span
+                      >
+                      pour accompagner les familles à domicile, là où tout se
+                      vit sans filtre.
+                    </p>
+                  </div>
+                </article>
+
+                <!-- Devenir mère -->
+                <article
+                  class="group rounded-3xl border border-primary-100 bg-white/95 p-6 sm:p-8 shadow-sm ring-1 ring-black/5 transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+                >
+                  <div class="flex items-center gap-3">
+                    <span
+                      class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-100 text-primary-600 shadow-sm"
+                    >
+                      <i class="fas fa-heart text-lg"></i>
+                    </span>
+                    <div>
+                      <span
+                        class="inline-flex items-center gap-2 rounded-full bg-primary-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary-600"
+                      >
+                        Devenir mère
+                      </span>
+                    </div>
+                  </div>
+                  <div class="mt-6 space-y-4">
+                    <p>
+                      <span class="font-semibold text-primary-700"
+                        >En 2025, je suis devenue mère</span
+                      >
+                      à mon tour. Ce que j'avais observé chez les autres, je
+                      l'ai vécu dans mon corps, dans mes tripes. J'ai connu la
+                      peur, les doutes, les pleurs et surtout l'amour.
+                    </p>
+                    <p>
+                      Alors j'ai imaginé mon cabinet : un espace simple mais
+                      chaleureux, pour vous recevoir telle que vous êtes —
+                      épuisée, heureuse, fatiguée, bouleversée. Un lieu que
+                      j'aurais aimé trouver durant ma propre maternité.
+                    </p>
+                  </div>
+                </article>
+              </div>
+
+              <div
+                class="mt-10 p-8 bg-secondary-50/80 rounded-3xl border border-secondary-100 shadow-sm space-y-4"
+              >
+                <h3 class="font-display text-2xl font-bold text-secondary-700">
+                  Pourquoi « La petite berceuse » ?
+                </h3>
+                <p>
+                  Le fœtus est en perpétuel bercement dans le ventre de sa mère.
+                  Les nouveau-nés et les adultes demeurent sensibles aux
+                  bercements physiques et psychiques.
+                </p>
+                <p>
+                  C'est pourquoi, j'ai décidé de devenir « La petite berceuse »
+                  : celle qui berce physiquement grâce aux soins proposés, mais
+                  aussi psycho-émotionnellement. Je vous accompagne et vous
+                  épaule avec passion et bienveillance.
+                </p>
+              </div>
+
+              <div class="mt-10 text-center sm:text-left">
+                <a
+                  href="formations.html"
+                  class="inline-flex items-center gap-3 rounded-full bg-secondary-500 px-6 py-3 text-white font-semibold shadow-lg shadow-secondary-500/20 transition hover:-translate-y-0.5 hover:bg-secondary-600 focus:outline-none focus:ring-2 focus:ring-secondary-300 focus:ring-offset-2"
+                >
+                  <i class="fas fa-graduation-cap text-white/90"></i>
+                  <span>Découvrir toutes mes formations</span>
+                </a>
+                <p class="mt-4 text-sm text-accent-500">
+                  Une page dédiée présente l'ensemble de mes diplômes,
+                  spécialités et certifications.
+                </p>
               </div>
             </div>
 
@@ -508,6 +667,14 @@
                 class="w-full h-64 object-cover transition-transform duration-[600ms] group-hover:scale-110"
               />
               <div
+                class="absolute top-4 left-4 flex items-center gap-2 bg-white/90 text-secondary-700 px-4 py-2 rounded-full shadow-md backdrop-blur-sm border border-white/60"
+              >
+                <i class="fas fa-spa text-secondary-500"></i>
+                <span class="text-xs font-semibold tracking-wide uppercase"
+                  >Massage</span
+                >
+              </div>
+              <div
                 class="absolute inset-0 bg-gradient-to-t from-primary-900/70 via-primary-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center"
               >
                 <div
@@ -538,6 +705,14 @@
                 alt="Thérapeutique Bain Bébé"
                 class="w-full h-64 object-cover transition-transform duration-[600ms] group-hover:scale-110"
               />
+              <div
+                class="absolute top-4 left-4 flex items-center gap-2 bg-white/90 text-accent-700 px-4 py-2 rounded-full shadow-md backdrop-blur-sm border border-white/60"
+              >
+                <i class="fas fa-baby text-accent-600"></i>
+                <span class="text-xs font-semibold tracking-wide uppercase"
+                  >Bain bébé</span
+                >
+              </div>
               <div
                 class="absolute inset-0 bg-gradient-to-t from-accent-900/70 via-accent-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center"
               >
@@ -570,6 +745,14 @@
                 class="w-full h-64 object-cover transition-transform duration-[600ms] group-hover:scale-110"
               />
               <div
+                class="absolute top-4 left-4 flex items-center gap-2 bg-white/90 text-secondary-700 px-4 py-2 rounded-full shadow-md backdrop-blur-sm border border-white/60"
+              >
+                <i class="fas fa-feather text-secondary-500"></i>
+                <span class="text-xs font-semibold tracking-wide uppercase"
+                  >Rituel</span
+                >
+              </div>
+              <div
                 class="absolute inset-0 bg-gradient-to-t from-secondary-900/70 via-secondary-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center"
               >
                 <div
@@ -601,6 +784,14 @@
                 class="w-full h-64 object-cover transition-transform duration-[600ms] group-hover:scale-110"
               />
               <div
+                class="absolute top-4 left-4 flex items-center gap-2 bg-white/90 text-primary-700 px-4 py-2 rounded-full shadow-md backdrop-blur-sm border border-white/60"
+              >
+                <i class="fas fa-hands-holding-heart text-primary-600"></i>
+                <span class="text-xs font-semibold tracking-wide uppercase"
+                  >Post-natal</span
+                >
+              </div>
+              <div
                 class="absolute inset-0 bg-gradient-to-t from-primary-900/70 via-primary-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center"
               >
                 <div
@@ -631,6 +822,14 @@
                 alt="Le serrage de bassin"
                 class="w-full h-64 object-cover transition-transform duration-[600ms] group-hover:scale-110"
               />
+              <div
+                class="absolute top-4 left-4 flex items-center gap-2 bg-white/90 text-secondary-700 px-4 py-2 rounded-full shadow-md backdrop-blur-sm border border-white/60"
+              >
+                <i class="fas fa-circle-notch text-secondary-500"></i>
+                <span class="text-xs font-semibold tracking-wide uppercase"
+                  >Rituel</span
+                >
+              </div>
               <div
                 class="absolute inset-0 bg-gradient-to-t from-secondary-900/70 via-secondary-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center"
               >
@@ -682,7 +881,7 @@
                 </div>
                 <div class="space-y-4 text-accent-600 flex-1">
                   <p class="text-xl md:text-2xl font-semibold">
-                    Habitant du Gard ? Du Vaucluse ? Des bouches du Rhône ? Le
+                    Habitant du Gard ? Du Vaucluse ? Des Bouches-du-Rhône ? Le
                     cabinet est idéalement situé !
                   </p>
                   <p>Pour vous situer...</p>
@@ -732,42 +931,32 @@
               </div>
 
               <div class="space-y-4">
-                <p class="text-accent-600 font-semibold italic">
-                  Parce que chaque naissance implique de la patience…
-                </p>
-
                 <p class="text-accent-600">
                   Je vous accueillerai prochainement dans mon nouveau cabinet
                   situé à <strong>Remoulins</strong> à partir du mois d'octobre
-                  2025, après des travaux de rénovations durant le mois de
-                  septembre.
+                  2025.
                 </p>
 
                 <div class="bg-green-50 rounded-xl p-4 border border-green-200">
                   <p class="text-green-800 font-semibold">
                     <i class="fas fa-parking mr-2"></i>
-                    Le côté pratique : stationnement dédié juste devant l'entrée
-                    !
-                  </p>
-                  <p class="text-green-700 text-sm mt-2">
-                    Pas besoin de chercher une place de parking, ni de déplier
-                    la poussette… tout est pensé pour votre confort.
+                    Stationnement dédié juste devant l'entrée !
                   </p>
                 </div>
 
-                <p class="text-accent-500 text-sm italic">Photos à venir…</p>
-
                 <div class="text-sm text-accent-600">
-                  <p class="font-semibold mb-2">Pour vous situer...</p>
+                  <p class="font-semibold mb-2">
+                    Distances depuis le cabinet :
+                  </p>
                   <div class="grid sm:grid-cols-2 gap-x-6 gap-y-1 text-left">
-                    <span>• 13min de Marguerittes (30)</span>
+                    <span>• 13 min de Marguerittes (30)</span>
                     <span>• 14 min de Aramon (30)</span>
                     <span>• 16 min de Uzès (30)</span>
                     <span>• 16 min de Beaucaire (30)</span>
                     <span>• 18 min des Angles (30)</span>
                     <span>• 22 min de Tarascon (13)</span>
-                    <span>• 23 min de Bagnols sur Cèze (30)</span>
-                    <span>• 21 min de orange (84)</span>
+                    <span>• 23 min de Bagnols-sur-Cèze (30)</span>
+                    <span>• 21 min de Orange (84)</span>
                     <span>• 24 min d'Avignon (84)</span>
                     <span>• 27 min de Nîmes (30)</span>
                     <span>• 35 min de Arles (13)</span>
@@ -825,7 +1014,7 @@
           <h2
             class="font-display text-4xl md:text-5xl font-bold text-[#FF9CA0] mb-8"
           >
-            Prendre rdv
+            Prendre rendez-vous
           </h2>
           <p class="text-xl text-accent-600 mb-12">
             Les soins se réalisent uniquement sur RDV.
@@ -853,7 +1042,8 @@
               </div>
 
               <p class="text-accent-600">
-                Prise de RDV sur Calendly en toute autonomie.
+                Réservez votre créneau en ligne et profitez d'un accueil
+                chaleureux dans un espace cocooning.
               </p>
 
               <div class="flex items-center gap-3">
@@ -866,8 +1056,7 @@
               </div>
 
               <a
-                href="https://calendly.com/lapetiteberceuse-epcn"
-                target="_blank"
+                href="#"
                 class="self-start bg-secondary-500 text-white px-6 py-3 rounded-full hover:bg-secondary-600 transition-colors font-medium shadow"
               >
                 Réserver en ligne
@@ -895,17 +1084,8 @@
               </div>
 
               <p class="text-accent-600">
-                Prise de RDV via téléphone au 06.67.80.98.94 ou par mail à
-                l'adresse lapetiteberceuse@outlook.fr
-              </p>
-
-              <p class="text-accent-600">
-                Je me déplace à domicile selon mes disponibilités, moyennement
-                des frais kilométriques (1€/km aller-retour).
-              </p>
-
-              <p class="text-accent-600 font-medium">
-                N'hésitez pas à me contacter pour en discuter !
+                Nous convenons ensemble de la date et du lieu. Je viens avec
+                tout le matériel pour recréer votre bulle de bien-être.
               </p>
 
               <div class="space-y-1 text-accent-600 text-sm">
@@ -969,6 +1149,27 @@
                 </p>
               </div>
             </div>
+          </div>
+
+          <!-- Offre spéciale -->
+          <div
+            class="bg-gradient-to-r from-primary-500 to-secondary-500 rounded-2xl p-8 text-white text-center"
+          >
+            <div class="flex items-center justify-center mb-4">
+              <i class="fas fa-star text-yellow-300 text-2xl mr-2"></i>
+              <h4 class="font-display text-2xl font-bold">OFFRE SPÉCIALE</h4>
+              <i class="fas fa-star text-yellow-300 text-2xl ml-2"></i>
+            </div>
+            <p class="text-xl font-semibold mb-2">
+              À l'occasion de l'ouverture du cabinet
+            </p>
+            <p class="text-lg mb-4">
+              <span class="font-bold text-yellow-300">-15%</span> sur toutes les
+              prestations
+            </p>
+            <p class="text-sm opacity-90">
+              Pour l'achat d'un soin (à offrir ou à s'offrir)<br />
+            </p>
           </div>
         </div>
       </div>
@@ -1465,9 +1666,8 @@
               </button>
               <div class="px-6 pb-6 hidden" id="answer3" data-faq-answer>
                 <p class="text-accent-600">
-                  Chaque soin nécessite un moment d'échange avant, mais aussi
-                  après. Pour cette raison, compter environ 30 minutes en plus
-                  de la durée du soin choisi.
+                  Tout dépend de la prestation choisie. Le temps indiqué inclut
+                  le moment d'échange et les conseils personnalisés.
                 </p>
               </div>
             </div>
@@ -1488,11 +1688,10 @@
                       id="indicator4"
                       class="flex items-center justify-center w-12 h-12 rounded-full bg-white border border-secondary-200 text-secondary-500 shadow-sm transition-all duration-300 group-hover:border-secondary-400 group-hover:text-secondary-600"
                     >
-                      <i class="fas fa-tshirt"></i>
+                      <i class="fas fa-gift"></i>
                     </span>
                     <h3 class="font-semibold text-lg text-secondary-700">
-                      Quels vêtements choisir si je viens au cabinet pour un
-                      soin ?
+                      Est-il possible d'offrir un soin ?
                     </h3>
                   </div>
                   <span
@@ -1507,10 +1706,89 @@
               </button>
               <div class="px-6 pb-6 hidden" id="answer4" data-faq-answer>
                 <p class="text-accent-600">
-                  Vous pouvez prévoir des vêtements amples et confortables.
-                  Faciles à mettre et à enlever pour la personne qui reçoit le
-                  soin (que ce soit pour une femme enceinte, une femme en post
-                  partum ou un nouveau-né).
+                  Bien sûr ! Tous les soins sont disponibles en bon cadeau
+                  physique ou numérique, valable 6 mois.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div
+              class="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 shadow-sm transition-all"
+              data-faq-card="5"
+            >
+              <button
+                type="button"
+                class="w-full px-6 py-5 focus:outline-none group"
+                onclick="toggleFAQ(5)"
+              >
+                <div class="flex items-center justify-between gap-4">
+                  <div class="flex items-center gap-4">
+                    <span
+                      id="indicator5"
+                      class="flex items-center justify-center w-12 h-12 rounded-full bg-white border border-secondary-200 text-secondary-500 shadow-sm transition-all duration-300 group-hover:border-secondary-400 group-hover:text-secondary-600"
+                    >
+                      <i class="fas fa-location-dot"></i>
+                    </span>
+                    <h3 class="font-semibold text-lg text-secondary-700">
+                      Où se déroulent les soins ?
+                    </h3>
+                  </div>
+                  <span
+                    class="flex items-center justify-center w-10 h-10 rounded-full bg-white border border-gray-200 text-secondary-500 transition-all duration-300 group-hover:border-secondary-400"
+                  >
+                    <i
+                      class="fas fa-chevron-down transition-transform duration-300"
+                      id="icon5"
+                    ></i>
+                  </span>
+                </div>
+              </button>
+              <div class="px-6 pb-6 hidden" id="answer5" data-faq-answer>
+                <p class="text-accent-600">
+                  Les soins se déroulent à Remoulins, ou à domicile selon vos
+                  préférences et mes disponibilités.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 6 -->
+            <div
+              class="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 shadow-sm transition-all"
+              data-faq-card="6"
+            >
+              <button
+                type="button"
+                class="w-full px-6 py-5 focus:outline-none group"
+                onclick="toggleFAQ(6)"
+              >
+                <div class="flex items-center justify-between gap-4">
+                  <div class="flex items-center gap-4">
+                    <span
+                      id="indicator6"
+                      class="flex items-center justify-center w-12 h-12 rounded-full bg-white border border-secondary-200 text-secondary-500 shadow-sm transition-all duration-300 group-hover:border-secondary-400 group-hover:text-secondary-600"
+                    >
+                      <i class="fas fa-list-check"></i>
+                    </span>
+                    <h3 class="font-semibold text-lg text-secondary-700">
+                      Comment préparer ma venue ?
+                    </h3>
+                  </div>
+                  <span
+                    class="flex items-center justify-center w-10 h-10 rounded-full bg-white border border-gray-200 text-secondary-500 transition-all duration-300 group-hover:border-secondary-400"
+                  >
+                    <i
+                      class="fas fa-chevron-down transition-transform duration-300"
+                      id="icon6"
+                    ></i>
+                  </span>
+                </div>
+              </button>
+              <div class="px-6 pb-6 hidden" id="answer6" data-faq-answer>
+                <p class="text-accent-600">
+                  Lors de votre réservation, vous recevez toutes les
+                  informations nécessaires pour préparer le soin dans les
+                  meilleures conditions.
                 </p>
               </div>
             </div>
@@ -1640,66 +1918,37 @@
         class="bg-white rounded-3xl max-w-4xl w-full max-h-screen overflow-y-auto shadow-2xl"
       >
         <div class="relative">
-          <!-- Header avec dégradé -->
-          <div
-            class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-primary-400 via-primary-300 to-secondary-400 rounded-t-3xl"
-          ></div>
-
           <button
             onclick="closeModal('modal1')"
-            class="absolute top-4 right-4 w-10 h-10 bg-primary-100 hover:bg-primary-200 rounded-full flex items-center justify-center transition-all hover:scale-110 z-10 shadow-sm"
+            class="absolute top-4 right-4 w-10 h-10 bg-gray-200 hover:bg-gray-300 rounded-full flex items-center justify-center transition-colors z-10"
           >
-            <i class="fas fa-times text-primary-600"></i>
+            <i class="fas fa-times text-accent-600"></i>
           </button>
-          <div class="p-8 pt-10">
+          <div class="p-8">
             <div class="text-center mb-8">
-              <div class="relative inline-block mb-6">
-                <img
-                  src="assets/img/la petite berceuse/Massage_femme_enceinte2.jpg"
-                  alt="Massage femme enceinte"
-                  class="w-full max-w-lg mx-auto rounded-2xl shadow-lg"
-                />
-                <div
-                  class="absolute -bottom-4 left-1/2 transform -translate-x-1/2"
-                >
-                  <div
-                    class="flex items-center gap-4 bg-white rounded-full px-6 py-3 shadow-lg border border-primary-100"
-                  >
-                    <span class="flex items-center gap-2">
-                      <i class="fas fa-tag text-primary-500"></i>
-                      <span class="text-xl font-bold text-primary-600"
-                        >70€</span
-                      >
-                    </span>
-                    <span class="w-px h-6 bg-gray-200"></span>
-                    <span class="flex items-center gap-2 text-accent-600">
-                      <i class="fas fa-clock text-primary-500"></i>
-                      <span class="font-semibold">1h30</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-
+              <img
+                src="assets/img/la petite berceuse/Massage_femme_enceinte2.jpg"
+                alt="Massage femme enceinte"
+                class="w-full max-w-lg mx-auto rounded-2xl shadow-lg mb-6"
+              />
               <h2
-                class="font-display text-3xl font-bold text-primary-600 mb-6 mt-8"
+                class="font-display text-3xl font-bold text-secondary-700 mb-4"
               >
                 Massage femme enceinte
               </h2>
-
-              <div
-                class="relative bg-gradient-to-r from-primary-50 via-white to-primary-50 rounded-2xl p-6 border border-primary-200 shadow-sm"
-              >
-                <i
-                  class="fas fa-quote-left text-primary-200 text-3xl absolute top-4 left-4"
-                ></i>
-                <p
-                  class="text-lg font-medium text-accent-700 italic relative z-10"
+              <div class="flex justify-center items-center space-x-6 text-lg">
+                <span
+                  class="bg-primary-100 text-primary-700 px-4 py-2 rounded-full font-semibold"
+                  >70€</span
                 >
-                  Un moment de douceur et de connexion avec son bébé
+                <span class="text-accent-600">1h30</span>
+              </div>
+              <div
+                class="bg-gradient-to-r from-primary-100 to-primary-50 rounded-2xl p-4 border-l-4 border-primary-400 mt-6"
+              >
+                <p class="text-lg font-medium text-accent-700 italic">
+                  « Un moment de douceur et de connexion avec son bébé »
                 </p>
-                <i
-                  class="fas fa-quote-right text-primary-200 text-3xl absolute bottom-4 right-4"
-                ></i>
               </div>
             </div>
 
@@ -1719,206 +1968,88 @@
                 </p>
               </div>
 
-              <div
-                class="bg-gradient-to-r from-secondary-50 to-secondary-100/50 rounded-2xl p-5 border border-secondary-200 shadow-sm"
-              >
-                <div class="flex items-center gap-3">
-                  <div
-                    class="flex items-center justify-center w-10 h-10 rounded-full bg-secondary-500 text-white"
-                  >
-                    <i class="fas fa-clock"></i>
-                  </div>
-                  <div>
-                    <p class="font-semibold text-secondary-700 mb-1">
-                      Réalisable :
+              <div class="bg-yellow-50 rounded-xl p-4 border border-yellow-200">
+                <p class="text-yellow-800">
+                  <strong>⏰ Réalisable :</strong> À partir de 16 SA
+                  (l'échographie du premier trimestre doit avoir eu lieu),
+                  jusqu'à l'accouchement.
+                </p>
+              </div>
+
+              <div>
+                <h3
+                  class="font-display text-xl font-bold text-secondary-700 mb-4"
+                >
+                  Déroulé de la séance
+                </h3>
+                <div class="space-y-4">
+                  <div class="bg-primary-50 rounded-xl p-4">
+                    <p class="text-accent-600">
+                      <strong>Temps d'accueil et d'échange</strong> pour
+                      comprendre votre vécu de grossesse et vos besoins
                     </p>
-                    <p class="text-accent-600 text-sm">
-                      À partir de 16 SA (l'échographie du premier trimestre doit
-                      avoir eu lieu), jusqu'à l'accouchement.
+                  </div>
+                  <div class="bg-primary-50 rounded-xl p-4">
+                    <p class="text-accent-600 mb-2">
+                      <strong>Massage cocooning (60 minutes)</strong> adapté à
+                      vos envies et à vos maux du moment :
+                    </p>
+                    <ul class="text-accent-600 text-sm space-y-1 ml-4">
+                      <li>
+                        • Réalisé en positions latérale, dorsale ou à l'aide
+                        d'un ballon
+                      </li>
+                      <li>
+                        • Utilisation d'une huile végétale biologique pour
+                        nourrir et hydrater votre peau
+                      </li>
+                      <li>
+                        • Ambiance douce avec serviettes moelleuses, coussins
+                        adaptés, voyage sonore, bougies…
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="bg-primary-50 rounded-xl p-4">
+                    <p class="text-accent-600">
+                      <strong>Temps d'intégration après le soin :</strong>
+                      moment d'échange autour d'une boisson réconfortante, avec
+                      la possibilité d'un tirage de carte d'oracle (optionnel).
                     </p>
                   </div>
                 </div>
               </div>
 
               <div>
-                <div class="flex items-center gap-3 mb-6">
-                  <div
-                    class="flex items-center justify-center w-12 h-12 rounded-full bg-primary-100 text-primary-600"
-                  >
-                    <i class="fas fa-spa text-lg"></i>
-                  </div>
-                  <h3 class="font-display text-2xl font-bold text-primary-600">
-                    Déroulé de la séance
-                  </h3>
-                </div>
-                <div class="space-y-3">
-                  <div
-                    class="bg-white rounded-2xl p-5 border border-primary-100 shadow-sm hover:shadow-md transition"
-                  >
-                    <div class="flex items-start gap-3">
-                      <div
-                        class="flex items-center justify-center w-8 h-8 rounded-full bg-primary-100 text-primary-600 flex-shrink-0 mt-0.5"
-                      >
-                        <span class="font-bold text-sm">1</span>
-                      </div>
-                      <div>
-                        <p class="text-accent-700 font-semibold mb-1">
-                          Temps d'accueil et d'échange
-                        </p>
-                        <p class="text-accent-600 text-sm">
-                          pour comprendre votre vécu de grossesse et vos besoins
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="bg-white rounded-2xl p-5 border border-primary-100 shadow-sm hover:shadow-md transition"
-                  >
-                    <div class="flex items-start gap-3">
-                      <div
-                        class="flex items-center justify-center w-8 h-8 rounded-full bg-primary-100 text-primary-600 flex-shrink-0 mt-0.5"
-                      >
-                        <span class="font-bold text-sm">2</span>
-                      </div>
-                      <div class="flex-1">
-                        <p class="text-accent-700 font-semibold mb-2">
-                          Massage cocooning (60 minutes)
-                        </p>
-                        <p class="text-accent-600 text-sm mb-2">
-                          adapté à vos envies et à vos maux du moment :
-                        </p>
-                        <ul class="text-accent-600 text-sm space-y-1.5 ml-1">
-                          <li class="flex items-start gap-2">
-                            <i
-                              class="fas fa-check text-primary-500 text-xs mt-1"
-                            ></i>
-                            <span
-                              >Réalisé en positions latérale, dorsale ou à
-                              l'aide d'un ballon</span
-                            >
-                          </li>
-                          <li class="flex items-start gap-2">
-                            <i
-                              class="fas fa-check text-primary-500 text-xs mt-1"
-                            ></i>
-                            <span
-                              >Utilisation d'une huile végétale biologique pour
-                              nourrir et hydrater votre peau</span
-                            >
-                          </li>
-                          <li class="flex items-start gap-2">
-                            <i
-                              class="fas fa-check text-primary-500 text-xs mt-1"
-                            ></i>
-                            <span
-                              >Ambiance douce avec serviettes moelleuses,
-                              coussins adaptés, voyage sonore, bougies…</span
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="bg-white rounded-2xl p-5 border border-primary-100 shadow-sm hover:shadow-md transition"
-                  >
-                    <div class="flex items-start gap-3">
-                      <div
-                        class="flex items-center justify-center w-8 h-8 rounded-full bg-primary-100 text-primary-600 flex-shrink-0 mt-0.5"
-                      >
-                        <span class="font-bold text-sm">3</span>
-                      </div>
-                      <div>
-                        <p class="text-accent-700 font-semibold mb-1">
-                          Temps d'intégration après le soin
-                        </p>
-                        <p class="text-accent-600 text-sm">
-                          moment d'échange autour d'une boisson réconfortante,
-                          avec la possibilité d'un tirage de carte d'oracle
-                          (optionnel).
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="bg-gradient-to-br from-secondary-50 to-white rounded-2xl p-6 border border-secondary-200 shadow-sm"
-              >
-                <div class="flex items-center gap-3 mb-4">
-                  <div
-                    class="flex items-center justify-center w-10 h-10 rounded-full bg-secondary-500 text-white"
-                  >
-                    <i class="fas fa-suitcase"></i>
-                  </div>
-                  <h3 class="font-display text-xl font-bold text-secondary-700">
-                    À domicile, je me déplace avec...
-                  </h3>
-                </div>
-                <p class="text-accent-600 leading-relaxed">
+                <h3
+                  class="font-display text-xl font-bold text-secondary-700 mb-4"
+                >
+                  À domicile, je me déplace avec...
+                </h3>
+                <p class="text-accent-600">
                   Table de massage, draps, serviettes, plaids, coussins de
                   positionnement, ballon de grossesse, huile végétale bio,
                   bougies, enceinte.
                 </p>
               </div>
 
-              <div
-                class="bg-gradient-to-r from-accent-50 to-accent-100/30 rounded-2xl p-6 border border-accent-200 shadow-sm"
-              >
-                <div class="flex items-start gap-4">
-                  <div
-                    class="flex items-center justify-center w-10 h-10 rounded-full bg-accent-500 text-white flex-shrink-0"
-                  >
-                    <i class="fas fa-info"></i>
-                  </div>
-                  <div>
-                    <h4 class="font-semibold text-accent-700 mb-3">
-                      Contre-indications
-                    </h4>
-                    <ul class="text-accent-600 text-sm space-y-2">
-                      <li class="flex items-start gap-2">
-                        <i
-                          class="fas fa-circle text-accent-400 text-xs mt-1"
-                        ></i>
-                        <span>Fièvre, inflammation, phlébite</span>
-                      </li>
-                      <li class="flex items-start gap-2">
-                        <i
-                          class="fas fa-circle text-accent-400 text-xs mt-1"
-                        ></i>
-                        <span>Vaccination récente (-48h)</span>
-                      </li>
-                      <li class="flex items-start gap-2">
-                        <i
-                          class="fas fa-circle text-accent-400 text-xs mt-1"
-                        ></i>
-                        <span>Saignements</span>
-                      </li>
-                      <li class="flex items-start gap-2">
-                        <i
-                          class="fas fa-circle text-accent-400 text-xs mt-1"
-                        ></i>
-                        <span
-                          >Séance d'ostéopathie (-7 jours) ou de kinésithérapie
-                          (-48h)</span
-                        >
-                      </li>
-                      <li class="flex items-start gap-2">
-                        <i
-                          class="fas fa-circle text-accent-400 text-xs mt-1"
-                        ></i>
-                        <span
-                          >En cas de pathologie (diabète, hypertension, menace
-                          d'accouchement prématuré…), un certificat médical est
-                          nécessaire.</span
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+              <div class="bg-red-50 rounded-xl p-4 border border-red-200">
+                <h4 class="font-semibold text-red-800 mb-2">
+                  Contre-indications
+                </h4>
+                <ul class="text-red-700 text-sm space-y-1">
+                  <li>• Fièvre, inflammation, phlébite</li>
+                  <li>• Vaccination récente (-48h)</li>
+                  <li>• Saignements</li>
+                  <li>
+                    • Séance d'ostéopathie (-7 jours) ou de kinésithérapie
+                    (-48h)
+                  </li>
+                  <li>
+                    • En cas de pathologie (diabète, hypertension, menace
+                    d'accouchement prématuré…), un certificat médical est
+                    nécessaire.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -1935,66 +2066,37 @@
         class="bg-white rounded-3xl max-w-4xl w-full max-h-screen overflow-y-auto shadow-2xl"
       >
         <div class="relative">
-          <!-- Header avec dégradé -->
-          <div
-            class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-secondary-400 via-primary-300 to-secondary-400 rounded-t-3xl"
-          ></div>
-
           <button
             onclick="closeModal('modal2')"
-            class="absolute top-4 right-4 w-10 h-10 bg-secondary-100 hover:bg-secondary-200 rounded-full flex items-center justify-center transition-all hover:scale-110 z-10 shadow-sm"
+            class="absolute top-4 right-4 w-10 h-10 bg-gray-200 hover:bg-gray-300 rounded-full flex items-center justify-center transition-colors z-10"
           >
-            <i class="fas fa-times text-secondary-600"></i>
+            <i class="fas fa-times text-accent-600"></i>
           </button>
-          <div class="p-8 pt-10">
+          <div class="p-8">
             <div class="text-center mb-8">
-              <div class="relative inline-block mb-6">
-                <img
-                  src="assets/img/la petite berceuse/Bain_thérapeutique2.jpg"
-                  alt="Thérapeutique Bain Bébé"
-                  class="w-full max-w-lg mx-auto rounded-2xl shadow-lg"
-                />
-                <div
-                  class="absolute -bottom-4 left-1/2 transform -translate-x-1/2"
-                >
-                  <div
-                    class="flex items-center gap-4 bg-white rounded-full px-6 py-3 shadow-lg border border-secondary-100"
-                  >
-                    <span class="flex items-center gap-2">
-                      <i class="fas fa-tag text-secondary-500"></i>
-                      <span class="text-xl font-bold text-secondary-600"
-                        >90€</span
-                      >
-                    </span>
-                    <span class="w-px h-6 bg-gray-200"></span>
-                    <span class="flex items-center gap-2 text-accent-600">
-                      <i class="fas fa-clock text-secondary-500"></i>
-                      <span class="font-semibold">1h30</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-
+              <img
+                src="assets/img/la petite berceuse/Bain_thérapeutique2.jpg"
+                alt="Thérapeutique Bain Bébé"
+                class="w-full max-w-lg mx-auto rounded-2xl shadow-lg mb-6"
+              />
               <h2
-                class="font-display text-3xl font-bold text-secondary-600 mb-6 mt-8"
+                class="font-display text-3xl font-bold text-secondary-700 mb-4"
               >
                 Thérapeutique bain bébé ®
               </h2>
-
-              <div
-                class="relative bg-gradient-to-r from-secondary-50 via-white to-secondary-50 rounded-2xl p-6 border border-secondary-200 shadow-sm"
-              >
-                <i
-                  class="fas fa-quote-left text-secondary-200 text-3xl absolute top-4 left-4"
-                ></i>
-                <p
-                  class="text-lg font-medium text-accent-700 italic relative z-10"
+              <div class="flex justify-center items-center space-x-6 text-lg">
+                <span
+                  class="bg-accent-100 text-accent-700 px-4 py-2 rounded-full font-semibold"
+                  >90€</span
                 >
-                  Un véritable cadeau pour souhaiter la bienvenue au monde
+                <span class="text-accent-600">1h30</span>
+              </div>
+              <div
+                class="bg-gradient-to-r from-accent-100 to-accent-50 rounded-2xl p-4 border-l-4 border-accent-400 mt-6"
+              >
+                <p class="text-lg font-medium text-accent-700 italic">
+                  « Un véritable cadeau pour souhaiter la bienvenue au monde »
                 </p>
-                <i
-                  class="fas fa-quote-right text-secondary-200 text-3xl absolute bottom-4 right-4"
-                ></i>
               </div>
             </div>
 
@@ -2022,254 +2124,127 @@
                 </p>
               </div>
 
-              <div
-                class="bg-gradient-to-r from-secondary-50 to-secondary-100/50 rounded-2xl p-5 border border-secondary-200 shadow-sm"
-              >
-                <div class="flex items-center gap-3">
-                  <div
-                    class="flex items-center justify-center w-10 h-10 rounded-full bg-secondary-500 text-white"
-                  >
-                    <i class="fas fa-baby"></i>
-                  </div>
-                  <div>
-                    <p class="font-semibold text-secondary-700 mb-1">
-                      Pour qui ?
-                    </p>
-                    <p class="text-accent-600 text-sm mb-1">
-                      <strong>Idéalement pour tous les bébés !</strong> Parce
-                      que naître, c'est toujours une traversée.
-                    </p>
-                    <p class="text-accent-600 text-sm">
-                      Le bain thérapeutique n'a pas vocation à « chercher ce qui
-                      ne va pas », mais plutôt à accueillir ce qui est. Par
-                      ailleurs, ce soin prend davantage tout son sens quand la
-                      grossesse et l'accouchement ont été difficiles pour maman
-                      et bébé (forceps, césarienne d'urgence, séparation à la
-                      naissance, etc…). Il permet une renaissance symbolique.
-                    </p>
-                  </div>
-                </div>
+              <div class="bg-blue-50 rounded-xl p-4 border border-blue-200">
+                <h4 class="font-semibold text-blue-800 mb-2">Pour qui ?</h4>
+                <p class="text-blue-700 mb-2">
+                  <strong>Idéalement pour tous les bébés !</strong> Parce que
+                  naître, c'est toujours une traversée.
+                </p>
+                <p class="text-blue-700 text-sm">
+                  Le bain thérapeutique n'a pas vocation à « chercher ce qui ne
+                  va pas », mais plutôt à accueillir ce qui est. Par ailleurs,
+                  ce soin prend davantage tout son sens quand la grossesse et
+                  l'accouchement ont été difficiles pour maman et bébé (forceps,
+                  césarienne d'urgence, séparation à la naissance, etc…). Il
+                  permet une renaissance symbolique.
+                </p>
               </div>
 
-              <div
-                class="bg-gradient-to-r from-primary-50 to-primary-100/50 rounded-2xl p-5 border border-primary-200 shadow-sm"
-              >
-                <div class="flex items-center gap-3">
-                  <div
-                    class="flex items-center justify-center w-10 h-10 rounded-full bg-primary-500 text-white"
-                  >
-                    <i class="fas fa-clock"></i>
-                  </div>
-                  <div>
-                    <p class="font-semibold text-primary-700 mb-1">
-                      Jusqu'à quand ?
-                    </p>
-                    <p class="text-accent-600 text-sm mb-1">
-                      <strong>Réalisable jusqu'au 21ème jour de vie.</strong>
-                    </p>
+              <div class="bg-red-50 rounded-xl p-4 border border-red-200">
+                <h4 class="font-semibold text-red-800 mb-2">
+                  ⏰ Jusqu'à quand ?
+                </h4>
+                <p class="text-red-700 mb-2">
+                  <strong>Réalisable jusqu'au 21ème jour de vie.</strong>
+                </p>
+                <p class="text-red-700 text-sm">
+                  C'est pour cette raison qu'il est fortement conseillé de
+                  réserver un créneau pendant la grossesse. En cas de
+                  prématurité, l'âge corrigé est retenu (date de terme
+                  initialement prévue).
+                </p>
+              </div>
+
+              <div>
+                <h3
+                  class="font-display text-xl font-bold text-secondary-700 mb-4"
+                >
+                  Déroulé du soin
+                </h3>
+                <div class="space-y-4">
+                  <div class="bg-accent-50 rounded-xl p-4">
+                    <h4 class="font-semibold text-accent-700 mb-2">
+                      Temps d'accueil et d'échange
+                    </h4>
                     <p class="text-accent-600 text-sm">
-                      C'est pour cette raison qu'il est fortement conseillé de
-                      réserver un créneau pendant la grossesse. En cas de
-                      prématurité, l'âge corrigé est retenu (date de terme
-                      initialement prévue).
+                      Nous revenons sur votre grossesse, votre accouchement et
+                      vos premiers pas en tant que parents. Un espace libre de
+                      parole et d'écoute.
+                    </p>
+                  </div>
+                  <div class="bg-accent-50 rounded-xl p-4">
+                    <h4 class="font-semibold text-accent-700 mb-2">
+                      Rencontre avec votre bébé
+                    </h4>
+                    <p class="text-accent-600 text-sm">
+                      Avec votre accord, je fais doucement connaissance avec
+                      lui. Je l'emmaillote à l'aide d'un lange afin de lui
+                      offrir une enveloppe sécurisante et contenante, proche de
+                      ce qu'il a connu in utero.
+                    </p>
+                  </div>
+                  <div class="bg-accent-50 rounded-xl p-4">
+                    <h4 class="font-semibold text-accent-700 mb-2">
+                      Soin dans l'eau (38°C)
+                    </h4>
+                    <p class="text-accent-600 text-sm">
+                      Réalisé dans une ambiance chaleureuse, douce et musicale,
+                      j'accompagne votre bébé en respectant son rythme, ses
+                      besoins, et ses réactions.
+                    </p>
+                  </div>
+                  <div class="bg-accent-50 rounded-xl p-4">
+                    <h4 class="font-semibold text-accent-700 mb-2">
+                      Sortie de l'eau
+                    </h4>
+                    <p class="text-accent-600 text-sm">
+                      Je le dépose délicatement dans une serviette pour
+                      prolonger la détente et vous faire profiter de votre bulle
+                      intime remplie d'émotions. Ce moment peut se poursuivre en
+                      peau à peau, ou par une initiation au massage si vous le
+                      souhaitez, et selon la disponibilité de votre bébé.
+                    </p>
+                  </div>
+                  <div class="bg-accent-50 rounded-xl p-4">
+                    <h4 class="font-semibold text-accent-700 mb-2">
+                      Accompagnement parental personnalisé
+                    </h4>
+                    <p class="text-accent-600 text-sm">
+                      Ce soin est aussi un espace pour répondre à vos questions
+                      : alimentation, sommeil, hygiène, besoins de votre bébé,
+                      etc… Le séjour à la maternité étant parfois trop court, ce
+                      temps est l'occasion idéale pour faire le point en toute
+                      bienveillance.
                     </p>
                   </div>
                 </div>
               </div>
 
               <div>
-                <div class="flex items-center gap-3 mb-6">
-                  <div
-                    class="flex items-center justify-center w-12 h-12 rounded-full bg-secondary-100 text-secondary-600"
-                  >
-                    <i class="fas fa-water text-lg"></i>
-                  </div>
-                  <h3
-                    class="font-display text-2xl font-bold text-secondary-600"
-                  >
-                    Déroulé du soin
-                  </h3>
-                </div>
-                <div class="space-y-3">
-                  <div
-                    class="bg-white rounded-2xl p-5 border border-secondary-100 shadow-sm hover:shadow-md transition"
-                  >
-                    <div class="flex items-start gap-3">
-                      <div
-                        class="flex items-center justify-center w-8 h-8 rounded-full bg-secondary-100 text-secondary-600 flex-shrink-0 mt-0.5"
-                      >
-                        <span class="font-bold text-sm">1</span>
-                      </div>
-                      <div>
-                        <p class="text-accent-700 font-semibold mb-1">
-                          Temps d'accueil et d'échange autour d'une boisson
-                          réconfortante
-                        </p>
-                        <p class="text-accent-600 text-sm">
-                          Nous revenons sur votre grossesse, votre accouchement
-                          et vos premiers pas en tant que parents. Un espace
-                          libre de parole et d'écoute.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="bg-white rounded-2xl p-5 border border-secondary-100 shadow-sm hover:shadow-md transition"
-                  >
-                    <div class="flex items-start gap-3">
-                      <div
-                        class="flex items-center justify-center w-8 h-8 rounded-full bg-secondary-100 text-secondary-600 flex-shrink-0 mt-0.5"
-                      >
-                        <span class="font-bold text-sm">2</span>
-                      </div>
-                      <div>
-                        <p class="text-accent-700 font-semibold mb-1">
-                          Rencontre avec votre bébé
-                        </p>
-                        <p class="text-accent-600 text-sm">
-                          Avec votre accord, je fais doucement connaissance avec
-                          lui. Je l'emmaillote à l'aide d'un lange afin de lui
-                          offrir une enveloppe sécurisante et contenante, proche
-                          de ce qu'il a connu in utero.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="bg-white rounded-2xl p-5 border border-secondary-100 shadow-sm hover:shadow-md transition"
-                  >
-                    <div class="flex items-start gap-3">
-                      <div
-                        class="flex items-center justify-center w-8 h-8 rounded-full bg-secondary-100 text-secondary-600 flex-shrink-0 mt-0.5"
-                      >
-                        <span class="font-bold text-sm">3</span>
-                      </div>
-                      <div>
-                        <p class="text-accent-700 font-semibold mb-1">
-                          Soin dans l'eau (38°C)
-                        </p>
-                        <p class="text-accent-600 text-sm">
-                          Réalisé dans une ambiance chaleureuse, douce et
-                          musicale, j'accompagne votre bébé en respectant son
-                          rythme, ses besoins, et ses réactions.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="bg-white rounded-2xl p-5 border border-secondary-100 shadow-sm hover:shadow-md transition"
-                  >
-                    <div class="flex items-start gap-3">
-                      <div
-                        class="flex items-center justify-center w-8 h-8 rounded-full bg-secondary-100 text-secondary-600 flex-shrink-0 mt-0.5"
-                      >
-                        <span class="font-bold text-sm">4</span>
-                      </div>
-                      <div>
-                        <p class="text-accent-700 font-semibold mb-1">
-                          Sortie de l'eau
-                        </p>
-                        <p class="text-accent-600 text-sm">
-                          Je le dépose délicatement dans une serviette pour
-                          prolonger la détente et vous faire profiter de votre
-                          bulle intime remplie d'émotions. Ce moment peut se
-                          poursuivre en peau à peau, ou par une initiation au
-                          massage si vous le souhaitez, et selon la
-                          disponibilité de votre bébé.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="bg-white rounded-2xl p-5 border border-secondary-100 shadow-sm hover:shadow-md transition"
-                  >
-                    <div class="flex items-start gap-3">
-                      <div
-                        class="flex items-center justify-center w-8 h-8 rounded-full bg-secondary-100 text-secondary-600 flex-shrink-0 mt-0.5"
-                      >
-                        <span class="font-bold text-sm">5</span>
-                      </div>
-                      <div>
-                        <p class="text-accent-700 font-semibold mb-1">
-                          Accompagnement parental personnalisé
-                        </p>
-                        <p class="text-accent-600 text-sm">
-                          Ce soin est aussi un espace pour répondre à vos
-                          questions : alimentation, sommeil, hygiène, besoins de
-                          votre bébé, etc… Le séjour à la maternité étant
-                          parfois trop court, ce temps est l'occasion idéale
-                          pour faire le point en toute bienveillance.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="bg-gradient-to-br from-secondary-50 to-white rounded-2xl p-6 border border-secondary-200 shadow-sm"
-              >
-                <div class="flex items-center gap-3 mb-4">
-                  <div
-                    class="flex items-center justify-center w-10 h-10 rounded-full bg-secondary-500 text-white"
-                  >
-                    <i class="fas fa-suitcase"></i>
-                  </div>
-                  <h3 class="font-display text-xl font-bold text-secondary-700">
-                    À domicile, je me déplace avec...
-                  </h3>
-                </div>
-                <p class="text-accent-600 leading-relaxed">
+                <h3
+                  class="font-display text-xl font-bold text-secondary-700 mb-4"
+                >
+                  À domicile, je me déplace avec...
+                </h3>
+                <p class="text-accent-600">
                   Baignoire, pieds de baignoire, accessoires pour adapter
                   l'arrivée et l'évacuation d'eau, langes, enceinte, bougies,
                   poupon de démonstration, huile végétale bio.
                 </p>
               </div>
 
-              <div
-                class="bg-gradient-to-r from-accent-50 to-accent-100/30 rounded-2xl p-6 border border-accent-200 shadow-sm"
-              >
-                <div class="flex items-start gap-4">
-                  <div
-                    class="flex items-center justify-center w-10 h-10 rounded-full bg-accent-500 text-white flex-shrink-0"
-                  >
-                    <i class="fas fa-info"></i>
-                  </div>
-                  <div>
-                    <h4 class="font-semibold text-accent-700 mb-3">
-                      Contre-indications
-                    </h4>
-                    <ul class="text-accent-600 text-sm space-y-2">
-                      <li class="flex items-start gap-2">
-                        <i
-                          class="fas fa-circle text-accent-400 text-xs mt-1"
-                        ></i>
-                        <span>Fièvre, hypothermie</span>
-                      </li>
-                      <li class="flex items-start gap-2">
-                        <i
-                          class="fas fa-circle text-accent-400 text-xs mt-1"
-                        ></i>
-                        <span>Perte ou stagnation de poids</span>
-                      </li>
-                      <li class="flex items-start gap-2">
-                        <i
-                          class="fas fa-circle text-accent-400 text-xs mt-1"
-                        ></i>
-                        <span
-                          >Chirurgie récente : accord médical nécessaire</span
-                        >
-                      </li>
-                    </ul>
-                    <p class="text-accent-600 text-sm mt-3 italic">
-                      En cas de doute, n'hésitez pas à me contacter !
-                    </p>
-                  </div>
-                </div>
+              <div class="bg-red-50 rounded-xl p-4 border border-red-200">
+                <h4 class="font-semibold text-red-800 mb-2">
+                  Contre-indications
+                </h4>
+                <ul class="text-red-700 text-sm space-y-1">
+                  <li>• Fièvre, hypothermie</li>
+                  <li>• Perte ou stagnation de poids</li>
+                  <li>• Chirurgie récente : accord médical nécessaire</li>
+                </ul>
+                <p class="text-red-700 text-sm mt-2">
+                  En cas de doute, n'hésitez pas à me contacter !
+                </p>
               </div>
             </div>
           </div>
@@ -2286,66 +2261,37 @@
         class="bg-white rounded-3xl max-w-4xl w-full max-h-screen overflow-y-auto shadow-2xl"
       >
         <div class="relative">
-          <!-- Header avec dégradé -->
-          <div
-            class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-secondary-400 via-secondary-300 to-primary-400 rounded-t-3xl"
-          ></div>
-
           <button
             onclick="closeModal('modal3')"
-            class="absolute top-4 right-4 w-10 h-10 bg-secondary-100 hover:bg-secondary-200 rounded-full flex items-center justify-center transition-all hover:scale-110 z-10 shadow-sm"
+            class="absolute top-4 right-4 w-10 h-10 bg-gray-200 hover:bg-gray-300 rounded-full flex items-center justify-center transition-colors z-10"
           >
-            <i class="fas fa-times text-secondary-600"></i>
+            <i class="fas fa-times text-accent-600"></i>
           </button>
-          <div class="p-8 pt-10">
+          <div class="p-8">
             <div class="text-center mb-8">
-              <div class="relative inline-block mb-6">
-                <img
-                  src="assets/img/la petite berceuse/Soin_rituel_anti_vergetures2.jpg"
-                  alt="Soin rituel anti-vergetures"
-                  class="w-full max-w-lg mx-auto rounded-2xl shadow-lg"
-                />
-                <div
-                  class="absolute -bottom-4 left-1/2 transform -translate-x-1/2"
-                >
-                  <div
-                    class="flex items-center gap-4 bg-white rounded-full px-6 py-3 shadow-lg border border-secondary-100"
-                  >
-                    <span class="flex items-center gap-2">
-                      <i class="fas fa-tag text-secondary-500"></i>
-                      <span class="text-xl font-bold text-secondary-600"
-                        >50€</span
-                      >
-                    </span>
-                    <span class="w-px h-6 bg-gray-200"></span>
-                    <span class="flex items-center gap-2 text-accent-600">
-                      <i class="fas fa-clock text-secondary-500"></i>
-                      <span class="font-semibold">1h</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-
+              <img
+                src="assets/img/la petite berceuse/Soin_rituel_anti_vergetures2.jpg"
+                alt="Soin rituel anti-vergetures"
+                class="w-full max-w-lg mx-auto rounded-2xl shadow-lg mb-6"
+              />
               <h2
-                class="font-display text-3xl font-bold text-secondary-600 mb-6 mt-8"
+                class="font-display text-3xl font-bold text-secondary-700 mb-4"
               >
                 Soin rituel anti-vergetures
               </h2>
-
-              <div
-                class="relative bg-gradient-to-r from-secondary-50 via-white to-secondary-50 rounded-2xl p-6 border border-secondary-200 shadow-sm"
-              >
-                <i
-                  class="fas fa-quote-left text-secondary-200 text-3xl absolute top-4 left-4"
-                ></i>
-                <p
-                  class="text-lg font-medium text-accent-700 italic relative z-10"
+              <div class="flex justify-center items-center space-x-6 text-lg">
+                <span
+                  class="bg-secondary-100 text-secondary-700 px-4 py-2 rounded-full font-semibold"
+                  >50€</span
                 >
-                  Un moment unique pour honorer votre baby bump
+                <span class="text-accent-600">1h</span>
+              </div>
+              <div
+                class="bg-gradient-to-r from-secondary-100 to-secondary-50 rounded-2xl p-4 border-l-4 border-secondary-400 mt-6"
+              >
+                <p class="text-lg font-medium text-accent-700 italic">
+                  « Un moment unique pour honorer votre baby bump »
                 </p>
-                <i
-                  class="fas fa-quote-right text-secondary-200 text-3xl absolute bottom-4 right-4"
-                ></i>
               </div>
             </div>
 
@@ -2372,241 +2318,113 @@
                 </p>
               </div>
 
-              <div
-                class="bg-gradient-to-r from-primary-50 to-primary-100/50 rounded-2xl p-5 border border-primary-200 shadow-sm"
-              >
-                <div class="flex items-center gap-3">
-                  <div
-                    class="flex items-center justify-center w-10 h-10 rounded-full bg-primary-500 text-white"
-                  >
-                    <i class="fas fa-star"></i>
+              <div class="bg-yellow-50 rounded-xl p-4 border border-yellow-200">
+                <h4 class="font-semibold text-yellow-800 mb-2">
+                  🌟 Exclusivité
+                </h4>
+                <p class="text-yellow-700">
+                  Disponible uniquement chez La Petite Berceuse
+                </p>
+              </div>
+
+              <div>
+                <h3
+                  class="font-display text-xl font-bold text-secondary-700 mb-4"
+                >
+                  Les bienfaits du soin
+                </h3>
+                <div class="space-y-2">
+                  <div class="flex items-start space-x-3">
+                    <i class="fas fa-droplet text-secondary-500 mt-1"></i>
+                    <span class="text-accent-600"
+                      >Hydratation intense grâce au Lait Fondant</span
+                    >
                   </div>
-                  <div>
-                    <p class="font-semibold text-primary-700 mb-1">
-                      Exclusivité
-                    </p>
+                  <div class="flex items-start space-x-3">
+                    <i class="fas fa-leaf text-secondary-500 mt-1"></i>
+                    <span class="text-accent-600"
+                      >Nutrition profonde avec l'Huile Sensorielle</span
+                    >
+                  </div>
+                  <div class="flex items-start space-x-3">
+                    <i
+                      class="fas fa-hand-holding-heart text-secondary-500 mt-1"
+                    ></i>
+                    <span class="text-accent-600"
+                      >Apaisement immédiat grâce au Masque tissu pour le ventre,
+                      qui soulage tiraillements et démangeaisons</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h3
+                  class="font-display text-xl font-bold text-secondary-700 mb-4"
+                >
+                  Déroulé de la séance
+                </h3>
+                <div class="space-y-4">
+                  <div class="bg-secondary-50 rounded-xl p-4">
+                    <h4 class="font-semibold text-secondary-700 mb-2">
+                      Temps d'accueil et d'échange
+                    </h4>
                     <p class="text-accent-600 text-sm">
-                      Disponible uniquement chez La Petite Berceuse
+                      Autour de votre grossesse
+                    </p>
+                  </div>
+                  <div class="bg-secondary-50 rounded-xl p-4">
+                    <h4 class="font-semibold text-secondary-700 mb-2">
+                      Massage cocooning (30 minutes)
+                    </h4>
+                    <p class="text-accent-600 text-sm">
+                      Avec les produits Daylily Paris aux parfums gourmands,
+                      dans une atmosphère douce et sensorielle (serviettes
+                      moelleuses, plaids tout doux, voyage sonore, bougies…)
+                    </p>
+                  </div>
+                  <div class="bg-secondary-50 rounded-xl p-4">
+                    <h4 class="font-semibold text-secondary-700 mb-2">
+                      Temps d'intégration après le soin
+                    </h4>
+                    <p class="text-accent-600 text-sm">
+                      Moment d'échange autour d'une boisson réconfortante, avec
+                      la possibilité d'un tirage de carte d'oracle (optionnel).
                     </p>
                   </div>
                 </div>
               </div>
 
               <div>
-                <div class="flex items-center gap-3 mb-6">
-                  <div
-                    class="flex items-center justify-center w-12 h-12 rounded-full bg-secondary-100 text-secondary-600"
-                  >
-                    <i class="fas fa-heart text-lg"></i>
-                  </div>
-                  <h3
-                    class="font-display text-2xl font-bold text-secondary-600"
-                  >
-                    Les bienfaits du soin
-                  </h3>
-                </div>
-                <div class="space-y-3">
-                  <div
-                    class="bg-white rounded-2xl p-4 border border-secondary-100 shadow-sm hover:shadow-md transition"
-                  >
-                    <div class="flex items-start gap-3">
-                      <div
-                        class="flex items-center justify-center w-10 h-10 rounded-full bg-secondary-100 text-secondary-600 flex-shrink-0"
-                      >
-                        <i class="fas fa-droplet"></i>
-                      </div>
-                      <p class="text-accent-600 leading-relaxed">
-                        Hydratation intense grâce au Lait Fondant
-                      </p>
-                    </div>
-                  </div>
-
-                  <div
-                    class="bg-white rounded-2xl p-4 border border-secondary-100 shadow-sm hover:shadow-md transition"
-                  >
-                    <div class="flex items-start gap-3">
-                      <div
-                        class="flex items-center justify-center w-10 h-10 rounded-full bg-secondary-100 text-secondary-600 flex-shrink-0"
-                      >
-                        <i class="fas fa-leaf"></i>
-                      </div>
-                      <p class="text-accent-600 leading-relaxed">
-                        Nutrition profonde avec l'Huile Sensorielle
-                      </p>
-                    </div>
-                  </div>
-
-                  <div
-                    class="bg-white rounded-2xl p-4 border border-secondary-100 shadow-sm hover:shadow-md transition"
-                  >
-                    <div class="flex items-start gap-3">
-                      <div
-                        class="flex items-center justify-center w-10 h-10 rounded-full bg-secondary-100 text-secondary-600 flex-shrink-0"
-                      >
-                        <i class="fas fa-hand-holding-heart"></i>
-                      </div>
-                      <p class="text-accent-600 leading-relaxed">
-                        Apaisement immédiat grâce au Masque tissu pour le
-                        ventre, qui soulage tiraillements et démangeaisons
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <div class="flex items-center gap-3 mb-6">
-                  <div
-                    class="flex items-center justify-center w-12 h-12 rounded-full bg-secondary-100 text-secondary-600"
-                  >
-                    <i class="fas fa-spa text-lg"></i>
-                  </div>
-                  <h3
-                    class="font-display text-2xl font-bold text-secondary-600"
-                  >
-                    Déroulé de la séance
-                  </h3>
-                </div>
-                <div class="space-y-3">
-                  <div
-                    class="bg-white rounded-2xl p-5 border border-secondary-100 shadow-sm hover:shadow-md transition"
-                  >
-                    <div class="flex items-start gap-3">
-                      <div
-                        class="flex items-center justify-center w-8 h-8 rounded-full bg-secondary-100 text-secondary-600 flex-shrink-0 mt-0.5"
-                      >
-                        <span class="font-bold text-sm">1</span>
-                      </div>
-                      <div>
-                        <p class="text-accent-700 font-semibold mb-1">
-                          Temps d'accueil et d'échange
-                        </p>
-                        <p class="text-accent-600 text-sm">
-                          Autour de votre grossesse
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="bg-white rounded-2xl p-5 border border-secondary-100 shadow-sm hover:shadow-md transition"
-                  >
-                    <div class="flex items-start gap-3">
-                      <div
-                        class="flex items-center justify-center w-8 h-8 rounded-full bg-secondary-100 text-secondary-600 flex-shrink-0 mt-0.5"
-                      >
-                        <span class="font-bold text-sm">2</span>
-                      </div>
-                      <div>
-                        <p class="text-accent-700 font-semibold mb-1">
-                          Massage cocooning (30 minutes)
-                        </p>
-                        <p class="text-accent-600 text-sm">
-                          Avec les produits Daylily Paris aux parfums gourmands,
-                          dans une atmosphère douce et sensorielle (serviettes
-                          moelleuses, plaids tout doux, voyage sonore, bougies…)
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="bg-white rounded-2xl p-5 border border-secondary-100 shadow-sm hover:shadow-md transition"
-                  >
-                    <div class="flex items-start gap-3">
-                      <div
-                        class="flex items-center justify-center w-8 h-8 rounded-full bg-secondary-100 text-secondary-600 flex-shrink-0 mt-0.5"
-                      >
-                        <span class="font-bold text-sm">3</span>
-                      </div>
-                      <div>
-                        <p class="text-accent-700 font-semibold mb-1">
-                          Temps d'intégration après le soin
-                        </p>
-                        <p class="text-accent-600 text-sm">
-                          Moment d'échange autour d'une boisson réconfortante,
-                          avec la possibilité d'un tirage de carte d'oracle
-                          (optionnel).
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="bg-gradient-to-br from-secondary-50 to-white rounded-2xl p-6 border border-secondary-200 shadow-sm"
-              >
-                <div class="flex items-center gap-3 mb-4">
-                  <div
-                    class="flex items-center justify-center w-10 h-10 rounded-full bg-secondary-500 text-white"
-                  >
-                    <i class="fas fa-suitcase"></i>
-                  </div>
-                  <h3 class="font-display text-xl font-bold text-secondary-700">
-                    À domicile, je me déplace avec...
-                  </h3>
-                </div>
-                <p class="text-accent-600 leading-relaxed">
+                <h3
+                  class="font-display text-xl font-bold text-secondary-700 mb-4"
+                >
+                  À domicile, je me déplace avec...
+                </h3>
+                <p class="text-accent-600">
                   Table de massage, draps, serviettes, plaids, cosmétiques
                   Daylily Paris®, bougies, enceinte.
                 </p>
               </div>
 
-              <div
-                class="bg-gradient-to-r from-accent-50 to-accent-100/30 rounded-2xl p-6 border border-accent-200 shadow-sm"
-              >
-                <div class="flex items-start gap-4">
-                  <div
-                    class="flex items-center justify-center w-10 h-10 rounded-full bg-accent-500 text-white flex-shrink-0"
-                  >
-                    <i class="fas fa-info"></i>
-                  </div>
-                  <div>
-                    <h4 class="font-semibold text-accent-700 mb-3">
-                      Contre-indications
-                    </h4>
-                    <ul class="text-accent-600 text-sm space-y-2">
-                      <li class="flex items-start gap-2">
-                        <i
-                          class="fas fa-circle text-accent-400 text-xs mt-1"
-                        ></i>
-                        <span>Fièvre, inflammation, phlébite</span>
-                      </li>
-                      <li class="flex items-start gap-2">
-                        <i
-                          class="fas fa-circle text-accent-400 text-xs mt-1"
-                        ></i>
-                        <span>Vaccination récente (-48h)</span>
-                      </li>
-                      <li class="flex items-start gap-2">
-                        <i
-                          class="fas fa-circle text-accent-400 text-xs mt-1"
-                        ></i>
-                        <span>Saignements</span>
-                      </li>
-                      <li class="flex items-start gap-2">
-                        <i
-                          class="fas fa-circle text-accent-400 text-xs mt-1"
-                        ></i>
-                        <span
-                          >Séance d'ostéopathie (-7 jours) ou de kinésithérapie
-                          (-48h)</span
-                        >
-                      </li>
-                      <li class="flex items-start gap-2">
-                        <i
-                          class="fas fa-circle text-accent-400 text-xs mt-1"
-                        ></i>
-                        <span
-                          >En cas de pathologie (diabète, hypertension, menace
-                          d'accouchement prématuré…), un certificat médical est
-                          nécessaire.</span
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+              <div class="bg-red-50 rounded-xl p-4 border border-red-200">
+                <h4 class="font-semibold text-red-800 mb-2">
+                  Contre-indications
+                </h4>
+                <ul class="text-red-700 text-sm space-y-1">
+                  <li>• Fièvre, inflammation, phlébite</li>
+                  <li>• Vaccination récente (-48h)</li>
+                  <li>• Saignements</li>
+                  <li>
+                    • Séance d'ostéopathie (-7 jours) ou de kinésithérapie
+                    (-48h)
+                  </li>
+                  <li>
+                    • En cas de pathologie (diabète, hypertension, menace
+                    d'accouchement prématuré…), un certificat médical est
+                    nécessaire.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -2623,75 +2441,44 @@
         class="bg-white rounded-3xl max-w-4xl w-full max-h-screen overflow-y-auto shadow-2xl"
       >
         <div class="relative">
-          <!-- Header avec dégradé -->
-          <div
-            class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-primary-400 via-secondary-300 to-primary-400 rounded-t-3xl"
-          ></div>
-
           <button
             onclick="closeModal('modal4')"
-            class="absolute top-4 right-4 w-10 h-10 bg-primary-100 hover:bg-primary-200 rounded-full flex items-center justify-center transition-all hover:scale-110 z-10 shadow-sm"
+            class="absolute top-4 right-4 w-10 h-10 bg-gray-200 hover:bg-gray-300 rounded-full flex items-center justify-center transition-colors z-10"
           >
-            <i class="fas fa-times text-primary-600"></i>
+            <i class="fas fa-times text-accent-600"></i>
           </button>
-          <div class="p-8 pt-10">
+          <div class="p-8">
             <div class="text-center mb-8">
-              <div class="relative inline-block mb-6">
-                <img
-                  src="assets/img/la petite berceuse/Massage_post_natal2.jpg"
-                  alt="Massage post-natal"
-                  class="w-full max-w-lg mx-auto rounded-2xl shadow-lg"
-                />
-                <div
-                  class="absolute -bottom-4 left-1/2 transform -translate-x-1/2"
-                >
-                  <div
-                    class="flex items-center gap-4 bg-white rounded-full px-6 py-3 shadow-lg border border-primary-100"
-                  >
-                    <span class="flex items-center gap-2">
-                      <i class="fas fa-tag text-primary-500"></i>
-                      <span class="text-xl font-bold text-primary-600"
-                        >70€</span
-                      >
-                    </span>
-                    <span class="w-px h-6 bg-gray-200"></span>
-                    <span class="flex items-center gap-2 text-accent-600">
-                      <i class="fas fa-clock text-primary-500"></i>
-                      <span class="font-semibold">1h30</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-
+              <img
+                src="assets/img/la petite berceuse/Massage_post_natal2.jpg"
+                alt="Massage post-natal"
+                class="w-full max-w-lg mx-auto rounded-2xl shadow-lg mb-6"
+              />
               <h2
-                class="font-display text-3xl font-bold text-primary-600 mb-3 mt-8"
+                class="font-display text-3xl font-bold text-secondary-700 mb-4"
               >
                 Massage post-natal
               </h2>
-
-              <div
-                class="inline-flex items-center gap-2 bg-gradient-to-r from-secondary-100 to-secondary-50 px-4 py-2 rounded-full border border-secondary-200 mb-4"
-              >
-                <i class="fas fa-star text-secondary-600"></i>
-                <span class="text-sm font-semibold text-secondary-700"
-                  >Mini serrage de bassin inclus</span
+              <div class="flex justify-center items-center space-x-6 text-lg">
+                <span
+                  class="bg-primary-100 text-primary-700 px-4 py-2 rounded-full font-semibold"
+                  >70€</span
                 >
+                <span class="text-accent-600">1h30</span>
               </div>
-
               <div
-                class="relative bg-gradient-to-r from-primary-50 via-white to-primary-50 rounded-2xl p-6 border border-primary-200 shadow-sm"
+                class="bg-gradient-to-r from-primary-100 to-primary-50 rounded-2xl p-4 border-l-4 border-primary-400 mt-6"
               >
-                <i
-                  class="fas fa-quote-left text-primary-200 text-3xl absolute top-4 left-4"
-                ></i>
-                <p
-                  class="text-lg font-medium text-accent-700 italic relative z-10"
-                >
-                  S'offrir une pause et se réapproprier son corps
+                <p class="text-lg font-medium text-accent-700 italic">
+                  « S'offrir une pause et se réapproprier son corps »
                 </p>
-                <i
-                  class="fas fa-quote-right text-primary-200 text-3xl absolute bottom-4 right-4"
-                ></i>
+              </div>
+              <div
+                class="bg-blue-50 rounded-xl p-4 border border-blue-200 mt-4"
+              >
+                <p class="text-blue-800 font-semibold">
+                  ✨ Mini serrage de bassin inclus
+                </p>
               </div>
             </div>
 
@@ -2723,221 +2510,107 @@
               </div>
 
               <div
-                class="bg-gradient-to-r from-primary-50 to-primary-100/50 rounded-2xl p-5 border border-primary-200 shadow-sm"
+                class="bg-primary-50 rounded-xl p-4 border border-primary-200"
               >
-                <div class="flex items-center gap-3">
-                  <div
-                    class="flex items-center justify-center w-10 h-10 rounded-full bg-primary-500 text-white"
-                  >
-                    <i class="fas fa-heart"></i>
+                <h4 class="font-semibold text-primary-800 mb-2">Pour qui ?</h4>
+                <p class="text-primary-700 mb-2">
+                  Pour toutes les femmes ayant porté la vie, quelle que soit
+                  leur histoire :
+                </p>
+                <ul class="text-primary-700 text-sm space-y-1 ml-4">
+                  <li>• Accouchement à terme ou prématuré</li>
+                  <li>• Césarienne ou voie basse</li>
+                  <li>• Deuil périnatal : Fausse couche, IMG, IVG…</li>
+                </ul>
+                <p class="text-primary-700 text-sm mt-2">
+                  Pour une raison symbolique, ce soin dit « de fermeture » est
+                  idéalement réalisable jusqu'au 9ème mois après l'accouchement.
+                  Mais il peut être reçu bien au-delà si le besoin se fait
+                  sentir.
+                </p>
+              </div>
+
+              <div>
+                <h3
+                  class="font-display text-xl font-bold text-secondary-700 mb-4"
+                >
+                  Déroulé de la séance
+                </h3>
+                <div class="space-y-4">
+                  <div class="bg-primary-50 rounded-xl p-4">
+                    <h4 class="font-semibold text-primary-700 mb-2">
+                      Temps d'accueil et d'échange bienveillant
+                    </h4>
+                    <p class="text-accent-600 text-sm">
+                      Autour de votre grossesse, accouchement, de votre vécu et
+                      de vos besoins.
+                    </p>
                   </div>
-                  <div>
-                    <p class="font-semibold text-primary-700 mb-1">
-                      Pour qui ?
-                    </p>
+                  <div class="bg-primary-50 rounded-xl p-4">
+                    <h4 class="font-semibold text-primary-700 mb-2">
+                      Massage complet à la fois tonique et enveloppant
+                    </h4>
                     <p class="text-accent-600 text-sm mb-2">
-                      Pour toutes les femmes ayant porté la vie, quelle que soit
-                      leur histoire :
+                      (en position ventrale puis dorsale)
                     </p>
-                    <ul class="text-accent-600 text-sm space-y-1">
-                      <li class="flex items-start gap-2">
-                        <i
-                          class="fas fa-check-circle text-primary-500 text-xs mt-1"
-                        ></i>
-                        <span>Accouchement à terme ou prématuré</span>
+                    <ul class="text-accent-600 text-sm space-y-1 ml-4">
+                      <li>
+                        • Tissus Rebozo appliqués sur la tête, le bassin et les
+                        pieds
                       </li>
-                      <li class="flex items-start gap-2">
-                        <i
-                          class="fas fa-check-circle text-primary-500 text-xs mt-1"
-                        ></i>
-                        <span>Césarienne ou voie basse</span>
+                      <li>
+                        • Utilisation d'une huile végétale biologique pour
+                        nourrir et hydrater votre peau
                       </li>
-                      <li class="flex items-start gap-2">
-                        <i
-                          class="fas fa-check-circle text-primary-500 text-xs mt-1"
-                        ></i>
-                        <span>Deuil périnatal : Fausse couche, IMG, IVG…</span>
+                      <li>
+                        • Matelas chauffant, serviettes douces, plaids moelleux,
+                        bougies, voyage sonore … tout est pensé pour votre
+                        confort
                       </li>
                     </ul>
-                    <p class="text-accent-600 text-sm mt-3">
-                      Pour une raison symbolique, ce soin dit « de fermeture »
-                      est idéalement réalisable jusqu'au 9ème mois après
-                      l'accouchement. Mais il peut être reçu bien au-delà si le
-                      besoin se fait sentir.
+                  </div>
+                  <div class="bg-primary-50 rounded-xl p-4">
+                    <h4 class="font-semibold text-primary-700 mb-2">
+                      Temps d'intégration
+                    </h4>
+                    <p class="text-accent-600 text-sm">
+                      Boisson réconfortante, échange libre pour déposer vos
+                      émotions et votre ressenti, tirage de carte d'oracle
+                      (optionnel)
                     </p>
                   </div>
                 </div>
               </div>
 
               <div>
-                <div class="flex items-center gap-3 mb-6">
-                  <div
-                    class="flex items-center justify-center w-12 h-12 rounded-full bg-primary-100 text-primary-600"
-                  >
-                    <i class="fas fa-spa text-lg"></i>
-                  </div>
-                  <h3 class="font-display text-2xl font-bold text-primary-600">
-                    Déroulé de la séance
-                  </h3>
-                </div>
-                <div class="space-y-3">
-                  <div
-                    class="bg-white rounded-2xl p-5 border border-primary-100 shadow-sm hover:shadow-md transition"
-                  >
-                    <div class="flex items-start gap-3">
-                      <div
-                        class="flex items-center justify-center w-8 h-8 rounded-full bg-primary-100 text-primary-600 flex-shrink-0 mt-0.5"
-                      >
-                        <span class="font-bold text-sm">1</span>
-                      </div>
-                      <div>
-                        <p class="text-accent-700 font-semibold mb-1">
-                          Temps d'accueil et d'échange bienveillant
-                        </p>
-                        <p class="text-accent-600 text-sm">
-                          Autour de votre grossesse, accouchement, de votre vécu
-                          et de vos besoins.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="bg-white rounded-2xl p-5 border border-primary-100 shadow-sm hover:shadow-md transition"
-                  >
-                    <div class="flex items-start gap-3">
-                      <div
-                        class="flex items-center justify-center w-8 h-8 rounded-full bg-primary-100 text-primary-600 flex-shrink-0 mt-0.5"
-                      >
-                        <span class="font-bold text-sm">2</span>
-                      </div>
-                      <div>
-                        <p class="text-accent-700 font-semibold mb-1">
-                          Massage complet à la fois tonique et enveloppant
-                        </p>
-                        <p class="text-accent-600 text-sm mb-2">
-                          (en position ventrale puis dorsale)
-                        </p>
-                        <ul class="text-accent-600 text-sm space-y-1">
-                          <li class="flex items-start gap-2">
-                            <i
-                              class="fas fa-check text-primary-400 text-xs mt-1"
-                            ></i>
-                            <span
-                              >Tissus Rebozo appliqués sur la tête, le bassin et
-                              les pieds</span
-                            >
-                          </li>
-                          <li class="flex items-start gap-2">
-                            <i
-                              class="fas fa-check text-primary-400 text-xs mt-1"
-                            ></i>
-                            <span
-                              >Utilisation d'une huile végétale biologique pour
-                              nourrir et hydrater votre peau</span
-                            >
-                          </li>
-                          <li class="flex items-start gap-2">
-                            <i
-                              class="fas fa-check text-primary-400 text-xs mt-1"
-                            ></i>
-                            <span
-                              >Matelas chauffant, serviettes douces, plaids
-                              moelleux, bougies, voyage sonore … tout est pensé
-                              pour votre confort</span
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="bg-white rounded-2xl p-5 border border-primary-100 shadow-sm hover:shadow-md transition"
-                  >
-                    <div class="flex items-start gap-3">
-                      <div
-                        class="flex items-center justify-center w-8 h-8 rounded-full bg-primary-100 text-primary-600 flex-shrink-0 mt-0.5"
-                      >
-                        <span class="font-bold text-sm">3</span>
-                      </div>
-                      <div>
-                        <p class="text-accent-700 font-semibold mb-1">
-                          Temps d'intégration
-                        </p>
-                        <p class="text-accent-600 text-sm">
-                          Boisson réconfortante, échange libre pour déposer vos
-                          émotions et votre ressenti, tirage de carte d'oracle
-                          (optionnel)
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="bg-gradient-to-br from-primary-50 to-white rounded-2xl p-6 border border-primary-200 shadow-sm"
-              >
-                <div class="flex items-center gap-3 mb-4">
-                  <div
-                    class="flex items-center justify-center w-10 h-10 rounded-full bg-primary-500 text-white"
-                  >
-                    <i class="fas fa-suitcase"></i>
-                  </div>
-                  <h3 class="font-display text-xl font-bold text-primary-700">
-                    À domicile, je me déplace avec...
-                  </h3>
-                </div>
-                <p class="text-accent-600 leading-relaxed">
+                <h3
+                  class="font-display text-xl font-bold text-secondary-700 mb-4"
+                >
+                  À domicile, je me déplace avec...
+                </h3>
+                <p class="text-accent-600">
                   Table de massage, matelas chauffant, draps, serviettes,
                   plaids, tissus Rebozo, bâton de serrage, huile végétale bio,
                   bougies, enceinte.
                 </p>
               </div>
 
-              <div
-                class="bg-gradient-to-r from-accent-50 to-accent-100/30 rounded-2xl p-6 border border-accent-200 shadow-sm"
-              >
-                <div class="flex items-start gap-4">
-                  <div
-                    class="flex items-center justify-center w-10 h-10 rounded-full bg-accent-500 text-white flex-shrink-0"
-                  >
-                    <i class="fas fa-info"></i>
-                  </div>
-                  <div>
-                    <h4 class="font-semibold text-accent-700 mb-3">
-                      Contre-indications
-                    </h4>
-                    <ul class="text-accent-600 text-sm space-y-2">
-                      <li class="flex items-start gap-2">
-                        <i
-                          class="fas fa-circle text-accent-400 text-xs mt-1"
-                        ></i>
-                        <span>Fièvre, inflammation, phlébite</span>
-                      </li>
-                      <li class="flex items-start gap-2">
-                        <i
-                          class="fas fa-circle text-accent-400 text-xs mt-1"
-                        ></i>
-                        <span>Vaccin récent (-48h)</span>
-                      </li>
-                      <li class="flex items-start gap-2">
-                        <i
-                          class="fas fa-circle text-accent-400 text-xs mt-1"
-                        ></i>
-                        <span
-                          >Séance d'ostéopathie (-7 jours) ou de kinésithérapie
-                          (-48h)</span
-                        >
-                      </li>
-                    </ul>
-                    <p class="text-accent-600 text-sm mt-3 italic">
-                      En cas de césarienne, il est recommandé de réaliser le
-                      soin après un délai de 8 semaines.
-                    </p>
-                  </div>
-                </div>
+              <div class="bg-red-50 rounded-xl p-4 border border-red-200">
+                <h4 class="font-semibold text-red-800 mb-2">
+                  Contre-indications
+                </h4>
+                <ul class="text-red-700 text-sm space-y-1">
+                  <li>• Fièvre, inflammation, phlébite</li>
+                  <li>• Vaccin récent (-48h)</li>
+                  <li>
+                    • Séance d'ostéopathie (-7 jours) ou de kinésithérapie
+                    (-48h)
+                  </li>
+                </ul>
+                <p class="text-red-700 text-sm mt-2">
+                  En cas de césarienne, il est recommandé de réaliser le soin
+                  après un délai de 8 semaines.
+                </p>
               </div>
             </div>
           </div>
@@ -2954,66 +2627,38 @@
         class="bg-white rounded-3xl max-w-4xl w-full max-h-screen overflow-y-auto shadow-2xl"
       >
         <div class="relative">
-          <!-- Header avec dégradé -->
-          <div
-            class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-secondary-400 via-primary-300 to-secondary-400 rounded-t-3xl"
-          ></div>
-
           <button
             onclick="closeModal('modal5')"
-            class="absolute top-4 right-4 w-10 h-10 bg-secondary-100 hover:bg-secondary-200 rounded-full flex items-center justify-center transition-all hover:scale-110 z-10 shadow-sm"
+            class="absolute top-4 right-4 w-10 h-10 bg-gray-200 hover:bg-gray-300 rounded-full flex items-center justify-center transition-colors z-10"
           >
-            <i class="fas fa-times text-secondary-600"></i>
+            <i class="fas fa-times text-accent-600"></i>
           </button>
-          <div class="p-8 pt-10">
+          <div class="p-8">
             <div class="text-center mb-8">
-              <div class="relative inline-block mb-6">
-                <img
-                  src="assets/img/la petite berceuse/Serrage_de_bassin2.jpg"
-                  alt="Le serrage de bassin"
-                  class="w-full max-w-lg mx-auto rounded-2xl shadow-lg"
-                />
-                <div
-                  class="absolute -bottom-4 left-1/2 transform -translate-x-1/2"
-                >
-                  <div
-                    class="flex items-center gap-4 bg-white rounded-full px-6 py-3 shadow-lg border border-secondary-100"
-                  >
-                    <span class="flex items-center gap-2">
-                      <i class="fas fa-tag text-secondary-500"></i>
-                      <span class="text-xl font-bold text-secondary-600"
-                        >40€</span
-                      >
-                    </span>
-                    <span class="w-px h-6 bg-gray-200"></span>
-                    <span class="flex items-center gap-2 text-accent-600">
-                      <i class="fas fa-clock text-secondary-500"></i>
-                      <span class="font-semibold">1h</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-
+              <img
+                src="assets/img/la petite berceuse/Serrage_de_bassin2.jpg"
+                alt="Le serrage de bassin"
+                class="w-full max-w-lg mx-auto rounded-2xl shadow-lg mb-6"
+              />
               <h2
-                class="font-display text-3xl font-bold text-secondary-600 mb-6 mt-8"
+                class="font-display text-3xl font-bold text-secondary-700 mb-4"
               >
                 Le serrage de bassin
               </h2>
-
-              <div
-                class="relative bg-gradient-to-r from-secondary-50 via-white to-secondary-50 rounded-2xl p-6 border border-secondary-200 shadow-sm"
-              >
-                <i
-                  class="fas fa-quote-left text-secondary-200 text-3xl absolute top-4 left-4"
-                ></i>
-                <p
-                  class="text-lg font-medium text-accent-700 italic relative z-10"
+              <div class="flex justify-center items-center space-x-6 text-lg">
+                <span
+                  class="bg-secondary-100 text-secondary-700 px-4 py-2 rounded-full font-semibold"
+                  >40€</span
                 >
-                  Une invitation à se recentrer, à refermer pour mieux renaître
+                <span class="text-accent-600">1h</span>
+              </div>
+              <div
+                class="bg-gradient-to-r from-secondary-100 to-secondary-50 rounded-2xl p-4 border-l-4 border-secondary-400 mt-6"
+              >
+                <p class="text-lg font-medium text-accent-700 italic">
+                  « Une invitation à se recentrer, à refermer pour mieux
+                  renaître »
                 </p>
-                <i
-                  class="fas fa-quote-right text-secondary-200 text-3xl absolute bottom-4 right-4"
-                ></i>
               </div>
             </div>
 
@@ -3041,328 +2686,159 @@
               </div>
 
               <div>
-                <div class="flex items-center gap-3 mb-6">
-                  <div
-                    class="flex items-center justify-center w-12 h-12 rounded-full bg-secondary-100 text-secondary-600"
-                  >
-                    <i class="fas fa-leaf text-lg"></i>
+                <h3
+                  class="font-display text-xl font-bold text-secondary-700 mb-4"
+                >
+                  Bienfaits physiques après une grossesse et un accouchement
+                </h3>
+                <div class="space-y-2">
+                  <div class="flex items-start space-x-3">
+                    <i class="fas fa-circle-check text-secondary-500 mt-1"></i>
+                    <span class="text-accent-600"
+                      >Sensation agréable de se sentir « refermée » (après avoir
+                      connu l'impression de « s'élargir » et d'être « ouverte »
+                      lié à l'enfantement)</span
+                    >
                   </div>
-                  <h3
-                    class="font-display text-2xl font-bold text-secondary-600"
-                  >
-                    Bienfaits physiques après une grossesse et un accouchement
-                  </h3>
-                </div>
-                <div class="space-y-3">
-                  <div
-                    class="bg-white rounded-2xl p-4 border border-secondary-100 shadow-sm hover:shadow-md transition"
-                  >
-                    <div class="flex items-start gap-3">
-                      <div
-                        class="flex items-center justify-center w-10 h-10 rounded-full bg-secondary-100 text-secondary-600 flex-shrink-0"
-                      >
-                        <i class="fas fa-check"></i>
-                      </div>
-                      <p class="text-accent-600 leading-relaxed">
-                        Sensation agréable de se sentir « refermée » (après
-                        avoir connu l'impression de « s'élargir » et d'être «
-                        ouverte » lié à l'enfantement)
-                      </p>
-                    </div>
+                  <div class="flex items-start space-x-3">
+                    <i class="fas fa-circle-check text-secondary-500 mt-1"></i>
+                    <span class="text-accent-600"
+                      >Soulager certaines douleurs (tendons, muscles et
+                      articulations mis à rude épreuve durant plusieurs
+                      mois)</span
+                    >
                   </div>
-
-                  <div
-                    class="bg-white rounded-2xl p-4 border border-secondary-100 shadow-sm hover:shadow-md transition"
-                  >
-                    <div class="flex items-start gap-3">
-                      <div
-                        class="flex items-center justify-center w-10 h-10 rounded-full bg-secondary-100 text-secondary-600 flex-shrink-0"
-                      >
-                        <i class="fas fa-check"></i>
-                      </div>
-                      <p class="text-accent-600 leading-relaxed">
-                        Soulager certaines douleurs (tendons, muscles et
-                        articulations mis à rude épreuve durant plusieurs mois)
-                      </p>
-                    </div>
+                  <div class="flex items-start space-x-3">
+                    <i class="fas fa-circle-check text-secondary-500 mt-1"></i>
+                    <span class="text-accent-600"
+                      >Soutenir les organes internes et les aider à retrouver
+                      leur place originelle</span
+                    >
                   </div>
-
-                  <div
-                    class="bg-white rounded-2xl p-4 border border-secondary-100 shadow-sm hover:shadow-md transition"
-                  >
-                    <div class="flex items-start gap-3">
-                      <div
-                        class="flex items-center justify-center w-10 h-10 rounded-full bg-secondary-100 text-secondary-600 flex-shrink-0"
-                      >
-                        <i class="fas fa-check"></i>
-                      </div>
-                      <p class="text-accent-600 leading-relaxed">
-                        Soutenir les organes internes et les aider à retrouver
-                        leur place originelle
-                      </p>
-                    </div>
-                  </div>
-
-                  <div
-                    class="bg-white rounded-2xl p-4 border border-secondary-100 shadow-sm hover:shadow-md transition"
-                  >
-                    <div class="flex items-start gap-3">
-                      <div
-                        class="flex items-center justify-center w-10 h-10 rounded-full bg-secondary-100 text-secondary-600 flex-shrink-0"
-                      >
-                        <i class="fas fa-check"></i>
-                      </div>
-                      <p class="text-accent-600 leading-relaxed">
-                        Préparation bénéfique à la rééducation du périnée
-                      </p>
-                    </div>
+                  <div class="flex items-start space-x-3">
+                    <i class="fas fa-circle-check text-secondary-500 mt-1"></i>
+                    <span class="text-accent-600"
+                      >Préparation bénéfique à la rééducation du périnée</span
+                    >
                   </div>
                 </div>
               </div>
 
               <div
-                class="bg-gradient-to-r from-secondary-50 to-secondary-100/50 rounded-2xl p-5 border border-secondary-200 shadow-sm"
+                class="bg-secondary-50 rounded-xl p-4 border border-secondary-200"
               >
-                <div class="flex items-center gap-3">
-                  <div
-                    class="flex items-center justify-center w-10 h-10 rounded-full bg-secondary-500 text-white"
-                  >
-                    <i class="fas fa-heart"></i>
-                  </div>
-                  <div>
-                    <p class="font-semibold text-secondary-700 mb-2">
-                      Pour qui ?
-                    </p>
-                    <div class="space-y-2 text-accent-600 text-sm">
-                      <p>
-                        <strong>Pour les jeunes mamans en post partum</strong>
-                        afin de clore cette période de grossesse
-                      </p>
-                      <p><strong>Mais pas que…</strong></p>
-                      <p>
-                        Pour toute femme vivant une transition de vie (arrivée
-                        des règles, rupture amoureuse, ménopause, deuil
-                        périnatal, EVJF, etc…).
-                      </p>
-                      <p>
-                        <strong>Et plus globalement…</strong> Pour toutes les
-                        femmes si ce soin interpelle leur cœur et qu'elles
-                        éprouvent un besoin de recentrage, de contenance et
-                        d'ancrage profond.
-                      </p>
-                    </div>
-                  </div>
+                <h4 class="font-semibold text-secondary-800 mb-2">
+                  Pour qui ?
+                </h4>
+                <div class="space-y-2 text-secondary-700 text-sm">
+                  <p>
+                    <strong>Pour les jeunes mamans en post partum</strong> afin
+                    de clore cette période de grossesse
+                  </p>
+                  <p><strong>Mais pas que…</strong></p>
+                  <p>
+                    Pour toute femme vivant une transition de vie (arrivée des
+                    règles, rupture amoureuse, ménopause, deuil périnatal, EVJF,
+                    etc…).
+                  </p>
+                  <p>
+                    <strong>Et plus globalement…</strong> Pour toutes les femmes
+                    si ce soin interpelle leur cœur et qu'elles éprouvent un
+                    besoin de recentrage, de contenance et d'ancrage profond.
+                  </p>
                 </div>
               </div>
 
-              <div
-                class="bg-gradient-to-r from-primary-50 to-primary-100/50 rounded-2xl p-5 border border-primary-200 shadow-sm"
-              >
-                <div class="flex items-center gap-3">
-                  <div
-                    class="flex items-center justify-center w-10 h-10 rounded-full bg-primary-500 text-white"
-                  >
-                    <i class="fas fa-info-circle"></i>
-                  </div>
-                  <div>
+              <div class="bg-purple-50 rounded-xl p-4 border border-purple-200">
+                <p class="text-purple-800 text-sm">
+                  <strong>⚡ Important :</strong> Le serrage de bassin est
+                  différent du « soin rituel rebozo » qui dure 3h et comprend un
+                  massage à 4 mains, un temps de sudation, un temps
+                  d'enveloppement, un temps de resserrage de 7 points du corps
+                  et une boisson médicinale.
+                </p>
+              </div>
+
+              <div>
+                <h3
+                  class="font-display text-xl font-bold text-secondary-700 mb-4"
+                >
+                  Déroulé du soin
+                </h3>
+                <div class="space-y-4">
+                  <div class="bg-secondary-50 rounded-xl p-4">
+                    <h4 class="font-semibold text-secondary-700 mb-2">
+                      Temps d'accueil et d'échange
+                    </h4>
                     <p class="text-accent-600 text-sm">
-                      <strong>Important :</strong> Le serrage de bassin est
-                      différent du « soin rituel rebozo » qui dure 3h et
-                      comprend un massage à 4 mains, un temps de sudation, un
-                      temps d'enveloppement, un temps de resserrage de 7 points
-                      du corps et une boisson médicinale.
+                      Sur votre parcours, afin de comprendre votre vécu et votre
+                      démarche.
+                    </p>
+                  </div>
+                  <div class="bg-secondary-50 rounded-xl p-4">
+                    <h4 class="font-semibold text-secondary-700 mb-2">
+                      Soin au sol (30 minutes)
+                    </h4>
+                    <ul class="text-accent-600 text-sm space-y-1 ml-4">
+                      <li>• Installation sur tapis avec matelas chauffant</li>
+                      <li>• Utilisation de Rebozo traditionnels mexicains</li>
+                      <li>
+                        • Techniques douces de bercements, étirements,
+                        enveloppements, contenances et serrages de 4 points clés
+                        du corps
+                      </li>
+                      <li>
+                        • L'attention est principalement portée sur le bassin
+                        durant lequel vous pouvez apprécier le moment présent et
+                        envisager une introspection profonde
+                      </li>
+                      <li>
+                        • Ambiance apaisante avec voyage sonore et bougies pour
+                        accompagner votre lâcher-prise
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="bg-secondary-50 rounded-xl p-4">
+                    <h4 class="font-semibold text-secondary-700 mb-2">
+                      Temps d'intégration
+                    </h4>
+                    <p class="text-accent-600 text-sm">
+                      Boisson réconfortante, échange libre pour déposer vos
+                      émotions et votre ressenti, tirage de carte d'oracle
+                      (optionnel).
                     </p>
                   </div>
                 </div>
               </div>
 
               <div>
-                <div class="flex items-center gap-3 mb-6">
-                  <div
-                    class="flex items-center justify-center w-12 h-12 rounded-full bg-secondary-100 text-secondary-600"
-                  >
-                    <i class="fas fa-spa text-lg"></i>
-                  </div>
-                  <h3
-                    class="font-display text-2xl font-bold text-secondary-600"
-                  >
-                    Déroulé du soin
-                  </h3>
-                </div>
-                <div class="space-y-3">
-                  <div
-                    class="bg-white rounded-2xl p-5 border border-secondary-100 shadow-sm hover:shadow-md transition"
-                  >
-                    <div class="flex items-start gap-3">
-                      <div
-                        class="flex items-center justify-center w-8 h-8 rounded-full bg-secondary-100 text-secondary-600 flex-shrink-0 mt-0.5"
-                      >
-                        <span class="font-bold text-sm">1</span>
-                      </div>
-                      <div>
-                        <p class="text-accent-700 font-semibold mb-1">
-                          Temps d'accueil et d'échange
-                        </p>
-                        <p class="text-accent-600 text-sm">
-                          Sur votre parcours, afin de comprendre votre vécu et
-                          votre démarche.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="bg-white rounded-2xl p-5 border border-secondary-100 shadow-sm hover:shadow-md transition"
-                  >
-                    <div class="flex items-start gap-3">
-                      <div
-                        class="flex items-center justify-center w-8 h-8 rounded-full bg-secondary-100 text-secondary-600 flex-shrink-0 mt-0.5"
-                      >
-                        <span class="font-bold text-sm">2</span>
-                      </div>
-                      <div>
-                        <p class="text-accent-700 font-semibold mb-1">
-                          Soin au sol (30 minutes)
-                        </p>
-                        <ul class="text-accent-600 text-sm space-y-1">
-                          <li class="flex items-start gap-2">
-                            <i
-                              class="fas fa-check text-secondary-400 text-xs mt-1"
-                            ></i>
-                            <span
-                              >Installation sur tapis avec matelas
-                              chauffant</span
-                            >
-                          </li>
-                          <li class="flex items-start gap-2">
-                            <i
-                              class="fas fa-check text-secondary-400 text-xs mt-1"
-                            ></i>
-                            <span
-                              >Utilisation de Rebozo traditionnels
-                              mexicains</span
-                            >
-                          </li>
-                          <li class="flex items-start gap-2">
-                            <i
-                              class="fas fa-check text-secondary-400 text-xs mt-1"
-                            ></i>
-                            <span
-                              >Techniques douces de bercements, étirements,
-                              enveloppements, contenances et serrages de 4
-                              points clés du corps</span
-                            >
-                          </li>
-                          <li class="flex items-start gap-2">
-                            <i
-                              class="fas fa-check text-secondary-400 text-xs mt-1"
-                            ></i>
-                            <span
-                              >L'attention est principalement portée sur le
-                              bassin durant lequel vous pouvez apprécier le
-                              moment présent et envisager une introspection
-                              profonde</span
-                            >
-                          </li>
-                          <li class="flex items-start gap-2">
-                            <i
-                              class="fas fa-check text-secondary-400 text-xs mt-1"
-                            ></i>
-                            <span
-                              >Ambiance apaisante avec voyage sonore et bougies
-                              pour accompagner votre lâcher-prise</span
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="bg-white rounded-2xl p-5 border border-secondary-100 shadow-sm hover:shadow-md transition"
-                  >
-                    <div class="flex items-start gap-3">
-                      <div
-                        class="flex items-center justify-center w-8 h-8 rounded-full bg-secondary-100 text-secondary-600 flex-shrink-0 mt-0.5"
-                      >
-                        <span class="font-bold text-sm">3</span>
-                      </div>
-                      <div>
-                        <p class="text-accent-700 font-semibold mb-1">
-                          Temps d'intégration
-                        </p>
-                        <p class="text-accent-600 text-sm">
-                          Boisson réconfortante, échange libre pour déposer vos
-                          émotions et votre ressenti, tirage de carte d'oracle
-                          (optionnel).
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="bg-gradient-to-br from-secondary-50 to-white rounded-2xl p-6 border border-secondary-200 shadow-sm"
-              >
-                <div class="flex items-center gap-3 mb-4">
-                  <div
-                    class="flex items-center justify-center w-10 h-10 rounded-full bg-secondary-500 text-white"
-                  >
-                    <i class="fas fa-suitcase"></i>
-                  </div>
-                  <h3 class="font-display text-xl font-bold text-secondary-700">
-                    À domicile, je me déplace avec…
-                  </h3>
-                </div>
-                <p class="text-accent-600 leading-relaxed">
+                <h3
+                  class="font-display text-xl font-bold text-secondary-700 mb-4"
+                >
+                  À domicile, je me déplace avec…
+                </h3>
+                <p class="text-accent-600">
                   Tapis de sol, matelas chauffant, tissus Rebozo, bâton de
                   serrage, bougies, enceinte.
                 </p>
               </div>
 
-              <div
-                class="bg-gradient-to-r from-accent-50 to-accent-100/30 rounded-2xl p-6 border border-accent-200 shadow-sm"
-              >
-                <div class="flex items-start gap-4">
-                  <div
-                    class="flex items-center justify-center w-10 h-10 rounded-full bg-accent-500 text-white flex-shrink-0"
-                  >
-                    <i class="fas fa-info"></i>
-                  </div>
-                  <div>
-                    <h4 class="font-semibold text-accent-700 mb-3">
-                      Contre-indications
-                    </h4>
-                    <ul class="text-accent-600 text-sm space-y-2">
-                      <li class="flex items-start gap-2">
-                        <i
-                          class="fas fa-circle text-accent-400 text-xs mt-1"
-                        ></i>
-                        <span>Fièvre, inflammation, phlébite</span>
-                      </li>
-                      <li class="flex items-start gap-2">
-                        <i
-                          class="fas fa-circle text-accent-400 text-xs mt-1"
-                        ></i>
-                        <span>Vaccin récent (-48h)</span>
-                      </li>
-                      <li class="flex items-start gap-2">
-                        <i
-                          class="fas fa-circle text-accent-400 text-xs mt-1"
-                        ></i>
-                        <span
-                          >Séance d'ostéopathie (-7 jours) ou de kinésithérapie
-                          (-48h)</span
-                        >
-                      </li>
-                    </ul>
-                    <p class="text-accent-600 text-sm mt-3 italic">
-                      En cas de césarienne, il est recommandé de réaliser le
-                      soin après un délai de 8 semaines.
-                    </p>
-                  </div>
-                </div>
+              <div class="bg-red-50 rounded-xl p-4 border border-red-200">
+                <h4 class="font-semibold text-red-800 mb-2">
+                  Contre-indications
+                </h4>
+                <ul class="text-red-700 text-sm space-y-1">
+                  <li>• Fièvre, inflammation, phlébite</li>
+                  <li>• Vaccin récent (-48h)</li>
+                  <li>
+                    • Séance d'ostéopathie (-7 jours) ou de kinésithérapie
+                    (-48h)
+                  </li>
+                </ul>
+                <p class="text-red-700 text-sm mt-2">
+                  En cas de césarienne, il est recommandé de réaliser le soin
+                  après un délai de 8 semaines.
+                </p>
               </div>
             </div>
           </div>

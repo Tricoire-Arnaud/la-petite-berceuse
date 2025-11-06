@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>À propos de moi – La Petite Berceuse</title>
+    <meta
+      name="description"
+      content="Découvrez mon parcours, mes formations et ma passion pour l'accompagnement périnatal."
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                50: "#FFF5F5",
+                100: "#FFE5E5",
+                200: "#FFCCCC",
+                300: "#FFB3B3",
+                400: "#FF9CA0",
+                500: "#FF9CA0",
+                600: "#FF9CA0",
+                700: "#FF9CA0",
+                800: "#CC7D80",
+                900: "#995E60",
+              },
+              secondary: {
+                50: "#F2F7F0",
+                100: "#E5EFE1",
+                200: "#CBDFC3",
+                300: "#B1CFA5",
+                400: "#8BB883",
+                500: "#8BB883",
+                600: "#8BB883",
+                700: "#6F9369",
+                800: "#536E4F",
+                900: "#374A35",
+              },
+              accent: {
+                50: "#F9F9F9",
+                100: "#F4F4F4",
+                200: "#EEEEEE",
+                300: "#D9D9D9",
+                400: "#989898",
+                500: "#545454",
+                600: "#545454",
+                700: "#545454",
+                800: "#434343",
+                900: "#323232",
+              },
+            },
+            fontFamily: {
+              display: ["Georgia", "serif"],
+              body: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body class="font-body text-accent-600 bg-white">
+    <header class="border-b border-gray-100 bg-white/95 shadow-sm">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col gap-4 py-6 sm:flex-row sm:items-center sm:justify-between">
+          <div class="flex items-center gap-3">
+            <a
+              href="index.html"
+              class="inline-flex items-center gap-3 rounded-2xl border border-white/70 bg-white px-3 py-2 shadow-sm hover:shadow-md transition"
+            >
+              <img
+                src="assets/img/la petite berceuse/logo petite berceuse.png"
+                alt="La Petite Berceuse"
+                class="h-12 w-auto"
+              />
+              <div class="flex flex-col">
+                <span class="font-display text-lg font-bold text-secondary-700"
+                  >La Petite Berceuse</span
+                >
+                <span class="text-sm text-accent-500"
+                  >Accompagnement périnatal</span
+                >
+              </div>
+            </a>
+            <span class="hidden sm:block text-sm text-accent-500">
+              À propos de moi
+            </span>
+          </div>
+          <a
+            href="index.html#contact"
+            class="inline-flex items-center gap-2 rounded-full bg-secondary-500 px-5 py-2.5 text-white font-semibold shadow-sm transition hover:bg-secondary-600"
+          >
+            <i class="fas fa-calendar-check"></i>
+            <span>Prendre rendez-vous</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="py-16 bg-primary-50/30">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl text-center space-y-6 text-accent-600">
+            <h1 class="font-display text-4xl sm:text-5xl font-bold text-primary-500">
+              À propos de moi
+            </h1>
+            <p class="text-lg">
+              Infirmière de formation et passionnée par la maternité, je vous accompagne avec bienveillance dans cette période unique de votre vie.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-4xl space-y-12 text-accent-600">
+            
+            <!-- Qui suis-je -->
+            <div class="bg-gradient-to-br from-primary-50 to-white rounded-3xl p-8 border border-primary-200 shadow-lg">
+              <div class="flex items-center gap-4 mb-6">
+                <div class="flex items-center justify-center w-16 h-16 rounded-full bg-primary-500 text-white shadow-lg">
+                  <i class="fas fa-user-nurse text-2xl"></i>
+                </div>
+                <h2 class="font-display text-3xl font-bold text-primary-500">
+                  Qui suis-je ?
+                </h2>
+              </div>
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div class="bg-white/80 rounded-2xl p-4 border border-primary-100 shadow-sm hover:shadow-md transition">
+                  <div class="flex items-center gap-3">
+                    <div class="flex items-center justify-center w-12 h-12 rounded-full bg-primary-100 text-primary-600">
+                      <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <p class="font-semibold text-accent-700">Infirmière de formation</p>
+                  </div>
+                </div>
+                <div class="bg-white/80 rounded-2xl p-4 border border-primary-100 shadow-sm hover:shadow-md transition">
+                  <div class="flex items-center gap-3">
+                    <div class="flex items-center justify-center w-12 h-12 rounded-full bg-primary-100 text-primary-600">
+                      <i class="fas fa-award"></i>
+                    </div>
+                    <p class="font-semibold text-accent-700">Ambassadrice de l'école du bien-naître</p>
+                  </div>
+                </div>
+                <div class="bg-white/80 rounded-2xl p-4 border border-primary-100 shadow-sm hover:shadow-md transition">
+                  <div class="flex items-center gap-3">
+                    <div class="flex items-center justify-center w-12 h-12 rounded-full bg-primary-100 text-primary-600">
+                      <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <p class="font-semibold text-accent-700">+8 ans d'expérience en tant qu'infirmière</p>
+                  </div>
+                </div>
+                <div class="bg-white/80 rounded-2xl p-4 border border-primary-100 shadow-sm hover:shadow-md transition">
+                  <div class="flex items-center gap-3">
+                    <div class="flex items-center justify-center w-12 h-12 rounded-full bg-primary-100 text-primary-600">
+                      <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <p class="font-semibold text-accent-700">+14 formations en périnatalité</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Passion et vocation -->
+            <div class="bg-white rounded-3xl p-8 border border-secondary-100 shadow-lg">
+              <div class="flex items-start gap-4 mb-6">
+                <div class="flex items-center justify-center w-14 h-14 rounded-full bg-secondary-100 text-secondary-600">
+                  <i class="fas fa-seedling text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="font-display text-2xl font-bold text-secondary-700 mb-2">
+                    Une passion née d'une vocation
+                  </h3>
+                  <div class="space-y-4 leading-relaxed text-accent-600">
+                    <p>
+                      D'aussi loin que je me souvienne, j'ai toujours été passionnée par la maternité. Très jeune, j'ai compris que je voulais prendre soin des autres, en particulier des femmes, des mères, et des nouveau-nés qui nous rejoignent dans ce monde.
+                    </p>
+                    <p>
+                      Pour moi, la maternité est un passage puissant. Elle nous relie à quelque chose de plus grand, de plus vaste que nous. Je me suis souvent sentie toute petite face à l'immensité de la vie. Un jour, une femme que j'ai rencontrée m'a dit : "Tu es venue sur Terre pour soigner la vie et donner la vie. » Depuis, ces mots résonnent comme une mission de vie.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Parcours professionnel -->
+            <div class="bg-white rounded-3xl p-8 border border-primary-100 shadow-lg">
+              <div class="flex items-start gap-4 mb-6">
+                <div class="flex items-center justify-center w-14 h-14 rounded-full bg-primary-100 text-primary-600">
+                  <i class="fas fa-hospital text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="font-display text-2xl font-bold text-primary-600 mb-2">
+                    Mon parcours d'infirmière
+                  </h3>
+                  <div class="space-y-4 leading-relaxed text-accent-600">
+                    <p>
+                      Infirmière depuis 2017, j'ai travaillé au sein de différents hôpitaux et cliniques, dans une grande diversité de services : auprès des enfants, des adultes, des personnes âgées, des personnes en situation de handicap, des personnes sans-abri… J'ai connu les urgences, la précarité, l'épuisement, la surcharge et le stress.
+                    </p>
+                    <p>
+                      Après deux vagues Covid en région parisienne, j'ai eu ce besoin de revenir à l'essentiel. De redéfinir ma façon de prendre soin, dans un système où l'humain n'est plus la priorité.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Voyage et transformation -->
+            <div class="bg-gradient-to-r from-secondary-50 via-white to-secondary-50 rounded-3xl p-8 border border-secondary-200 shadow-lg">
+              <div class="flex items-start gap-4 mb-6">
+                <div class="flex items-center justify-center w-14 h-14 rounded-full bg-secondary-200 text-secondary-700">
+                  <i class="fas fa-globe-africa text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="font-display text-2xl font-bold text-secondary-700 mb-2">
+                    Un voyage qui change tout
+                  </h3>
+                  <div class="space-y-4 leading-relaxed text-accent-600">
+                    <p>
+                      Alors je suis partie en mission de volontariat au Togo, un voyage qui a bouleversé mon regard. Là-bas, la maternité est instinctive, honorée, et surtout entourée.
+                    </p>
+                    <div class="bg-white/60 rounded-2xl p-6 border-l-4 border-secondary-500">
+                      <p class="font-semibold text-secondary-700 text-lg italic">
+                        J'y ai vu des femmes belles tant je les ai trouvées fortes.
+                      </p>
+                    </div>
+                    <p>
+                      À mon retour, j'ai souhaité accompagner la maternité avec une approche psycho-émotionnelle. Je me suis formée en périnatalité, j'ai étudié, beaucoup lu, et intégré à plein temps un service de néonatalogie. Mais je me heurtais une fois de plus aux mêmes problématiques. C'est pourquoi, en 2024, j'ai créé mon entreprise pour accompagner les familles à domicile, là où tout se vit sans filtre.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Devenir mère -->
+            <div class="bg-white rounded-3xl p-8 border border-primary-100 shadow-lg">
+              <div class="flex items-start gap-4 mb-6">
+                <div class="flex items-center justify-center w-14 h-14 rounded-full bg-primary-100 text-primary-600">
+                  <i class="fas fa-heart text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="font-display text-2xl font-bold text-primary-600 mb-2">
+                    Devenir mère à mon tour
+                  </h3>
+                  <div class="space-y-4 leading-relaxed text-accent-600">
+                    <p>
+                      En 2025, je suis devenue mère à mon tour. Ce que j'avais vu chez les autres, je l'ai alors vécu dans mon corps, dans mes tripes. J'ai connu la peur, les doutes, les pleurs et surtout l'amour.
+                    </p>
+                    <p>
+                      Alors j'ai imaginé mon cabinet. Un petit espace simple, mais chaleureux. Pour vous recevoir telle que vous êtes : épuisée, heureuse, fatiguée, bouleversée. Un lieu que j'aurais aimé trouver durant ma propre maternité.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pourquoi La petite berceuse -->
+            <div class="bg-gradient-to-br from-secondary-100 via-secondary-50 to-white rounded-3xl p-8 border border-secondary-300 shadow-xl">
+              <div class="flex items-center gap-4 mb-6">
+                <div class="flex items-center justify-center w-16 h-16 rounded-full bg-secondary-500 text-white shadow-lg">
+                  <i class="fas fa-moon text-2xl"></i>
+                </div>
+                <h3 class="font-display text-2xl font-bold text-secondary-700">
+                  Pourquoi « La petite berceuse » ?
+                </h3>
+              </div>
+              <div class="space-y-4 leading-relaxed text-accent-600">
+                <p>
+                  Le fœtus est en perpétuel bercements dans le ventre de sa mère. Les nouveau-nés et les adultes demeurent sensibles aux bercements physiques et psychiques.
+                </p>
+                <p>
+                  C'est pourquoi, j'ai décidé de devenir « La petite berceuse » : celle qui berce physiquement grâce aux soins proposés, mais aussi psycho-émotionnellement : je vous accompagne et vous épaule avec passion et bienveillance.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h2 class="font-display text-3xl font-bold text-secondary-600 mb-8">
+                Mes formations
+              </h2>
+              
+              <!-- 2017 - Diplôme -->
+              <div class="mb-8">
+                <div class="flex items-center gap-3 mb-4">
+                  <div class="flex items-center justify-center w-16 h-16 rounded-full bg-primary-100 text-primary-600 font-bold text-lg">
+                    2017
+                  </div>
+                  <h3 class="font-display text-xl font-bold text-primary-600">
+                    Formation initiale
+                  </h3>
+                </div>
+                <div class="ml-20">
+                  <div class="bg-gradient-to-r from-primary-50 to-white rounded-2xl p-6 border border-primary-200 shadow-sm">
+                    <div class="flex items-start gap-4">
+                      <div class="flex items-center justify-center w-12 h-12 rounded-full bg-primary-200 text-primary-700">
+                        <i class="fas fa-graduation-cap text-lg"></i>
+                      </div>
+                      <div>
+                        <h4 class="font-semibold text-accent-700 mb-1">
+                          Diplôme d'état d'infirmier
+                        </h4>
+                        <p class="text-sm text-accent-500">IFSI de Chartres</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2021 - Formations -->
+              <div class="mb-8">
+                <div class="flex items-center gap-3 mb-4">
+                  <div class="flex items-center justify-center w-16 h-16 rounded-full bg-secondary-100 text-secondary-700 font-bold text-lg">
+                    2021
+                  </div>
+                  <h3 class="font-display text-xl font-bold text-secondary-700">
+                    Spécialisations en périnatalité
+                  </h3>
+                </div>
+                <div class="ml-20 grid gap-4">
+                  <div class="bg-white rounded-2xl p-5 border border-secondary-100 shadow-sm hover:shadow-md transition">
+                    <div class="flex items-start gap-3">
+                      <div class="flex items-center justify-center w-10 h-10 rounded-full bg-secondary-100 text-secondary-600">
+                        <i class="fas fa-baby text-sm"></i>
+                      </div>
+                      <div class="flex-1">
+                        <h4 class="font-semibold text-accent-700">Allaitement initiation</h4>
+                        <p class="text-sm text-accent-500">Nathalie Hendleman, Sage femme et consultante en lactation IBCLC</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 border border-secondary-100 shadow-sm hover:shadow-md transition">
+                    <div class="flex items-start gap-3">
+                      <div class="flex items-center justify-center w-10 h-10 rounded-full bg-secondary-100 text-secondary-600">
+                        <i class="fas fa-baby text-sm"></i>
+                      </div>
+                      <div class="flex-1">
+                        <h4 class="font-semibold text-accent-700">Allaitement perfectionnement</h4>
+                        <p class="text-sm text-accent-500">Delphine Dumoulins, puéricultrice et consultante en lactation IBCLC</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 border border-secondary-100 shadow-sm hover:shadow-md transition">
+                    <div class="flex items-start gap-3">
+                      <div class="flex items-center justify-center w-10 h-10 rounded-full bg-secondary-100 text-secondary-600">
+                        <i class="fas fa-heart text-sm"></i>
+                      </div>
+                      <div class="flex-1">
+                        <h4 class="font-semibold text-accent-700">Approcher l'in utero</h4>
+                        <p class="text-sm text-accent-500">Nathalie Lancelin, psychologue spécialisée en périnatalité</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 border border-secondary-100 shadow-sm hover:shadow-md transition">
+                    <div class="flex items-start gap-3">
+                      <div class="flex items-center justify-center w-10 h-10 rounded-full bg-secondary-100 text-secondary-600">
+                        <i class="fas fa-hand-holding-heart text-sm"></i>
+                      </div>
+                      <div class="flex-1">
+                        <h4 class="font-semibold text-accent-700">Douleur du nouveau-né</h4>
+                        <p class="text-sm text-accent-500">Olivier Mercadier, infirmier en pédiatrie, diplômé en douleur, psychologie de l'enfant, hypnose médicale et hypo-analgésie</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 border border-secondary-100 shadow-sm hover:shadow-md transition">
+                    <div class="flex items-start gap-3">
+                      <div class="flex items-center justify-center w-10 h-10 rounded-full bg-secondary-100 text-secondary-600">
+                        <i class="fas fa-spa text-sm"></i>
+                      </div>
+                      <div class="flex-1">
+                        <h4 class="font-semibold text-accent-700">Massage femme enceinte</h4>
+                        <p class="text-sm text-accent-500">Dorothée Danloue, praticienne en massages et formatrice spécialisée en périnatalité</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 border border-secondary-100 shadow-sm hover:shadow-md transition">
+                    <div class="flex items-start gap-3">
+                      <div class="flex items-center justify-center w-10 h-10 rounded-full bg-secondary-100 text-secondary-600">
+                        <i class="fas fa-moon text-sm"></i>
+                      </div>
+                      <div class="flex-1">
+                        <h4 class="font-semibold text-accent-700">Sommeil bébé Niveau 1</h4>
+                        <p class="text-sm text-accent-500">Nathalie Debrock, Pharmacienne et experte en sommeil</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 border border-secondary-100 shadow-sm hover:shadow-md transition">
+                    <div class="flex items-start gap-3">
+                      <div class="flex items-center justify-center w-10 h-10 rounded-full bg-secondary-100 text-secondary-600">
+                        <i class="fas fa-child text-sm"></i>
+                      </div>
+                      <div class="flex-1">
+                        <h4 class="font-semibold text-accent-700">Initiation au portage</h4>
+                        <p class="text-sm text-accent-500">Cendrine Calvary, monitrice et formatrice au portage</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 border border-secondary-100 shadow-sm hover:shadow-md transition">
+                    <div class="flex items-start gap-3">
+                      <div class="flex items-center justify-center w-10 h-10 rounded-full bg-secondary-100 text-secondary-600">
+                        <i class="fas fa-hands text-sm"></i>
+                      </div>
+                      <div class="flex-1">
+                        <h4 class="font-semibold text-accent-700">Massage bébé</h4>
+                        <p class="text-sm text-accent-500">Sarah Karp, sage-femme et ostéopathe</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2023 - Formations -->
+              <div class="mb-8">
+                <div class="flex items-center gap-3 mb-4">
+                  <div class="flex items-center justify-center w-16 h-16 rounded-full bg-primary-100 text-primary-600 font-bold text-lg">
+                    2023
+                  </div>
+                  <h3 class="font-display text-xl font-bold text-primary-600">
+                    Perfectionnement
+                  </h3>
+                </div>
+                <div class="ml-20 grid gap-4">
+                  <div class="bg-white rounded-2xl p-5 border border-primary-100 shadow-sm hover:shadow-md transition">
+                    <div class="flex items-start gap-3">
+                      <div class="flex items-center justify-center w-10 h-10 rounded-full bg-primary-100 text-primary-600">
+                        <i class="fas fa-baby-carriage text-sm"></i>
+                      </div>
+                      <div class="flex-1">
+                        <h4 class="font-semibold text-accent-700">Les indispensables de la puériculture</h4>
+                        <p class="text-sm text-accent-500">Sylvie Cacciatore, Infirmière cadre et puéricultrice</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 border border-primary-100 shadow-sm hover:shadow-md transition">
+                    <div class="flex items-start gap-3">
+                      <div class="flex items-center justify-center w-10 h-10 rounded-full bg-primary-100 text-primary-600">
+                        <i class="fas fa-water text-sm"></i>
+                      </div>
+                      <div class="flex-1">
+                        <h4 class="font-semibold text-accent-700">Thalasso / Thérapeutique bain bébé Méthode Sonia Krief</h4>
+                        <p class="text-sm text-accent-500">Albane, infirmière anesthésiste, diplômée en hypnose thérapeutique</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 border border-primary-100 shadow-sm hover:shadow-md transition">
+                    <div class="flex items-start gap-3">
+                      <div class="flex items-center justify-center w-10 h-10 rounded-full bg-primary-100 text-primary-600">
+                        <i class="fas fa-spa text-sm"></i>
+                      </div>
+                      <div class="flex-1">
+                        <h4 class="font-semibold text-accent-700">Massage femme enceinte</h4>
+                        <p class="text-sm text-accent-500">Candice Lebertois, Esthéticienne, Spa thérapeute, et formatrice en massages du monde</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2024 - Formations -->
+              <div class="mb-8">
+                <div class="flex items-center gap-3 mb-4">
+                  <div class="flex items-center justify-center w-16 h-16 rounded-full bg-secondary-100 text-secondary-700 font-bold text-lg">
+                    2024
+                  </div>
+                  <h3 class="font-display text-xl font-bold text-secondary-700">
+                    Approfondissement
+                  </h3>
+                </div>
+                <div class="ml-20 grid gap-4">
+                  <div class="bg-white rounded-2xl p-5 border border-secondary-100 shadow-sm hover:shadow-md transition">
+                    <div class="flex items-start gap-3">
+                      <div class="flex items-center justify-center w-10 h-10 rounded-full bg-secondary-100 text-secondary-600">
+                        <i class="fas fa-hands-holding-child text-sm"></i>
+                      </div>
+                      <div class="flex-1">
+                        <h4 class="font-semibold text-accent-700">Massage post-natal</h4>
+                        <p class="text-sm text-accent-500">Dorothée Danloue, praticienne en massages et formatrice spécialisée en périnatalité</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bg-white rounded-2xl p-5 border border-secondary-100 shadow-sm hover:shadow-md transition">
+                    <div class="flex items-start gap-3">
+                      <div class="flex items-center justify-center w-10 h-10 rounded-full bg-secondary-100 text-secondary-600">
+                        <i class="fas fa-heart-pulse text-sm"></i>
+                      </div>
+                      <div class="flex-1">
+                        <h4 class="font-semibold text-accent-700">Maternité et addictions</h4>
+                        <p class="text-sm text-accent-500">Michel Cadart, médecin généraliste, et Karine Quintard, sage-femme diplômée en périnatalité et addictions</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2025 - Formation -->
+              <div class="mb-8">
+                <div class="flex items-center gap-3 mb-4">
+                  <div class="flex items-center justify-center w-16 h-16 rounded-full bg-primary-100 text-primary-600 font-bold text-lg">
+                    2025
+                  </div>
+                  <h3 class="font-display text-xl font-bold text-primary-600">
+                    Formation continue
+                  </h3>
+                </div>
+                <div class="ml-20">
+                  <div class="bg-white rounded-2xl p-5 border border-primary-100 shadow-sm hover:shadow-md transition">
+                    <div class="flex items-start gap-3">
+                      <div class="flex items-center justify-center w-10 h-10 rounded-full bg-primary-100 text-primary-600">
+                        <i class="fas fa-ribbon text-sm"></i>
+                      </div>
+                      <div class="flex-1">
+                        <h4 class="font-semibold text-accent-700">Usages du Rebozo</h4>
+                        <p class="text-sm text-accent-500">Priscilla Lange, doula</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-6 border-t border-secondary-200 text-center sm:text-left">
+              <a
+                href="index.html#a-propos"
+                class="inline-flex items-center gap-3 rounded-full bg-secondary-500 px-6 py-3 text-white font-semibold shadow-sm transition hover:opacity-90"
+              >
+                <i class="fas fa-arrow-left"></i>
+                <span>Retourner à l'accueil</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-50 py-10">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col gap-4 text-sm text-accent-500 sm:flex-row sm:items-center sm:justify-between">
+          <p>&copy; <span id="currentYear"></span> La Petite Berceuse. Tous droits réservés.</p>
+          <a
+            href="index.html"
+            class="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2 text-accent-600 transition hover:text-secondary-600"
+          >
+            <i class="fas fa-home"></i>
+            <span>Retour à l'accueil</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+
